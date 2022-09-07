@@ -1,36 +1,119 @@
-LineageOS
-===========
+<p align="center">
+<img src="https://github.com/RiceDroid/android/blob/twelve/sushi.png">
+</p>
 
-Getting started
+What is RiceDroid?
+---------------
+Ricedroid is an operating system based on lineage/crdroid, that aims to provide necessary "ricing" for android while being fast and stable.
+
+Terminology
+---------------
+The rice in the project name can be referred to "rice" (food) itself, but in a sense it is indeed the term "ricing" in linux.
+
+Maintainership
 ---------------
 
-To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
+ Maintainership is closed at the moment and will be open until further notice.
+ 
+Getting Started
+---------------
+**Initialize local repository (thanks to apon77 for repo init script)**
 
-To initialize your local repository using the LineageOS trees, use a command like this:
+```bash
+repo init --depth=1 --no-repo-verify -u https://github.com/strwbrry143/android -b thirteen -g default,-mips,-darwin,-notdefault
 ```
-repo init -u https://github.com/LineageOS/android.git -b lineage-20.0
+**in case of repo syncing failures try this instead**
+
+```bash
+repo init -u https://github.com/RiceDroid/android -b thirteen
 ```
-Then to sync up:
+
+**Sync up with this command:**
+```bash
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
+
 ```
-repo sync
+
+Preparing device for this ROM
+---------------
+
+**Inherit Lineage vendor common stuffs**
+```bash
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 ```
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
 
+**Adapt your device tree according to our fwb/hardware/vendor changes and use these flags to configure certain ROM properties**
+```bash
+# maintainer flag (one word only/no spacing)
+RICE_MAINTAINER := maintainer
 
-Submitting patches
-------------------
-Patches are always welcome! Please submit your patches via LineageOS Gerrit!
+# chipset flag (one word only/no spacing)
+RICE_CHIPSET := chipset
 
-Simply follow our guide on [how to submit patches](https://wiki.lineageos.org/submitting-patch-howto.html).
+# gapps build flag, if not defined build type is vanilla
+WITH_GMS := true/false
 
-To view the status of your and others' patches, visit [LineageOS Gerrit Code Review](https://review.lineageos.org/).
+# Sushi Bootanimation (only 720/1080p/1440 supported. if not defined, bootanimation is google bootanimation)
+SUSHI_BOOTANIMATION := 720/1080/1440
 
+# Graphene Camera
+TARGET_BUILD_GRAPHENEOS_CAMERA := true/false
 
-Buildbot
---------
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := true/false
 
-All supported devices are built weekly and periodically as changes are committed to ensure the source trees remain buildable.
+# UDFPS ICONS/ANIMATIONS
+TARGET_HAS_UDFPS := true/false
 
-You can view the current build statuses at [LineageOS Buildkite](https://buildkite.com/lineageos).
+# Quick tap feature
+TARGET_SUPPORTS_QUICK_TAP := true/false
 
-Builds produced weekly by the buildbot can be downloaded from [LineageOS downloads](https://download.lineageos.org/).
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true/false
+
+# Memory properties
+# Tune these properties according to device perfconfigstore.xml(if available)/device capabilities.
+# These props are overridable
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.fw.bg_apps_limit?=48 \
+    persist.sys.fw.use_trim_settings?=true \
+    persist.sys.fw.empty_app_percent?=50 \
+    persist.sys.fw.trim_empty_percent?=100 \
+    persist.sys.fw.trim_cache_percent?=100 \
+    persist.sys.fw.trim_enable_memory?=2147483648 \
+    persist.sys.fw.bservice_age?=120000 \
+    persist.sys.fw.bservice_limit?=6 \
+    persist.sys.fw.bservice_enable?=true 
+```
+
+Build
+---------------
+**Set up environment**
+```bash
+. build/envsetup.sh
+```
+**Build the code**
+```bash
+brunch "device_codename"
+```
+
+Credits
+---------------
+* [**AOSPA**](https://github.com/AOSPA)
+* [**Bootleggers**](https://github.com/BootleggersROM)
+* [**crDroid**](https://github.com/crdroidandroid)
+* [**Corvus-AOSP**](https://github.com/Corvus-R)
+* [**Derpfest**](https://github.com/Derpfest-12)
+* [**DotOS**](https://github.com/DotOS)
+* [**Evolution-X**](https://github.com/Evolution-X)
+* [**Flamingo-OS**](https://github.com/Flamingo-OS)
+* [**LineageOS**](https://github.com/LineageOS)
+* [**Octavi-OS**](https://github.com/Octavi-OS)
+* [**Omnirom**](https://github.com/omnirom)
+* [**PixelDust**](https://github.com/PixelDust-Twelve)
+* [**Project-Fluid**](https://github.com/Project-Fluid)
+* [**Project Kaleidoscope**](https://github.com/Project-Kaleidoscope)
+* [**Project Radiant**](https://github.com/ProjectRadiant)
+* [**SparkOS**](https://github.com/Spark-Rom)
+* [**Xdroid-OSS**](https://github.com/xdroid-oss)
+

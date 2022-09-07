@@ -1,0 +1,49 @@
+Thread title: [ROM][12][DEVICE] riceDroid [AOSP]
+
+[CENTER]
+[SIZE="5"][b][color=#1a73e8]riceDroid for Device name [codename][/color][/b][/SIZE]
+
+[SIZE="4"][b][color=#1a73e8]What is riceDroid?[/color][/b][/SIZE]
+[SIZE="3"]* Ricedroid is an operating system based on lineage/crdroid, that aims to provide necessary "ricing" for android while being fast and stable. 
+
+[SIZE="4"][b][color=#1a73e8]Terminology[/color][/b][/SIZE]
+[SIZE="3"]* The rice in the project name can be referred to "rice" (food) itself, but in a sense it is indeed the term "ricing" in linux.
+
+Based on Android 12
+[/SIZE]
+
+[SIZE="4"][b][color=#1a73e8]Whats working?[/color][/b][/SIZE]
+[SIZE="3"]Wi-Fi
+RIL
+Mobile data
+GPS
+Camera
+Flashlight
+Camcorder
+Bluetooth
+FM radio
+Fingerprint reader
+Face unlock
+NFC
+Lights
+Sound/vibration[/SIZE]
+
+[SIZE="4"][b][color=#1a73e8]Known issues[/color][/b][/SIZE]
+[SIZE="3"]Nothing yet[/SIZE]
+[SIZE="3"]You tell me[/SIZE]
+
+[SIZE="3"][B]VANILLA AND CORE GAPPS BUILD AVAILABLE[/B][/SIZE]
+
+[/CENTER]
+
+[LEFT][SIZE="3"][list]
+[*][b]Android OS version:[/b] 12.0.0_rX
+[*][b]Security patch level:[/b] XXX XX XXX
+[*][b]Build author/Device Maintainer:[/b] [url=XDA_PROFILE_URL]XDA_USERNAME[/url]
+[*][b]Device Source code:[/b] [url=https://github.com/RiceDroid-devices]https://github.com/RiceDroid-devices[/url]
+[*][b]Source code:[/b] [url=https://github.com/RiceDroid]https://github.com/RiceDroid[/url]
+[*][b]ROM Developer:[/b] [url=https://forum.xda-developers.com/m/dlwlrma123.5637875/]dlwlrma123[/url]
+[/list][/SIZE][/LEFT]
+
+
+
