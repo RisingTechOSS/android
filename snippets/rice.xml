@@ -39,6 +39,7 @@
   <!-- Vendor -->
   <project path="vendor/addons" name="str143/android_vendor_addons" revision="thirteen" />
   <project path="vendor/lineage" name="str143/android_vendor_rice" revision="thirteen" />
+  <project path="vendor/riceOTA" name="RiceDroid/android_vendor_RiceDroidOTA" revision="thirteen" />
 
   <!-- External  -->
   <project path="external/jemalloc_new" name="crdroidandroid/android_external_jemalloc-new" groups="pdk" revision="13.0" />
