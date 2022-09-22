@@ -31,6 +31,7 @@
   <project path="packages/apps/Settings" name="str143/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/riceDroidSettings" name="str143/android_packages_apps_RiceDroidSettings" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/ThemePicker" name="str143/android_packages_apps_ThemePicker" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Updater" name="str-br/android_packages_apps_Updater" revision="thirteen" />
   <project path="packages/modules/Connectivity" name="str143/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   <project path="packages/modules/Permission" name="str143/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   <project path="packages/services/OmniJaws" name="str143/packages_services_OmniJaws" revision="thirteen" />
