@@ -4,6 +4,8 @@
   <remote  name="gitlab"
            fetch="https://gitlab.com/" />
 
+  <project path="art" name="str143/android_art" groups="pdk" revision="thirteen" />
+
   <!-- Device -->
   <project path="device/lineage/sepolicy" name="str143/android_device_lineage_sepolicy" revision="thirteen" />
   <project path="device/qcom/sepolicy_vndr" name="str143/android_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="thirteen" />
