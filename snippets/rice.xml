@@ -22,6 +22,7 @@
   <!-- Packages -->
   <project path="packages/apps/Backgrounds" name="RiceDroid/android_packages_apps_Backgrounds" revision="twelve" />
   <project path="packages/apps/Contacts" name="str143/android_packages_apps_Contacts" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/DeskClock" name="str143/android_packages_apps_DeskClock" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/Dialer" name="str143/android_packages_apps_Dialer" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/Eleven" name="RiceDroid/android_packages_apps_Music" revision="twelve" />
   <project path="packages/apps/GameSpace" name="str143/android_packages_apps_GameSpace" revision="thirteen" />
