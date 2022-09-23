@@ -187,7 +187,6 @@
   <project path="external/google-fonts/big-shoulders-text" name="platform/external/google-fonts/big-shoulders-text" groups="pdk" remote="aosp" />
   <project path="external/google-fonts/carrois-gothic-sc" name="platform/external/google-fonts/carrois-gothic-sc" groups="pdk" remote="aosp" />
   <project path="external/google-fonts/coming-soon" name="platform/external/google-fonts/coming-soon" groups="pdk" remote="aosp" />
-  <project path="external/google-fonts/cutive-mono" name="platform/external/google-fonts/cutive-mono" groups="pdk" remote="aosp" />
   <project path="external/google-fonts/dancing-script" name="platform/external/google-fonts/dancing-script" groups="pdk" remote="aosp" />
   <project path="external/google-fonts/fraunces" name="platform/external/google-fonts/fraunces" groups="pdk" remote="aosp" />
   <project path="external/google-fonts/karla" name="platform/external/google-fonts/karla" groups="pdk" remote="aosp" />
@@ -339,7 +338,6 @@
   <project path="external/nist-pkits" name="platform/external/nist-pkits" groups="pdk" remote="aosp" />
   <project path="external/nist-sip" name="platform/external/nist-sip" groups="pdk" remote="aosp" />
   <project path="external/nos/host/generic" name="platform/external/nos/host/generic" groups="pdk" remote="aosp" />
-  <project path="external/noto-fonts" name="platform/external/noto-fonts" groups="pdk" remote="aosp" />
   <project path="external/nullaway" name="platform/external/nullaway" groups="pdk" remote="aosp" />
   <project path="external/oauth" name="platform/external/oauth" groups="pdk" remote="aosp" />
   <project path="external/obex" name="platform/external/obex" groups="pdk" remote="aosp" />
@@ -414,7 +412,6 @@
   <project path="external/replicaisland" name="platform/external/replicaisland" groups="pdk" remote="aosp" />
   <project path="external/rmi4utils" name="platform/external/rmi4utils" groups="pdk" remote="aosp" />
   <project path="external/robolectric-shadows" name="platform/external/robolectric-shadows" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="external/roboto-fonts" name="platform/external/roboto-fonts" groups="pdk" remote="aosp" />
   <project path="external/rootdev" name="platform/external/rootdev" groups="pdk" remote="aosp" />
   <project path="external/Reactive-Extensions/RxCpp" name="platform/external/Reactive-Extensions/RxCpp" groups="pdk" remote="aosp" />
   <project path="external/rnnoise" name="platform/external/rnnoise" groups="pdk" remote="aosp" />

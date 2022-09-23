@@ -56,6 +56,12 @@
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="crdroidandroid/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" revision="13.0" />
   <project path="vendor/qcom/opensource/vibrator" name="crdroidandroid/android_vendor_qcom_opensource_vibrator" groups="qcom,waipio-vendor" revision="13.0" />
   
+  <!-- ProtonAOSP repositories -->
+  <project name="ProtonAOSP/android_external_noto-fonts" path="external/noto-fonts" revision="sc-v2" />
+  <project name="ProtonAOSP/android_external_roboto-fonts" path="external/roboto-fonts" revision="sc-v2" />
+  <project name="ProtonAOSP/android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" revision="sc-v2" />
+  <project name="kdrag0n/android_packages_apps_RepainterServicePriv" path="packages/apps/RepainterServicePriv" revision="main" />
+
   <!-- Personal  -->
   <project name="str143/device_oneplus_kebab" path="device/oneplus/kebab" revision="thirteen-OOS12" />
   <project name="str143/android_kernel_oneplus_sm8250" path="kernel/oneplus/sm8250" revision="thirteen-OOS12" />
