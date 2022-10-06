@@ -42,6 +42,7 @@
 
   <!-- Vendor -->
   <project path="vendor/addons" name="str143/android_vendor_addons" revision="thirteen" />
+  <project path="vendor/gms" name="dlwlrma123/vendor_google_pixel" remote="gitlab" revision="thirteen" clone-depth="1" />
   <project path="vendor/lineage" name="str143/android_vendor_rice" revision="thirteen" />
   <project path="vendor/riceOTA" name="RiceDroid/android_vendor_RiceDroidOTA" revision="thirteen" />
 
