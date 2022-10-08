@@ -44,14 +44,21 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 **Adapt your device tree according to our fwb/hardware/vendor changes and use these flags to configure certain ROM properties**
 ```bash
-# maintainer flag (one word only/no spacing)
-RICE_MAINTAINER := maintainer
 
 # chipset flag (one word only/no spacing)
+# friendly tip: use can use init_xxx.cpp as workaround for spacing
+# e.g. property_override("ro.rice.chipset", "Snapdragon 870 5G");
 RICE_CHIPSET := chipset
 
-# gapps build flag, if not defined build type is vanilla
-WITH_GMS := true/false
+# maintainer flag (one word only/no spacing)
+# friendly tip: use can use init_xxx.cpp as workaround for spacing
+# e.g. property_override("ro.rice.maintainer", "get riced");
+RICE_MAINTAINER := maintainer
+
+# maintainer flag (one word only/no spacing)
+# this will reflect on build/display version, a firmware package/zip name 
+# e.g. riceDroid-7.0-COMMUNITY-device-AOSP.zip - AOSP is the default package type, WITH_GMS will override the package type to PIXEL
+RICE_PACKAGE_TYPE := AOSP
 
 # Sushi Bootanimation (only 720/1080p/1440 supported. if not defined, bootanimation is google bootanimation)
 SUSHI_BOOTANIMATION := 720/1080/1440
@@ -65,25 +72,69 @@ TARGET_ENABLE_BLUR := true/false
 # UDFPS ICONS/ANIMATIONS
 TARGET_HAS_UDFPS := true/false
 
-# Quick tap feature
-TARGET_SUPPORTS_QUICK_TAP := true/false
+# Allow usage of custom binary linker (LD), default is false
+TARGET_KERNEL_OPTIONAL_LD := true/false
 
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := true/false
+# Spoof build description/fingerprint as pixel device
+TARGET_USE_PIXEL_FINGERPRINT := true/false
+
+# GMS build flags, if none were defined the package build type will be AOSP
+WITH_GMS := true/false - ship with GMS packages, replaces misc AOSP packages with Google packages.
+TARGET_OPTOUT_GOOGLE_TELEPHONY := true/false - opt out of google dialer support (requires WITH_GMS flag)
+
+# We took some of Code Linaro optimizations and ported it to AOSP,
+# But due to some stuffs we were not able to make the system parse the device perfconfigstore.xml automatically
+# builders might need to tune runtime properties listed below (with reference and CLO counterparts)
 
 # Memory properties
-# Tune these properties according to device perfconfigstore.xml(if available)/device capabilities.
-# These props are overridable
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.fw.bg_apps_limit?=48 \
-    persist.sys.fw.use_trim_settings?=true \
-    persist.sys.fw.empty_app_percent?=50 \
-    persist.sys.fw.trim_empty_percent?=100 \
-    persist.sys.fw.trim_cache_percent?=100 \
-    persist.sys.fw.trim_enable_memory?=2147483648 \
-    persist.sys.fw.bservice_age?=120000 \
-    persist.sys.fw.bservice_limit?=6 \
-    persist.sys.fw.bservice_enable?=true 
+# builder(s) may refer to default CLO perfconfigstore.xml file shipped with the tree/BSP(if available).
+
+[1] https://dumps.tadiphone.dev/dumps/oneplus/oneplus9r/-/blob/qssi-user-12-RKQ1.211119.001-R.202207300316-release-keys--IN/vendor/etc/perf/perfconfigstore.xml
+[2] https://github.com/AOSPA/android_device_qcom_common/blob/sapphire/vendor/perf/configs/lahaina/perf/perfconfigstore.xml
+
+# memory management [2]
+persist.sys.fw.bg_apps_limit=96
+
+# Adapted LMKD [1] & [2]
+# kill_heaviest_task_dup
+ro.lmk.kill_heaviest_task=true
+# kill_timeout_ms_dup
+ro.lmk.kill_timeout_ms=100
+# thrashing_threshold
+ro.lmk.thrashing_limit=30
+# thrashing_decay
+ro.lmk.thrashing_limit_decay=5
+# nstrat_low_swap
+ro.lmk.swap_free_low_percentage=10
+# nstrat_psi_partial_ms
+ro.lmk.psi_partial_stall_ms=70
+# nstrat_psi_complete_ms
+ro.lmk.psi_complete_stall_ms=70
+# use_new_strategy_dup
+ro.lmk.use_new_strategy=true
+# CLO lmkd [1] - others were not defined (will use default values from lmkd binary)
+ro.lmk.psi_scrit_complete_stall_ms=75
+ro.lmk.nstrat_wmark_boost_factor=4
+ro.lmk.enable_watermark_check=true
+ro.lmk.enable_userspace_lmk=true
+ro.lmk.super_critical=701
+ro.lmk.direct_reclaim_pressure=45
+ro.lmk.reclaim_scan_threshold=0
+
+# app compaction - [1] & [2]
+# disabled app compaction due to app freezes when switching tasks
+persist.sys.appcompact.enable_app_compact=false
+persist.sys.appcompact.full_compact_type=2
+persist.sys.appcompact.some_compact_type=4
+persist.sys.appcompact.compact_throttle_somesome=5000
+persist.sys.appcompact.compact_throttle_somefull=10000
+persist.sys.appcompact.compact_throttle_fullsome=500
+persist.sys.appcompact.compact_throttle_fullfull=10000
+persist.sys.appcompact.compact_throttle_bfgs=600000
+persist.sys.appcompact.compact_throttle_persistent=600000
+persist.sys.appcompact.rss_throttle_kb=12000
+persist.sys.appcompact.delta_rss_throttle_kb=8000
+persist.sys.perf.topAppRenderThreadBoost.enable=false
 ```
 
 Build
