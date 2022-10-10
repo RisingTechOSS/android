@@ -28,7 +28,7 @@
 
   <!-- AOSP Projects -->
 
-  <project path="build/make" name="str143/android_build" groups="pdk" revision="thirteen" >
+  <project path="build/make" name="minaripenguin37/android_build" groups="pdk" revision="thirteen" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -44,11 +44,11 @@
   <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" groups="pdk" remote="aosp" />
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
   <project path="build/pesto" name="platform/build/pesto" groups="pdk" remote="aosp" />
-  <project path="build/soong" name="str143/android_build_soong" groups="pdk,tradefed" revision="thirteen" >
+  <project path="build/soong" name="minaripenguin37/android_build_soong" groups="pdk,tradefed" revision="thirteen" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="bootable/recovery" name="str143/android_bootable_recovery" groups="pdk" revision="thirteen" />
+  <project path="bootable/recovery" name="minaripenguin37/android_bootable_recovery" groups="pdk" revision="thirteen" />
   <project path="bootable/libbootloader" name="platform/bootable/libbootloader" groups="vts,pdk" remote="aosp" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -158,7 +158,6 @@
   <project path="external/ethtool" name="platform/external/ethtool" groups="pdk" remote="aosp" />
   <project path="external/exoplayer" name="platform/external/exoplayer" groups="pdk" remote="aosp" />
   <project path="external/expat" name="platform/external/expat" groups="pdk" remote="aosp" />
-  <project path="external/f2fs-tools" name="platform/external/f2fs-tools" groups="pdk" remote="aosp" />
   <project path="external/fastrpc" name="platform/external/fastrpc" groups="pdk" remote="aosp" />
   <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" remote="aosp" />
   <project path="external/fec" name="platform/external/fec" groups="pdk" remote="aosp" />
@@ -311,7 +310,7 @@
   <project path="external/lottie" name="platform/external/lottie" groups="pdk" remote="aosp" />
   <project path="external/ltp" name="platform/external/ltp" groups="vts,pdk" remote="aosp" />
   <project path="external/lua" name="platform/external/lua" groups="pdk" remote="aosp_master" />
-  <project path="external/lz4" name="platform/external/lz4" groups="pdk" remote="aosp_master" />
+  <project path="external/lz4" name="platform/external/lz4" groups="pdk" remote="aosp" />
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" remote="aosp_master" />
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk" remote="aosp" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk" remote="aosp" />
@@ -931,7 +930,6 @@
   <project path="packages/services/Iwlan" name="platform/packages/services/Iwlan" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/services/Mms" name="LineageOS/android_packages_services_Mms" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Mtp" name="platform/packages/services/Mtp" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="packages/services/Telecomm" name="LineageOS/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Telephony" name="LineageOS/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/wallpapers/ImageWallpaper" name="platform/packages/wallpapers/ImageWallpaper" groups="pdk-fs" remote="aosp" />
   <project path="packages/wallpapers/LivePicker" name="LineageOS/android_packages_wallpapers_LivePicker" groups="pdk-fs" />

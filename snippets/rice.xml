@@ -4,51 +4,53 @@
   <remote  name="gitlab"
            fetch="https://gitlab.com/" />
 
-  <project path="art" name="str143/android_art" groups="pdk" revision="thirteen" />
+  <project path="art" name="minaripenguin37/android_art" groups="pdk" revision="thirteen" />
 
   <!-- Device -->
-  <project path="device/lineage/sepolicy" name="str143/android_device_lineage_sepolicy" revision="thirteen" />
-  <project path="device/qcom/sepolicy_vndr" name="str143/android_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="thirteen" />
+  <project path="device/lineage/sepolicy" name="minaripenguin37/android_device_lineage_sepolicy" revision="thirteen" />
+  <project path="device/qcom/sepolicy_vndr" name="minaripenguin37/android_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="thirteen" />
   
    <!-- Frameworks -->
-  <project path="frameworks/av" name="str143/android_frameworks_av" groups="pdk" revision="thirteen" />
-  <project path="frameworks/base" name="str143/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="frameworks/libs/systemui" name="str143/android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="frameworks/native" name="str143/android_frameworks_native" groups="pdk" revision="thirteen" />
+  <project path="frameworks/av" name="minaripenguin37/android_frameworks_av" groups="pdk" revision="thirteen" />
+  <project path="frameworks/base" name="minaripenguin37/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="frameworks/libs/systemui" name="minaripenguin37/android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="frameworks/native" name="minaripenguin37/android_frameworks_native" groups="pdk" revision="thirteen" />
 
   <!-- Lineage -->
-  <project path="lineage-sdk" name="str143/android_lineage-sdk" revision="thirteen" />
+  <project path="lineage-sdk" name="minaripenguin37/android_lineage-sdk" revision="thirteen" />
 
   <!-- Packages -->
   <project path="packages/apps/Backgrounds" name="RiceDroid/android_packages_apps_Backgrounds" revision="twelve" />
-  <project path="packages/apps/Contacts" name="str143/android_packages_apps_Contacts" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/DeskClock" name="str143/android_packages_apps_DeskClock" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Dialer" name="str143/android_packages_apps_Dialer" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Contacts" name="minaripenguin37/android_packages_apps_Contacts" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/DeskClock" name="minaripenguin37/android_packages_apps_DeskClock" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Dialer" name="minaripenguin37/android_packages_apps_Dialer" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/Eleven" name="RiceDroid/android_packages_apps_Music" revision="twelve" />
-  <project path="packages/apps/GameSpace" name="str143/android_packages_apps_GameSpace" revision="thirteen" />
-  <project path="packages/apps/Launcher3" name="str143/android_packages_apps_Launcher3" revision="thirteen" />
-  <project path="packages/apps/LineageParts" name="str143/android_packages_apps_LineageParts" revision="thirteen" />
-  <project path="packages/apps/Messaging" name="str143/android_packages_apps_Messaging" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Settings" name="str143/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/riceDroidSettings" name="str143/android_packages_apps_RiceDroidSettings" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/ThemePicker" name="str143/android_packages_apps_ThemePicker" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Updater" name="str-br/android_packages_apps_Updater" revision="thirteen" />
-  <project path="packages/modules/Connectivity" name="str143/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="packages/modules/Permission" name="str143/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="packages/services/OmniJaws" name="str143/packages_services_OmniJaws" revision="thirteen" />
+  <project path="packages/apps/GameSpace" name="minaripenguin37/android_packages_apps_GameSpace" revision="thirteen" />
+  <project path="packages/apps/Launcher3" name="minaripenguin37/android_packages_apps_Launcher3" revision="thirteen" />
+  <project path="packages/apps/LineageParts" name="minaripenguin37/android_packages_apps_LineageParts" revision="thirteen" />
+  <project path="packages/apps/Messaging" name="minaripenguin37/android_packages_apps_Messaging" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Settings" name="minaripenguin37/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/riceDroidSettings" name="minaripenguin37/android_packages_apps_RiceDroidSettings" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/ThemePicker" name="minaripenguin37/android_packages_apps_ThemePicker" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Updater" name="minaripenguin37/android_packages_apps_Updater" revision="thirteen" />
+  <project path="packages/modules/Connectivity" name="minaripenguin37/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/modules/Permission" name="minaripenguin37/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/services/OmniJaws" name="minaripenguin37/packages_services_OmniJaws" revision="thirteen" />
+  <project path="packages/services/Telecomm" name="minaripenguin37/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
 
   <!-- System -->
-  <project path="system/memory/lmkd" name="str143/android_system_memory_lmkd" groups="pdk" revision="thirteen" />
+  <project path="system/memory/lmkd" name="minaripenguin37/android_system_memory_lmkd" groups="pdk" revision="thirteen" />
 
   <!-- Vendor -->
-  <project path="vendor/addons" name="str143/android_vendor_addons" revision="thirteen" />
+  <project path="vendor/addons" name="minaripenguin37/android_vendor_addons" revision="thirteen" />
   <project path="vendor/gms" name="dlwlrma123/vendor_google_pixel" remote="gitlab" revision="thirteen" clone-depth="1" />
-  <project path="vendor/lineage" name="str143/android_vendor_rice" revision="thirteen" />
+  <project path="vendor/lineage" name="minaripenguin37/android_vendor_rice" revision="thirteen" />
   <project path="vendor/riceOTA" name="RiceDroid/android_vendor_RiceDroidOTA" revision="thirteen" />
 
   <!-- External  -->
-  <project path="bionic" name="str-br/android_bionic" groups="pdk" revision="thirteen" />
-  <project path="external/arm-optimized-routines" name="str-br/android_external_arm-optimized-routines" groups="pdk" revision="thirteen" />
+  <project path="bionic" name="minaripenguin37/android_bionic" groups="pdk" revision="thirteen" />
+  <project path="external/arm-optimized-routines" name="minaripenguin37/android_external_arm-optimized-routines" groups="pdk" revision="thirteen" />
+    <project path="external/f2fs-tools" name="minaripenguin37/android_external_f2fs-tools" groups="pdk" revision="thirteen" />
   <project path="external/colorkt" name="crdroidandroid/android_external_colorkt" revision="13.0" />
   <project path="external/jemalloc_new" name="crdroidandroid/android_external_jemalloc-new" groups="pdk" revision="13.0" />
   <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" groups="pdk" revision="13.0" />
@@ -57,7 +59,7 @@
   <project path="device/qcom/sepolicy" name="crdroidandroid/android_device_qcom_sepolicy" groups="qcom,qssi" revision="13.0" />
   <project path="packages/modules/Wifi" name="crdroidandroid/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" revision="13.0" />
   <project path="packages/apps/Nfc" name="crdroidandroid/android_packages_apps_Nfc" revision="13.0" />
-  <project path="system/core" name="str143/android_system_core" groups="pdk" revision="thirteen" />
+  <project path="system/core" name="minaripenguin37/android_system_core" groups="pdk" revision="thirteen" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="crdroidandroid/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" revision="13.0" />
   <project path="vendor/qcom/opensource/vibrator" name="crdroidandroid/android_vendor_qcom_opensource_vibrator" groups="qcom,waipio-vendor" revision="13.0" />
   
@@ -68,8 +70,8 @@
   <project name="kdrag0n/android_packages_apps_RepainterServicePriv" path="packages/apps/RepainterServicePriv" revision="main" />
 
   <!-- Personal  -->
-  <project name="str143/device_oneplus_kebab" path="device/oneplus/kebab" revision="thirteen-OOS12" />
-  <project name="str143/android_kernel_oneplus_sm8250" path="kernel/oneplus/sm8250" revision="thirteen-OOS12" />
-  <project name="str143/vendor_oneplus_kebab_OOS12" path="vendor/oneplus/kebab" revision="twelve" />
+  <project name="minaripenguin37/device_oneplus_kebab" path="device/oneplus/kebab" revision="thirteen-OOS12" />
+  <project name="minaripenguin37/android_kernel_oneplus_sm8250" path="kernel/oneplus/sm8250" revision="thirteen-OOS12" />
+  <project name="minaripenguin37/vendor_oneplus_kebab_OOS12" path="vendor/oneplus/kebab" revision="twelve" />
 
 </manifest>
