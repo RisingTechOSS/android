@@ -47,10 +47,14 @@
   <project path="vendor/lineage" name="minaripenguin37/android_vendor_rice" revision="thirteen" />
   <project path="vendor/riceOTA" name="RiceDroid/android_vendor_RiceDroidOTA" revision="thirteen" />
 
-  <!-- External  -->
+  <!-- Others  -->
   <project path="bionic" name="minaripenguin37/android_bionic" groups="pdk" revision="thirteen" />
   <project path="external/arm-optimized-routines" name="minaripenguin37/android_external_arm-optimized-routines" groups="pdk" revision="thirteen" />
-    <project path="external/f2fs-tools" name="minaripenguin37/android_external_f2fs-tools" groups="pdk" revision="thirteen" />
+  <project path="external/f2fs-tools" name="minaripenguin37/android_external_f2fs-tools" groups="pdk" revision="thirteen" />
+  <project path="system/core" name="minaripenguin37/android_system_core" groups="pdk" revision="thirteen" />
+
+  <!-- External projects repositories  -->
+  <project path="libcore" name="crdroidandroid/android_libcore" groups="pdk" revision="13.0" />
   <project path="external/colorkt" name="crdroidandroid/android_external_colorkt" revision="13.0" />
   <project path="external/jemalloc_new" name="crdroidandroid/android_external_jemalloc-new" groups="pdk" revision="13.0" />
   <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" groups="pdk" revision="13.0" />
@@ -59,15 +63,12 @@
   <project path="device/qcom/sepolicy" name="crdroidandroid/android_device_qcom_sepolicy" groups="qcom,qssi" revision="13.0" />
   <project path="packages/modules/Wifi" name="crdroidandroid/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" revision="13.0" />
   <project path="packages/apps/Nfc" name="crdroidandroid/android_packages_apps_Nfc" revision="13.0" />
-  <project path="system/core" name="minaripenguin37/android_system_core" groups="pdk" revision="thirteen" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="crdroidandroid/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" revision="13.0" />
-  <project path="vendor/qcom/opensource/vibrator" name="crdroidandroid/android_vendor_qcom_opensource_vibrator" groups="qcom,waipio-vendor" revision="13.0" />
-  
-  <!-- ProtonAOSP repositories -->
   <project name="ProtonAOSP/android_external_noto-fonts" path="external/noto-fonts" revision="sc-v2" />
   <project name="ProtonAOSP/android_external_roboto-fonts" path="external/roboto-fonts" revision="sc-v2" />
   <project name="ProtonAOSP/android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" revision="sc-v2" />
   <project name="kdrag0n/android_packages_apps_RepainterServicePriv" path="packages/apps/RepainterServicePriv" revision="main" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="crdroidandroid/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" revision="13.0" />
+  <project path="vendor/qcom/opensource/vibrator" name="crdroidandroid/android_vendor_qcom_opensource_vibrator" groups="qcom,waipio-vendor" revision="13.0" />
 
   <!-- Personal  -->
   <project name="minaripenguin37/device_oneplus_kebab" path="device/oneplus/kebab" revision="thirteen-OOS12" />
