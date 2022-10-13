@@ -51,12 +51,12 @@
   <project path="bionic" name="minaripenguin37/android_bionic" groups="pdk" revision="thirteen" />
   <project path="external/arm-optimized-routines" name="minaripenguin37/android_external_arm-optimized-routines" groups="pdk" revision="thirteen" />
   <project path="external/f2fs-tools" name="minaripenguin37/android_external_f2fs-tools" groups="pdk" revision="thirteen" />
+  <project path="external/jemalloc_new" name="minaripenguin37/android_external_jemalloc-new" groups="pdk" revision="thirteen" />
   <project path="system/core" name="minaripenguin37/android_system_core" groups="pdk" revision="thirteen" />
 
   <!-- External projects repositories  -->
   <project path="libcore" name="crdroidandroid/android_libcore" groups="pdk" revision="13.0" />
   <project path="external/colorkt" name="crdroidandroid/android_external_colorkt" revision="13.0" />
-  <project path="external/jemalloc_new" name="crdroidandroid/android_external_jemalloc-new" groups="pdk" revision="13.0" />
   <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" groups="pdk" revision="13.0" />
   <project path="external/sqlite" name="crdroidandroid/android_external_sqlite" groups="pdk" revision="13.0" />
   <project path="external/themelib" name="crdroidandroid/android_external_themelib" revision="13.0" />
