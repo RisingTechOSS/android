@@ -13,6 +13,7 @@
    <!-- Frameworks -->
   <project path="frameworks/av" name="minaripenguin37/android_frameworks_av" groups="pdk" revision="thirteen" />
   <project path="frameworks/base" name="minaripenguin37/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="frameworks/libs/net" name="minaripenguin37/android_frameworks_libs_net" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   <project path="frameworks/libs/systemui" name="minaripenguin37/android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   <project path="frameworks/native" name="minaripenguin37/android_frameworks_native" groups="pdk" revision="thirteen" />
 
@@ -35,6 +36,7 @@
   <project path="packages/apps/Updater" name="minaripenguin37/android_packages_apps_Updater" revision="thirteen" />
   <project path="packages/modules/Connectivity" name="minaripenguin37/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   <project path="packages/modules/Permission" name="minaripenguin37/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/modules/Wifi" name="minaripenguin37/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   <project path="packages/services/OmniJaws" name="minaripenguin37/packages_services_OmniJaws" revision="thirteen" />
   <project path="packages/services/Telecomm" name="minaripenguin37/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
 
@@ -63,7 +65,6 @@
   <project path="external/sqlite" name="crdroidandroid/android_external_sqlite" groups="pdk" revision="13.0" />
   <project path="external/themelib" name="crdroidandroid/android_external_themelib" revision="13.0" />
   <project path="device/qcom/sepolicy" name="crdroidandroid/android_device_qcom_sepolicy" groups="qcom,qssi" revision="13.0" />
-  <project path="packages/modules/Wifi" name="crdroidandroid/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" revision="13.0" />
   <project path="packages/apps/Nfc" name="crdroidandroid/android_packages_apps_Nfc" revision="13.0" />
   <project name="ProtonAOSP/android_external_noto-fonts" path="external/noto-fonts" revision="sc-v2" />
   <project name="ProtonAOSP/android_external_roboto-fonts" path="external/roboto-fonts" revision="sc-v2" />
@@ -71,6 +72,18 @@
   <project name="kdrag0n/android_packages_apps_RepainterServicePriv" path="packages/apps/RepainterServicePriv" revision="main" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="crdroidandroid/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" revision="13.0" />
   <project path="vendor/qcom/opensource/vibrator" name="crdroidandroid/android_vendor_qcom_opensource_vibrator" groups="qcom,waipio-vendor" revision="13.0" />
+
+  <project path="vendor/nxp/nfc" name="crdroidandroid/android_vendor_nxp_nfc" revision="13.0" />
+  <project path="vendor/nxp/secure_element" name="crdroidandroid/android_vendor_nxp_secure_element" revision="13.0" />
+  <project path="vendor/nxp/secure_element_extns" name="crdroidandroid/android_vendor_nxp_secure_element_extns" revision="13.0" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="crdroidandroid/android_vendor_nxp_interfaces_opensource_nfc" revision="13.0" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="crdroidandroid/android_vendor_nxp_opensource_external_libnfc-nci" revision="13.0" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="crdroidandroid/android_vendor_nxp_opensource_frameworks" revision="13.0" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="crdroidandroid/android_vendor_nxp_opensource_packages_apps_Nfc" revision="13.0" />
+  <project path="vendor/nxp/opensource/pn5xx/halimpl" name="crdroidandroid/android_vendor_nxp_opensource_halimpl" revision="13.0-pn5xx" />
+  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="crdroidandroid/android_vendor_nxp_opensource_hidlimpl" revision="13.0-pn5xx" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" name="crdroidandroid/android_vendor_nxp_opensource_halimpl" revision="13.0-sn100x" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="crdroidandroid/android_vendor_nxp_opensource_hidlimpl" revision="13.0-sn100x" />
 
   <!-- Personal  -->
   <project name="minaripenguin37/device_oneplus_kebab" path="device/oneplus/kebab" revision="thirteen-OOS12" />
