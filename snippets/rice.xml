@@ -59,6 +59,7 @@
   <project path="system/core" name="minaripenguin37/android_system_core" groups="pdk" revision="thirteen" />
 
   <!-- External projects repositories  -->
+  <project path="external/AndroidSystemBlur" name="minaripenguin37/AndroidSystemBlur" revision="main" />
   <project path="libcore" name="crdroidandroid/android_libcore" groups="pdk" revision="13.0" />
   <project path="external/colorkt" name="crdroidandroid/android_external_colorkt" revision="13.0" />
   <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" groups="pdk" revision="13.0" />
