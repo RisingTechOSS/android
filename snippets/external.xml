@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- crDroid Android repositories  -->
+  
+  <project path="libcore" name="crdroidandroid/android_libcore" groups="pdk" revision="13.0" />
+  <project path="device/qcom/sepolicy" name="crdroidandroid/android_device_qcom_sepolicy" groups="qcom,qssi" revision="13.0" />
+
+   <!-- external  -->
+  <project path="external/colorkt" name="crdroidandroid/android_external_colorkt" revision="13.0" />
+  <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" groups="pdk" revision="13.0" />
+  <project path="external/sqlite" name="crdroidandroid/android_external_sqlite" groups="pdk" revision="13.0" />
+  <project path="external/themelib" name="crdroidandroid/android_external_themelib" revision="13.0" />
+  
+  <!-- hardware  -->
+  <project path="hardware/qcom-caf/sm8150/display" name="crdroidandroid/android_hardware_qcom_display" revision="13.0-caf-sm8150" />
+  
+  <!-- frameworks  -->
+  <project path="frameworks/opt/net/ims" name="crdroidandroid/android_frameworks_opt_net_ims" groups="pdk" revision="13.0" />
+  
+  <!-- packages  -->
+ <project path="packages/apps/CellBroadcastReceiver" name="crdroidandroid/android_packages_apps_CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" revision="13.0" />
+  <project path="packages/apps/Nfc" name="crdroidandroid/android_packages_apps_Nfc" revision="13.0" />
+  
+  <!-- vendor nxp  -->
+  <project path="vendor/nxp/nfc" name="crdroidandroid/android_vendor_nxp_nfc" revision="13.0" />
+  <project path="vendor/nxp/secure_element" name="crdroidandroid/android_vendor_nxp_secure_element" revision="13.0" />
+  <project path="vendor/nxp/secure_element_extns" name="crdroidandroid/android_vendor_nxp_secure_element_extns" revision="13.0" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="crdroidandroid/android_vendor_nxp_interfaces_opensource_nfc" revision="13.0" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="crdroidandroid/android_vendor_nxp_opensource_external_libnfc-nci" revision="13.0" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="crdroidandroid/android_vendor_nxp_opensource_frameworks" revision="13.0" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="crdroidandroid/android_vendor_nxp_opensource_packages_apps_Nfc" revision="13.0" />
+  <project path="vendor/nxp/opensource/pn5xx/halimpl" name="crdroidandroid/android_vendor_nxp_opensource_halimpl" revision="13.0-pn5xx" />
+  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="crdroidandroid/android_vendor_nxp_opensource_hidlimpl" revision="13.0-pn5xx" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" name="crdroidandroid/android_vendor_nxp_opensource_halimpl" revision="13.0-sn100x" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="crdroidandroid/android_vendor_nxp_opensource_hidlimpl" revision="13.0-sn100x" />
+  
+  <!-- vendor qcom  -->
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="crdroidandroid/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" revision="13.0" />
+  <project path="vendor/qcom/opensource/vibrator" name="crdroidandroid/android_vendor_qcom_opensource_vibrator" groups="qcom,waipio-vendor" revision="13.0" />
+  
+  <!-- proton AOSP repositories  -->
+  <project name="ProtonAOSP/android_external_noto-fonts" path="external/noto-fonts" revision="sc-v2" />
+  <project name="ProtonAOSP/android_external_roboto-fonts" path="external/roboto-fonts" revision="sc-v2" />
+  <project name="ProtonAOSP/android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" revision="sc-v2" />
+  <project name="kdrag0n/android_packages_apps_RepainterServicePriv" path="packages/apps/RepainterServicePriv" revision="main" />
+  
+</manifest>

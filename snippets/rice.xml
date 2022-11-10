@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="gitlab"
-           fetch="https://gitlab.com/" />
-
   <project path="art" name="minaripenguin37/android_art" groups="pdk" revision="thirteen" />
 
   <!-- Device -->
@@ -52,6 +49,7 @@
 
   <!-- Others  -->
   <project path="bionic" name="minaripenguin37/android_bionic" groups="pdk" revision="thirteen" />
+  <project path="external/AndroidSystemBlur" name="minaripenguin37/AndroidSystemBlur" revision="main" />
   <project path="external/arm-optimized-routines" name="minaripenguin37/android_external_arm-optimized-routines" groups="pdk" revision="thirteen" />
   <project path="external/faceunlock" name="dlwlrma123/external_faceunlock" remote="gitlab" revision="thirteen" />
   <project path="external/f2fs-tools" name="minaripenguin37/android_external_f2fs-tools" groups="pdk" revision="thirteen" />
@@ -59,41 +57,5 @@
   <project path="external/lz4" name="RiceDroid/external_lz4" groups="pdk" revision="thirteen" />
   <project path="external/zlib" name="minaripenguin37/android_external_zlib-ng" groups="pdk" revision="thirteen" />
   <project path="system/core" name="minaripenguin37/android_system_core" groups="pdk" revision="thirteen" />
-
-  <!-- External projects repositories  -->
-  <project path="external/AndroidSystemBlur" name="minaripenguin37/AndroidSystemBlur" revision="main" />
-  <project path="libcore" name="crdroidandroid/android_libcore" groups="pdk" revision="13.0" />
-  <project path="external/colorkt" name="crdroidandroid/android_external_colorkt" revision="13.0" />
-  <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" groups="pdk" revision="13.0" />
-  <project path="external/sqlite" name="crdroidandroid/android_external_sqlite" groups="pdk" revision="13.0" />
-  <project path="external/themelib" name="crdroidandroid/android_external_themelib" revision="13.0" />
-  <project path="hardware/qcom-caf/sm8150/display" name="crdroidandroid/android_hardware_qcom_display" revision="13.0-caf-sm8150" />
-  <project path="frameworks/opt/net/ims" name="crdroidandroid/android_frameworks_opt_net_ims" groups="pdk" revision="13.0" />
-  <project path="device/qcom/sepolicy" name="crdroidandroid/android_device_qcom_sepolicy" groups="qcom,qssi" revision="13.0" />
- <project path="packages/apps/CellBroadcastReceiver" name="crdroidandroid/android_packages_apps_CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" revision="13.0" />
-  <project path="packages/apps/Nfc" name="crdroidandroid/android_packages_apps_Nfc" revision="13.0" />
-  <project name="ProtonAOSP/android_external_noto-fonts" path="external/noto-fonts" revision="sc-v2" />
-  <project name="ProtonAOSP/android_external_roboto-fonts" path="external/roboto-fonts" revision="sc-v2" />
-  <project name="ProtonAOSP/android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" revision="sc-v2" />
-  <project name="kdrag0n/android_packages_apps_RepainterServicePriv" path="packages/apps/RepainterServicePriv" revision="main" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="crdroidandroid/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" revision="13.0" />
-  <project path="vendor/qcom/opensource/vibrator" name="crdroidandroid/android_vendor_qcom_opensource_vibrator" groups="qcom,waipio-vendor" revision="13.0" />
-
-  <project path="vendor/nxp/nfc" name="crdroidandroid/android_vendor_nxp_nfc" revision="13.0" />
-  <project path="vendor/nxp/secure_element" name="crdroidandroid/android_vendor_nxp_secure_element" revision="13.0" />
-  <project path="vendor/nxp/secure_element_extns" name="crdroidandroid/android_vendor_nxp_secure_element_extns" revision="13.0" />
-  <project path="vendor/nxp/opensource/interfaces/nfc" name="crdroidandroid/android_vendor_nxp_interfaces_opensource_nfc" revision="13.0" />
-  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="crdroidandroid/android_vendor_nxp_opensource_external_libnfc-nci" revision="13.0" />
-  <project path="vendor/nxp/opensource/commonsys/frameworks" name="crdroidandroid/android_vendor_nxp_opensource_frameworks" revision="13.0" />
-  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="crdroidandroid/android_vendor_nxp_opensource_packages_apps_Nfc" revision="13.0" />
-  <project path="vendor/nxp/opensource/pn5xx/halimpl" name="crdroidandroid/android_vendor_nxp_opensource_halimpl" revision="13.0-pn5xx" />
-  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="crdroidandroid/android_vendor_nxp_opensource_hidlimpl" revision="13.0-pn5xx" />
-  <project path="vendor/nxp/opensource/sn100x/halimpl" name="crdroidandroid/android_vendor_nxp_opensource_halimpl" revision="13.0-sn100x" />
-  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="crdroidandroid/android_vendor_nxp_opensource_hidlimpl" revision="13.0-sn100x" />
-
-  <!-- Personal  -->
-  <project name="minaripenguin37/device_oneplus_kebab" path="device/oneplus/kebab" revision="thirteen-OOS12" />
-  <project name="minaripenguin37/android_kernel_oneplus_sm8250" path="kernel/oneplus/sm8250" revision="thirteen-OOS12" />
-  <project name="minaripenguin37/vendor_oneplus_kebab_OOS12" path="vendor/oneplus/kebab" revision="twelve" />
 
 </manifest>
