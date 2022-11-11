@@ -4,7 +4,6 @@
   <!-- crDroid Android repositories  -->
   
   <project path="libcore" name="crdroidandroid/android_libcore" groups="pdk" revision="13.0" />
-  <project path="device/qcom/sepolicy" name="crdroidandroid/android_device_qcom_sepolicy" groups="qcom,qssi" revision="13.0" />
 
    <!-- external  -->
   <project path="external/colorkt" name="crdroidandroid/android_external_colorkt" revision="13.0" />

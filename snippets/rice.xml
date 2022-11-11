@@ -5,6 +5,7 @@
 
   <!-- Device -->
   <project path="device/lineage/sepolicy" name="minaripenguin37/android_device_lineage_sepolicy" revision="thirteen" />
+  <project path="device/qcom/sepolicy" name="minaripenguin37/android_device_qcom_sepolicy" groups="qcom,qssi" revision="thirteen" />
   <project path="device/qcom/sepolicy_vndr" name="minaripenguin37/android_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="thirteen" />
   
    <!-- Frameworks -->
