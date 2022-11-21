@@ -56,6 +56,7 @@
   <project path="external/f2fs-tools" name="minaripenguin37/android_external_f2fs-tools" groups="pdk" revision="thirteen" />
   <project path="external/jemalloc_new" name="minaripenguin37/android_external_jemalloc-new" groups="pdk" revision="thirteen" />
   <project path="external/lz4" name="RiceDroid/external_lz4" groups="pdk" revision="thirteen" />
+  <project path="external/scudo" name="minaripenguin/android_external_scudo" groups="pdk" revision="thirteen" />
   <project path="external/zlib" name="minaripenguin37/android_external_zlib-ng" groups="pdk" revision="thirteen" />
   <project path="system/core" name="minaripenguin37/android_system_core" groups="pdk" revision="thirteen" />
 
