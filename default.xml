@@ -155,7 +155,7 @@
   <project path="external/eigen" name="platform/external/eigen" groups="pdk" remote="aosp_master" />
   <project path="external/elfutils" name="platform/external/elfutils" groups="pdk" remote="aosp" />
   <project path="external/emma" name="platform/external/emma" groups="pdk" remote="aosp" />
-  <project path="external/erofs-utils" name="platform/external/erofs-utils" groups="pdk" remote="aosp" />
+  <project path="external/erofs-utils" name="minaripenguin/android_external_erofs_utils" groups="pdk" revision="thirteen" />
   <project path="external/error_prone" name="platform/external/error_prone" groups="pdk" remote="aosp" />
   <project path="external/escapevelocity" name="platform/external/escapevelocity" groups="pdk" remote="aosp" />
   <project path="external/ethtool" name="platform/external/ethtool" groups="pdk" remote="aosp" />
