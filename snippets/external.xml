@@ -3,7 +3,7 @@
 
   <!-- crDroid Android repositories  -->
   
-  <project path="libcore" name="crdroidandroid/android_libcore" groups="pdk" revision="13.0" />
+  <project path="libcore" name="minaripenguin/android_libcore" groups="pdk" revision="thirteen" />
 
    <!-- external  -->
   <project path="external/colorkt" name="crdroidandroid/android_external_colorkt" revision="13.0" />
