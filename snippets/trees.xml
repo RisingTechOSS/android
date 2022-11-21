@@ -3,7 +3,6 @@
 
   <!-- Personal  -->
   <project name="minaripenguin37/device_oneplus_kebab" path="device/oneplus/kebab" revision="thirteen-OOS12" />
-  <project name="minaripenguin37/android_kernel_oneplus_sm8250" path="kernel/oneplus/sm8250" revision="thirteen-OOS12" />
   <project name="minaripenguin37/vendor_oneplus_kebab_OOS12" path="vendor/oneplus/kebab" revision="twelve" />
 
 </manifest>
