@@ -211,7 +211,7 @@
   <project path="external/guice" name="platform/external/guice" groups="pdk" remote="aosp" />
   <project path="external/gwp_asan" name="platform/external/gwp_asan" groups="pdk" remote="aosp" />
   <project path="external/hamcrest" name="platform/external/hamcrest" groups="pdk" remote="aosp" />
-  <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" groups="pdk,qcom_msm8x26" remote="aosp" />
+  <project path="external/harfbuzz_ng" name="minaripenguin/android_external_harfbuzz_ng" groups="pdk,qcom_msm8x26" revision="thirteen" />
   <project path="external/hyphenation-patterns" name="platform/external/hyphenation-patterns" groups="pdk" remote="aosp" />
   <project path="external/icing" name="platform/external/icing" groups="pdk" remote="aosp" />
   <project path="external/icu" name="LineageOS/android_external_icu" groups="pdk" />

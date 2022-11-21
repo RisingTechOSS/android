@@ -8,7 +8,7 @@
    <!-- external  -->
   <project path="external/colorkt" name="crdroidandroid/android_external_colorkt" revision="13.0" />
   <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" groups="pdk" revision="13.0" />
-  <project path="external/sqlite" name="crdroidandroid/android_external_sqlite" groups="pdk" revision="13.0" />
+  <project path="external/sqlite" name="minaripenguin/android_external_sqlite" groups="pdk" revision="thirteen" />
   <project path="external/themelib" name="crdroidandroid/android_external_themelib" revision="13.0" />
   
   <!-- hardware  -->
