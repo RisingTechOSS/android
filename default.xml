@@ -167,7 +167,7 @@
   <project path="external/fft2d" name="platform/external/fft2d" groups="pdk" remote="aosp" />
   <project path="external/firebase-messaging" name="platform/external/firebase-messaging" groups="pdk" remote="aosp" />
   <project path="external/flac" name="platform/external/flac" groups="pdk" remote="aosp" />
-  <project path="external/flatbuffers" name="platform/external/flatbuffers" groups="pdk" remote="aosp" />
+  <project path="external/flatbuffers" name="minaripenguin/android_external_flatbuffers" groups="pdk" revision="thirteen" />
   <project path="external/fmtlib" name="platform/external/fmtlib" groups="pdk" remote="aosp" />
   <project path="external/fonttools" name="platform/external/fonttools" groups="pdk" remote="aosp_master" />
   <project path="external/FP16" name="platform/external/FP16" groups="pdk" remote="aosp" />
