@@ -43,5 +43,6 @@
   <project name="ProtonAOSP/android_external_roboto-fonts" path="external/roboto-fonts" revision="sc-v2" />
   <project name="ProtonAOSP/android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" revision="sc-v2" />
   <project name="kdrag0n/android_packages_apps_RepainterServicePriv" path="packages/apps/RepainterServicePriv" revision="main" />
-  
+
+  <project path="packages/apps/ParallelSpacePrebuilt" name="Project-Kaleidoscope/android_packages_apps_ParallelSpacePrebuilt" remote="gitlab" revision="sunflowerleaf" />
 </manifest>
