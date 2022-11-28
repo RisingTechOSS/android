@@ -686,7 +686,7 @@
   <project path="external/vixl" name="platform/external/vixl" groups="pdk" remote="aosp" />
   <project path="external/vogar" name="platform/external/vogar" groups="pdk" remote="aosp" />
   <project path="external/volley" name="platform/external/volley" groups="pdk" remote="aosp" />
-  <project path="external/vulkan-headers" name="platform/external/vulkan-headers" groups="pdk" remote="aosp" />
+  <project path="external/vulkan-headers" name="minaripenguin/android_external_vulkan-headers" groups="pdk" revision="thirteen" />
   <project path="external/vulkan-validation-layers" name="platform/external/vulkan-validation-layers" groups="pdk" remote="aosp" />
   <project path="external/walt" name="platform/external/walt" groups="pdk" remote="aosp" />
   <project path="external/wayland" name="platform/external/wayland" groups="pdk" remote="aosp" />
