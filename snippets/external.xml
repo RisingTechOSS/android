@@ -44,5 +44,9 @@
   <project name="ProtonAOSP/android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" revision="sc-v2" />
   <project name="kdrag0n/android_packages_apps_RepainterServicePriv" path="packages/apps/RepainterServicePriv" revision="main" />
 
+  <!-- Parallel Space -->
   <project path="packages/apps/ParallelSpacePrebuilt" name="Project-Kaleidoscope/android_packages_apps_ParallelSpacePrebuilt" remote="gitlab" revision="sunflowerleaf" />
+  
+  <!-- Vendor support -->
+  <project path="vendor/support" name="Flamingo-OS/vendor_support" remote="github" revision="A12.1" />
 </manifest>
