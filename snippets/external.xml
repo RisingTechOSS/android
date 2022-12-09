@@ -2,18 +2,15 @@
 <manifest>
 
   <!-- crDroid Android repositories  -->
-  
-  <project path="libcore" name="minaripenguin/android_libcore" groups="pdk" revision="thirteen" />
 
    <!-- external  -->
   <project path="external/colorkt" name="crdroidandroid/android_external_colorkt" revision="13.0" />
   <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" groups="pdk" revision="13.0" />
-  <project path="external/sqlite" name="minaripenguin/android_external_sqlite" groups="pdk" revision="thirteen" />
   <project path="external/themelib" name="crdroidandroid/android_external_themelib" revision="13.0" />
-  
+
   <!-- hardware  -->
   <project path="hardware/qcom-caf/sm8150/display" name="crdroidandroid/android_hardware_qcom_display" revision="13.0-caf-sm8150" />
-  
+
   <!-- frameworks  -->
   <project path="frameworks/opt/net/ims" name="crdroidandroid/android_frameworks_opt_net_ims" groups="pdk" revision="13.0" />
   

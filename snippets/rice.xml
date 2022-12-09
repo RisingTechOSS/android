@@ -1,63 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <project path="art" name="minaripenguin37/android_art" groups="pdk" revision="thirteen" />
+  <project path="art" name="ricedroidOSS/android_art" groups="pdk" revision="thirteen" />
+  
+  <project path="bionic" name="ricedroidOSS/android_bionic" groups="pdk" revision="thirteen" />
+
+  <project path="bootable/recovery" name="ricedroidOSS/android_bootable_recovery" groups="pdk" revision="thirteen" />
+
+  <project path="libcore" name="ricedroidOSS/android_libcore" groups="pdk" revision="thirteen" />
+
+  <project path="libnativehelper" name="ricedroidOSS/android_libnativehelper" groups="pdk" revision="thirteen" />
+
+  <project path="platform_testing" name="ricedroidOSS/android_platform_testing" groups="pdk-fs,pdk-cw-fs,cts" revision="thirteen" />
+
+  <project path="build/soong" name="ricedroidOSS/android_build_soong" groups="pdk,tradefed" revision="thirteen" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  
+  <project path="build/make" name="ricedroidOSS/android_build" groups="pdk" revision="thirteen" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
 
   <!-- Device -->
-  <project path="device/lineage/sepolicy" name="minaripenguin37/android_device_lineage_sepolicy" revision="thirteen" />
-  <project path="device/qcom/sepolicy" name="minaripenguin37/android_device_qcom_sepolicy" groups="qcom,qssi" revision="thirteen" />
-  <project path="device/qcom/sepolicy_vndr" name="minaripenguin37/android_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="thirteen" />
+  <project path="device/lineage/sepolicy" name="ricedroidOSS/android_device_lineage_sepolicy" revision="thirteen" />
+  <project path="device/qcom/sepolicy" name="ricedroidOSS/android_device_qcom_sepolicy" groups="qcom,qssi" revision="thirteen" />
+  <project path="device/qcom/sepolicy_vndr" name="ricedroidOSS/android_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="thirteen" />
   
+  <!-- External  -->
+  <project path="external/AndroidSystemBlur" name="ricedroidOSS/AndroidSystemBlur" revision="main" />
+  <project path="external/arm-optimized-routines" name="ricedroidOSS/android_external_arm-optimized-routines" groups="pdk" revision="thirteen" />
+  <project path="external/bouncycastle" name="ricedroidOSS/android_external_bouncycastle" groups="pdk" revision="thirteen" />
+  <project path="external/erofs-utils" name="ricedroidOSS/android_external_erofs_utils" groups="pdk" revision="thirteen" />
+  <project path="external/faceunlock" name="dlwlrma123/external_faceunlock" remote="gitlab" revision="thirteen" />
+  <project path="external/f2fs-tools" name="ricedroidOSS/android_external_f2fs-tools" groups="pdk" revision="thirteen" />
+  <project path="external/flatbuffers" name="ricedroidOSS/android_external_flatbuffers" groups="pdk" revision="thirteen" />
+  <project path="external/freetype" name="ricedroidOSS/android_external_freetype" groups="pdk" revision="thirteen" />
+  <project path="external/harfbuzz_ng" name="ricedroidOSS/android_external_harfbuzz_ng" groups="pdk,qcom_msm8x26" revision="thirteen" />
+  <project path="external/jemalloc_new" name="ricedroidOSS/android_external_jemalloc-new" groups="pdk" revision="thirteen" />
+  <project path="external/libpng" name="ricedroidOSS/android_external_libpng" groups="pdk" revision="thirteen" />
+  <project path="external/lz4" name="ricedroidOSS/external_lz4" groups="pdk" revision="thirteen" />
+  <project path="external/perfetto" name="ricedroidOSS/android_external_perfetto" groups="pdk" revision="thirteen" />
+  <project path="external/scudo" name="ricedroidOSS/android_external_scudo" groups="pdk" revision="thirteen" />
+  <project path="external/sqlite" name="ricedroidOSS/android_external_sqlite" groups="pdk" revision="thirteen" />
+  <project path="external/vixl" name="ricedroidOSS/android_external_vixl" groups="pdk" revision="thirteen" />
+  <project path="external/vulkan-headers" name="ricedroidOSS/android_external_vulkan-headers" groups="pdk" revision="thirteen" />
+  <project path="external/zlib" name="ricedroidOSS/android_external_zlib-ng" groups="pdk" revision="thirteen" />
+
    <!-- Frameworks -->
-  <project path="frameworks/av" name="minaripenguin37/android_frameworks_av" groups="pdk" revision="thirteen" />
-  <project path="frameworks/base" name="minaripenguin37/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="frameworks/libs/net" name="minaripenguin37/android_frameworks_libs_net" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="frameworks/libs/systemui" name="minaripenguin37/android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="frameworks/native" name="minaripenguin37/android_frameworks_native" groups="pdk" revision="thirteen" />
+  <project path="frameworks/av" name="ricedroidOSS/android_frameworks_av" groups="pdk" revision="thirteen" />
+  <project path="frameworks/base" name="ricedroidOSS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="frameworks/libs/net" name="ricedroidOSS/android_frameworks_libs_net" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="frameworks/libs/systemui" name="ricedroidOSS/android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="frameworks/native" name="ricedroidOSS/android_frameworks_native" groups="pdk" revision="thirteen" />
+  <project path="frameworks/opt/telephony" name="ricedroidOSS/android_frameworks_opt_telephony" groups="pdk" revision="thirteen"/>
+
+   <!-- Hardware -->
+  <project path="hardware/interfaces" name="ricedroidOSS/android_hardware_interfaces" groups="pdk" revision="thirteen" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="ricedroidOSS/android_hardware_qcom_audio" groups="qcom" revision="thirteen-clo-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/display" name="ricedroidOSS/android_hardware_qcom_display" groups="qcom" revision="thirteen-clo-sm8250" />
+  <project path="hardware/qcom-caf/wlan" name="ricedroidOSS/android_hardware_qcom_wlan" groups="qcom,waipio-vendor" revision="thirteen" />
 
   <!-- Lineage -->
-  <project path="lineage-sdk" name="minaripenguin37/android_lineage-sdk" revision="thirteen" />
+  <project path="lineage-sdk" name="ricedroidOSS/android_lineage-sdk" revision="thirteen" />
 
   <!-- Packages -->
-  <project path="packages/apps/Backgrounds" name="RiceDroid/android_packages_apps_Backgrounds" revision="twelve" />
-  <project path="packages/apps/Contacts" name="minaripenguin37/android_packages_apps_Contacts" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/DeskClock" name="minaripenguin37/android_packages_apps_DeskClock" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Dialer" name="minaripenguin37/android_packages_apps_Dialer" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Eleven" name="RiceDroid/android_packages_apps_Music" revision="twelve" />
-  <project path="packages/apps/FaceUnlockService" name="minaripenguin37/android_packages_apps_FaceUnlockService" revision="thirteen" />
-  <project path="packages/apps/GameSpace" name="minaripenguin37/android_packages_apps_GameSpace" revision="thirteen" />
-  <project path="packages/apps/Launcher3" name="minaripenguin37/android_packages_apps_Launcher3" revision="thirteen" />
-  <project path="packages/apps/LineageParts" name="minaripenguin37/android_packages_apps_LineageParts" revision="thirteen" />
-  <project path="packages/apps/Messaging" name="minaripenguin37/android_packages_apps_Messaging" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Settings" name="minaripenguin37/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/riceDroidSettings" name="minaripenguin37/android_packages_apps_RiceDroidSettings" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/ThemePicker" name="minaripenguin37/android_packages_apps_ThemePicker" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Updater" name="minaripenguin37/android_packages_apps_Updater" revision="thirteen" />
-  <project path="packages/modules/Connectivity" name="minaripenguin37/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="packages/modules/Permission" name="minaripenguin37/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="packages/modules/Wifi" name="minaripenguin37/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="packages/services/OmniJaws" name="minaripenguin37/packages_services_OmniJaws" revision="thirteen" />
-  <project path="packages/services/Telecomm" name="minaripenguin37/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Contacts" name="ricedroidOSS/android_packages_apps_Contacts" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/crDroidSettings" name="ricedroidOSS/android_packages_apps_RiceDroidSettings" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/DeskClock" name="ricedroidOSS/android_packages_apps_DeskClock" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Dialer" name="ricedroidOSS/android_packages_apps_Dialer" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/FaceUnlockService" name="ricedroidOSS/android_packages_apps_FaceUnlockService" revision="thirteen" />
+  <project path="packages/apps/GameSpace" name="ricedroidOSS/android_packages_apps_GameSpace" revision="thirteen" />
+  <project path="packages/apps/Launcher3" name="ricedroidOSS/android_packages_apps_Launcher3" revision="thirteen" />
+  <project path="packages/apps/LineageParts" name="ricedroidOSS/android_packages_apps_LineageParts" revision="thirteen" />
+  <project path="packages/apps/Messaging" name="ricedroidOSS/android_packages_apps_Messaging" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Settings" name="ricedroidOSS/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/ThemePicker" name="ricedroidOSS/android_packages_apps_ThemePicker" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/WallpaperPicker2" name="ricedroidOSS/android_packages_apps_WallpaperPicker2" groups="pdk-fs" revision="thirteen"/>
+  <project path="packages/apps/Updater" name="ricedroidOSS/android_packages_apps_Updater" revision="thirteen" />
+  <project path="packages/modules/Bluetooth" name="ricedroidOSS/android_packages_modules_Bluetooth" groups="pdk" revision="thirteen"/>
+  <project path="packages/modules/Connectivity" name="ricedroidOSS/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+    <project path="packages/modules/DnsResolver" name="ricedroidOSS/android_packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/providers/DownloadProvider" name="ricedroidOSS/android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
+  <project path="packages/providers/MediaProvider" name="ricedroidOSS/android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/modules/AdServices" name="ricedroidOSS/android_packages_modules_Adservices" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/modules/Permission" name="ricedroidOSS/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/modules/Wifi" name="ricedroidOSS/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/providers/TelephonyProvider" name="ricedroidOSS/android_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
+  <project path="packages/services/Mms" name="ricedroidOSS/android_packages_services_Mms" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/services/OmniJaws" name="ricedroidOSS/packages_services_OmniJaws" revision="thirteen" />
+  <project path="packages/services/Telecomm" name="ricedroidOSS/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/services/Telephony" name="ricedroidOSS/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
 
   <!-- System -->
-  <project path="system/memory/lmkd" name="minaripenguin37/android_system_memory_lmkd" groups="pdk" revision="thirteen" />
+  <project path="system/apex" name="ricedroidOSS/android_system_apex" groups="pdk" revision="thirteen" />
+  <project path="system/bpf" name="ricedroidOSS/android_system_bpf" groups="pdk" revision="thirteen" />
+  <project path="system/connectivity/wificond" name="ricedroidOSS/android_system_connectivity_wificond" groups="pdk" revision="thirteen" />
+  <project path="system/core" name="ricedroidOSS/android_system_core" groups="pdk" revision="thirteen" />
+  <project path="system/libbase" name="ricedroidOSS/android_system_libbase" groups="pdk" revision="thirteen" />
+  <project path="system/libhwbinder" name="ricedroidOSS/android_system_libhwbinder" groups="pdk" revision="thirteen" />
+  <project path="system/logging" name="ricedroidOSS/system_logging" groups="pdk" revision="thirteen"/>
+  <project path="system/media" name="ricedroidOSS/android_system_media" groups="pdk" revision="thirteen" />
+  <project path="system/memory/lmkd" name="ricedroidOSS/android_system_memory_lmkd" groups="pdk" revision="thirteen" />
+  <project path="system/netd" name="ricedroidOSS/android_system_netd" groups="pdk" revision="thirteen" />
+  <project path="system/security" name="ricedroidOSS/android_system_security" groups="pdk" revision="thirteen" />
+  <project path="system/sepolicy" name="ricedroidOSS/android_system_sepolicy" groups="pdk" revision="thirteen" />
+  <project path="system/tools/aidl" name="ricedroidOSS/android_system_tools_aidl" groups="pdk" revision="thirteen" />
+  <project path="system/vold" name="ricedroidOSS/android_system_vold" groups="pdk" revision="thirteen" />
+  <project path="system/update_engine" name="ricedroidOSS/android_system_update_engine" revision="thirteen" groups="pdk" />
 
   <!-- Vendor -->
-  <project path="vendor/addons" name="minaripenguin37/android_vendor_addons" revision="thirteen" />
+  <project path="vendor/addons" name="ricedroidOSS/android_vendor_addons" revision="thirteen" />
   <project path="vendor/gms" name="dlwlrma123/vendor_google_pixel" remote="gitlab" revision="thirteen" clone-depth="1" />
-  <project path="vendor/lineage" name="minaripenguin37/android_vendor_rice" revision="thirteen" />
-  <project path="vendor/riceOTA" name="minaripenguin37/android_vendor_RiceDroidOTA" revision="thirteen" />
-
-  <!-- Others  -->
-  <project path="bionic" name="minaripenguin37/android_bionic" groups="pdk" revision="thirteen" />
-  <project path="external/AndroidSystemBlur" name="minaripenguin37/AndroidSystemBlur" revision="main" />
-  <project path="external/arm-optimized-routines" name="minaripenguin37/android_external_arm-optimized-routines" groups="pdk" revision="thirteen" />
-  <project path="external/faceunlock" name="dlwlrma123/external_faceunlock" remote="gitlab" revision="thirteen" />
-  <project path="external/f2fs-tools" name="minaripenguin37/android_external_f2fs-tools" groups="pdk" revision="thirteen" />
-  <project path="external/jemalloc_new" name="minaripenguin37/android_external_jemalloc-new" groups="pdk" revision="thirteen" />
-  <project path="external/lz4" name="minaripenguin/external_lz4" groups="pdk" revision="thirteen" />
-  <project path="external/scudo" name="minaripenguin/android_external_scudo" groups="pdk" revision="thirteen" />
-  <project path="external/zlib" name="minaripenguin37/android_external_zlib-ng" groups="pdk" revision="thirteen" />
-  <project path="system/core" name="minaripenguin37/android_system_core" groups="pdk" revision="thirteen" />
+  <project path="vendor/lineage" name="ricedroidOSS/android_vendor_rice" revision="thirteen" />
+  <project path="vendor/riceOTA" name="ricedroidOSS/android_vendor_RiceDroidOTA" revision="thirteen" />
 
 </manifest>

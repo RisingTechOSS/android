@@ -32,18 +32,14 @@
   <project path="hardware/lineage/livedisplay" name="LineageOS/android_hardware_lineage_livedisplay" />
   <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" />
   <project path="packages/apps/AudioFX" name="LineageOS/android_packages_apps_AudioFX" />
-  <project path="packages/apps/Etar" name="LineageOS/android_packages_apps_Etar" />
   <project path="packages/apps/FlipFlap" name="LineageOS/android_packages_apps_FlipFlap" />
   <project path="packages/apps/LineageCustomizer" name="LineageOS/android_packages_apps_LineageCustomizer" />
   <project path="packages/apps/Profiles" name="LineageOS/android_packages_apps_Profiles" />
   <project path="packages/apps/Recorder" name="LineageOS/android_packages_apps_Recorder" />
-  <project path="packages/apps/Seedvault" name="LineageOS/android_packages_apps_Seedvault" />
-  <project path="packages/apps/SetupWizard" name="LineageOS/android_packages_apps_SetupWizard" />
   <project path="packages/apps/SimpleDeviceConfig" name="LineageOS/android_packages_apps_SimpleDeviceConfig" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
   <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" clone-depth="1" />
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" />
-  <project path="vendor/crowdin" name="LineageOS/android_vendor_crowdin" />
 
   <!-- Inline kernel build -->
   <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
@@ -101,15 +97,12 @@
   <project path="hardware/qcom-caf/sdm845/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,sdm845" revision="lineage-20.0-caf-sdm845" />
   <project path="hardware/qcom-caf/sm8150/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,msmnile" revision="lineage-20.0-caf-sm8150" />
   <project path="hardware/qcom-caf/sm8150/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,msmnile" revision="lineage-20.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8250/audio" name="minaripenguin/android_hardware_qcom_audio" groups="qcom" revision="thirteen-clo-sm8250" />
-  <project path="hardware/qcom-caf/sm8250/display" name="minaripenguin/android_hardware_qcom_display" groups="qcom" revision="thirteen-clo-sm8250" />
   <project path="hardware/qcom-caf/sm8250/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,kona" revision="lineage-20.0-caf-sm8250" />
   <project path="hardware/qcom-caf/sm8350/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,lahaina" revision="lineage-20.0-caf-sm8350" />
   <project path="hardware/qcom-caf/sm8350/display" name="LineageOS/android_hardware_qcom_display" groups="qcom" revision="lineage-20.0-caf-sm8350" />
   <project path="hardware/qcom-caf/sm8350/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,lahaina" revision="lineage-20.0-caf-sm8350" />
   <project path="hardware/qcom-caf/thermal" name="LineageOS/android_hardware_qcom_thermal" groups="qcom,waipio-vendor" />
   <project path="hardware/qcom-caf/vr" name="LineageOS/android_hardware_qcom_vr" groups="qcom,sdm660" />
-  <project path="hardware/qcom-caf/wlan" name="minaripenguin/android_hardware_qcom_wlan" groups="qcom,waipio-vendor" revision="thirteen" />
   <project path="vendor/codeaurora/telephony" name="LineageOS/android_vendor_codeaurora_telephony" groups="qcom,qssi" />
   <project path="vendor/qcom/opensource/audio" name="LineageOS/android_vendor_qcom_opensource_audio" groups="qcom,qssi" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" />
@@ -125,21 +118,6 @@
   <project path="vendor/qcom/opensource/thermal-engine" name="LineageOS/android_vendor_qcom_opensource_thermal-engine" groups="qcom,waipio-vendor" />
   <project path="vendor/qcom/opensource/usb" name="LineageOS/android_vendor_qcom_opensource_usb" groups="qcom,waipio-vendor" />
   <project path="vendor/qcom/opensource/wfd-commonsys" name="LineageOS/android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,waipio-video" />
-
-  <!-- NXP additions -->
-  <!--
-  <project path="vendor/nxp/nfc" name="LineageOS/android_vendor_nxp_nfc" groups="nxp" />
-  <project path="vendor/nxp/secure_element" name="LineageOS/android_vendor_nxp_secure_element" groups="nxp" />
-  <project path="vendor/nxp/secure_element_extns" name="LineageOS/android_vendor_nxp_secure_element_extns" groups="nxp" />
-  -->
-
-  <!-- Infrastructure -->
-  <project path="lineage/charter" name="LineageOS/charter" groups="infra" revision="master" />
-  <project path="lineage/crowdin" name="LineageOS/cm_crowdin" groups="infra" revision="master" />
-  <project path="lineage/hudson" name="LineageOS/hudson" groups="infra" revision="master" />
-  <project path="lineage/mirror" name="LineageOS/mirror" groups="infra" revision="master" />
-  <project path="lineage/website" name="LineageOS/www" groups="infra" revision="master" />
-  <project path="lineage/wiki" name="LineageOS/lineage_wiki" groups="infra" revision="master" />
 
   <!-- Tools -->
   <project path="lineage/contributors-cloud-generator" name="LineageOS/contributors-cloud-generator" groups="tools" revision="master" />

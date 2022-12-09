@@ -1,26 +1,30 @@
 <p align="center">
-<img src="https://github.com/RiceDroid/android/blob/twelve/sushi.png">
+<img src="https://github.com/ricedroidOSS/android/blob/thirteen/sushi.png">
 </p>
 
 What is RiceDroid?
 ---------------
-Ricedroid is an operating system based on lineage/crdroid, that aims to provide necessary "ricing" for android while being fast and stable.
+Ricedroid is a FREE OPENSOURCE Android Operating System based on LineageOS and crDroid, that aims to provide necessary "ricing" aka customizations for ANDROID while being fast and stable. This operating system is highly inspired by Oxygen OS (10-11) and nothingOS, we strive to make things different but not too far from AOSP.
 
 Terminology
 ---------------
 The rice in the project name can be referred to "rice" (food) itself, but in a sense it is indeed the term "ricing" in linux.
 
+
 Maintainership
 ---------------
+Requirements:
 
- Maintainership is closed at the moment and will be open until further notice.
+1. Device trees must be properly maintained, patches applied to the tree must be either rom source changes adaptation,bug fixes or improvements.
+2. Must have no known issues in his/her current device community.
+3. Approved by the maintainership application form reviewers. Maintainership application form link: https://docs.google.com/forms/d/e/1FAIpQLSdQjt9NvuzEEqxwvEVtGbCaoxaFFLoz7SRr8J1c_-kcn5EQBQ/viewform
  
 Getting Started
 ---------------
 **Initialize local repository (thanks to apon77 for repo init script)**
 
 ```bash
-repo init --depth=1 --no-repo-verify -u https://github.com/strwbrry143/android -b thirteen -g default,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify -u https://github.com/ricedroidOSS/android -b thirteen -g default,-mips,-darwin,-notdefault
 ```
 **in case of repo syncing failures try this instead**
 
@@ -30,7 +34,31 @@ repo init -u https://github.com/RiceDroid/android -b thirteen
 
 **Sync up with this command:**
 ```bash
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
+repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
+
+```
+**Workaround for failing repositories**
+
+```
+Failing repos:
+system/core
+Try re-running with "-j1 --fail-fast" to exit at the first error.
+user@linux1-S:~/rice$ cd system/core
+user@linux1-S:~/rice/system/core$ git remote remove github
+user@linux1-S:~/rice/system/core$ git remote add github https://github.com/RiceDroid/android_system_core
+user@linux1-S:~/rice/system/core$ git fetch github
+remote: Enumerating objects: 204495, done.
+remote: Counting objects: 100% (204495/204495), done.
+remote: Compressing objects: 100% (84311/84311), done.
+remote: Total 204495 (delta 116667), reused 204374 (delta 116643), pack-reused 
+Receiving objects: 100% (204495/204495), 203.26 MiB | 23.42 MiB/s, done.
+Resolving deltas: 100% (116667/116667), done.
+From https://github.com/RiceDroid/android_system_core
+ * [new branch]          thirteen   -> github/thirteen
+ * [new branch]          twelve     -> github/twelve
+user@linux1-S:~/rice/system/core$ git switch thirteen
+user@linux1-S:~/rice/system/core$ git branch -f --track thirteen github/thirteen
+HEAD is now at xxxxxxx Congrats you can now resync without deleting folder!
 
 ```
 
@@ -45,20 +73,20 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 **Adapt your device tree according to our fwb/hardware/vendor changes and use these flags to configure certain ROM properties**
 ```bash
 
-# chipset flag (one word only/no spacing)
-# friendly tip: use can use init_xxx.cpp as workaround for spacing
+# chipset flag enclose var with "" if more than one
+# friendly tip: builders can use init_xxx.cpp as workaround for spacing
 # e.g. property_override("ro.rice.chipset", "Snapdragon 870 5G");
-RICE_CHIPSET := chipset
+RICE_CHIPSET := "snapdragon x"
 
-# maintainer flag (one word only/no spacing)
-# friendly tip: use can use init_xxx.cpp as workaround for spacing
+# chipset flag enclose var with "" if more than one
+# friendly tip: builders can use init_xxx.cpp as workaround for spacing
 # e.g. property_override("ro.rice.maintainer", "get riced");
-RICE_MAINTAINER := maintainer
+RICE_MAINTAINER := "a maintainer"
 
-# maintainer flag (one word only/no spacing)
+# chipset flag enclose var with "" if more than one
 # this will reflect on build/display version, a firmware package/zip name 
 # e.g. riceDroid-7.0-COMMUNITY-device-AOSP.zip - AOSP is the default package type, WITH_GMS will override the package type to PIXEL
-RICE_PACKAGE_TYPE := AOSP
+RICE_PACKAGE_TYPE := "VANILLA AOSP"
 
 # Sushi Bootanimation (only 720/1080p/1440 supported. if not defined, bootanimation is google bootanimation)
 SUSHI_BOOTANIMATION := 720/1080/1440
@@ -78,28 +106,39 @@ TARGET_KERNEL_OPTIONAL_LD := true/false
 # Spoof build description/fingerprint as pixel device
 TARGET_USE_PIXEL_FINGERPRINT := true/false
 
-# GMS build flags, if none were defined the package build type will be AOSP
+# GMS build flags, if none were defined the package build type will be AOSP (default: false)
 WITH_GMS := true/false - ship with GMS packages, replaces misc AOSP packages with Google packages.
-TARGET_OPTOUT_GOOGLE_TELEPHONY := true/false - opt out of google dialer support (requires WITH_GMS flag)
+
+# Customized GMS Flags 
+# WITH_GMS flag is required
+
+# Opt out of google dialer support, compiler will build aosp dialer,
+# package type will change from PIXEL -> GMS
+TARGET_OPTOUT_GOOGLE_TELEPHONY := true/false
+
+# Compiler will only build GMS playstore services, its dependencies, and Gboard app.
+# package type will change from PIXEL/GMS -> CORE
+TARGET_CORE_GMS := true/false
+
+# extra flag under TARGET_CORE_GMS
+TARGET_CORE_GMS_EXTRAS := true/false - extra packages for core build type (velvet and photos)
 
 # We took some of Code Linaro optimizations and ported it to AOSP,
 # But due to some stuffs we were not able to make the system parse the device perfconfigstore.xml automatically
 # builders might need to tune runtime properties listed below (with reference and CLO counterparts)
 
 # Memory properties
-# builder(s) may refer to default CLO perfconfigstore.xml file shipped with the tree/BSP(if available).
 
-[1] https://dumps.tadiphone.dev/dumps/oneplus/oneplus9r/-/blob/qssi-user-12-RKQ1.211119.001-R.202207300316-release-keys--IN/vendor/etc/perf/perfconfigstore.xml
-[2] https://github.com/AOSPA/android_device_qcom_common/blob/sapphire/vendor/perf/configs/lahaina/perf/perfconfigstore.xml
-
-# memory management [2]
+# Max cached app processes in system, overrides "config_customizedMaxCachedProcesses"
 persist.sys.fw.bg_apps_limit=96
 
-# Adapted LMKD [1] & [2]
+# Code linaro LMKD properties and its AOSP counterparts - refer to perfconfigstore.xml (if available) for tuning purposes
 # kill_heaviest_task_dup
 ro.lmk.kill_heaviest_task=true
 # kill_timeout_ms_dup
 ro.lmk.kill_timeout_ms=100
+# use_new_strategy_dup
+ro.lmk.use_new_strategy=true
 # thrashing_threshold
 ro.lmk.thrashing_limit=30
 # thrashing_decay
@@ -110,8 +149,6 @@ ro.lmk.swap_free_low_percentage=10
 ro.lmk.psi_partial_stall_ms=70
 # nstrat_psi_complete_ms
 ro.lmk.psi_complete_stall_ms=70
-# use_new_strategy_dup
-ro.lmk.use_new_strategy=true
 # CLO lmkd [1] - others were not defined (will use default values from lmkd binary)
 ro.lmk.psi_scrit_complete_stall_ms=75
 ro.lmk.nstrat_wmark_boost_factor=4
@@ -121,8 +158,7 @@ ro.lmk.super_critical=701
 ro.lmk.direct_reclaim_pressure=45
 ro.lmk.reclaim_scan_threshold=0
 
-# app compaction - [1] & [2]
-# disabled app compaction due to app freezes when switching tasks
+# App compaction - refer to perfconfigstore.xml (if available) for tuning purposes
 persist.sys.appcompact.enable_app_compact=false
 persist.sys.appcompact.full_compact_type=2
 persist.sys.appcompact.some_compact_type=4
@@ -134,7 +170,6 @@ persist.sys.appcompact.compact_throttle_bfgs=600000
 persist.sys.appcompact.compact_throttle_persistent=600000
 persist.sys.appcompact.rss_throttle_kb=12000
 persist.sys.appcompact.delta_rss_throttle_kb=8000
-persist.sys.perf.topAppRenderThreadBoost.enable=false
 ```
 
 Build
@@ -151,6 +186,7 @@ brunch "device_codename"
 Credits
 ---------------
 * [**AOSPA**](https://github.com/AOSPA)
+* [**AICP**](https://github.com/AICP)
 * [**Bootleggers**](https://github.com/BootleggersROM)
 * [**crDroid**](https://github.com/crdroidandroid)
 * [**Corvus-AOSP**](https://github.com/Corvus-R)
@@ -161,10 +197,12 @@ Credits
 * [**LineageOS**](https://github.com/LineageOS)
 * [**Octavi-OS**](https://github.com/Octavi-OS)
 * [**Omnirom**](https://github.com/omnirom)
-* [**PixelDust**](https://github.com/PixelDust-Twelve)
+* [**PixelDust Caf**](https://github.com/pixeldust-project-caf)
 * [**Project-Fluid**](https://github.com/Project-Fluid)
 * [**Project Kaleidoscope**](https://github.com/Project-Kaleidoscope)
 * [**Project Radiant**](https://github.com/ProjectRadiant)
 * [**SparkOS**](https://github.com/Spark-Rom)
+* [**StagOS**](https://github.com/StagOS)
 * [**Xdroid-OSS**](https://github.com/xdroid-oss)
+
 
