@@ -242,7 +242,7 @@
   <project path="external/libbackup" name="platform/external/libbackup" groups="pdk" remote="aosp" />
   <project path="external/libbrillo" name="platform/external/libbrillo" groups="pdk" remote="aosp" />
   <project path="external/libbpf" name="platform/external/libbpf" groups="pdk" remote="aosp" />
-  <project path="external/libcap" name="platform/external/libcap" groups="pdk" remote="aosp" />
+  <project path="external/libcap" name="platform/external/libcap" groups="pdk" remote="aosp_master" revison="ebeee9aaa20989b2bd07ed343be815661b8ca807" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" groups="pdk" remote="aosp" />
   <project path="external/libchrome" name="platform/external/libchrome" groups="pdk" remote="aosp" />
   <project path="external/libchromeos-rs" name="platform/external/libchromeos-rs" groups="pdk" remote="aosp" />
