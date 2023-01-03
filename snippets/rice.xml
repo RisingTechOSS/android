@@ -104,6 +104,7 @@
   <project path="system/core" name="ricedroidOSS/android_system_core" groups="pdk" revision="thirteen" />
   <project path="system/libbase" name="ricedroidOSS/android_system_libbase" groups="pdk" revision="thirteen" />
   <project path="system/libhwbinder" name="ricedroidOSS/android_system_libhwbinder" groups="pdk" revision="thirteen" />
+  <project path="system/libziparchive" name="ricedroidOSS/android_system_libziparchive" groups="pdk" revision="thirteen" />
   <project path="system/logging" name="ricedroidOSS/system_logging" groups="pdk" revision="thirteen"/>
   <project path="system/media" name="ricedroidOSS/android_system_media" groups="pdk" revision="thirteen" />
   <project path="system/memory/lmkd" name="ricedroidOSS/android_system_memory_lmkd" groups="pdk" revision="thirteen" />
