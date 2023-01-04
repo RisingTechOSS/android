@@ -5,11 +5,16 @@
 
    <!-- external  -->
   <project path="external/colorkt" name="crdroidandroid/android_external_colorkt" revision="13.0" />
+  <project path="external/faceunlock" name="crdroidandroid/android_external_faceunlock" remote="gitlab" revision="13.0"/>
+  <project path="external/fastrpc" name="crdroidandroid/android_external_fastrpc" groups="pdk" revision="13.0" />
   <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" groups="pdk" revision="13.0" />
+  <project path="external/selinux" name="crdroidandroid/android_external_selinux" groups="pdk" revision="13.0" />
+  <project path="external/setupcompat" name="crdroidandroid/android_external_setupcompat" groups="pdk" revision="13.0" />
   <project path="external/themelib" name="crdroidandroid/android_external_themelib" revision="13.0" />
 
   <!-- hardware  -->
   <project path="hardware/qcom-caf/sm8150/display" name="crdroidandroid/android_hardware_qcom_display" revision="13.0-caf-sm8150" />
+  <project path="hardware/lineage/interfaces" name="crdroidandroid/android_hardware_lineage_interfaces" revision="13.0" />
 
   <!-- frameworks  -->
   <project path="frameworks/opt/net/ims" name="crdroidandroid/android_frameworks_opt_net_ims" groups="pdk" revision="13.0" />
@@ -17,6 +22,8 @@
   <!-- packages  -->
  <project path="packages/apps/CellBroadcastReceiver" name="crdroidandroid/android_packages_apps_CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" revision="13.0" />
   <project path="packages/apps/Nfc" name="crdroidandroid/android_packages_apps_Nfc" revision="13.0" />
+  <project path="packages/apps/ParallelSpace" name="crdroidandroid/android_packages_apps_ParallelSpace" revision="13.0" />
+  <project path="packages/apps/SimpleDeviceConfig" name="crdroidandroid/android_packages_apps_SimpleDeviceConfig" revision="13.0" />
   
   <!-- vendor nxp  -->
   <project path="vendor/nxp/nfc" name="crdroidandroid/android_vendor_nxp_nfc" revision="13.0" />
@@ -40,9 +47,6 @@
   <project name="ProtonAOSP/android_external_roboto-fonts" path="external/roboto-fonts" revision="sc-v2" />
   <project name="ProtonAOSP/android_external_google-fonts_cutive-mono" path="external/google-fonts/cutive-mono" revision="sc-v2" />
   <project name="kdrag0n/android_packages_apps_RepainterServicePriv" path="packages/apps/RepainterServicePriv" revision="main" />
-
-  <!-- Parallel Space -->
-  <project path="packages/apps/ParallelSpacePrebuilt" name="Project-Kaleidoscope/android_packages_apps_ParallelSpacePrebuilt" remote="gitlab" revision="sunflowerleaf" />
   
   <!-- Vendor support -->
   <project path="vendor/support" name="Flamingo-OS/vendor_support" remote="github" revision="A12.1" />
