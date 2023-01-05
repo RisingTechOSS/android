@@ -29,7 +29,7 @@ repo init --depth=1 --no-repo-verify -u https://github.com/ricedroidOSS/android 
 **in case of repo syncing failures try this instead**
 
 ```bash
-repo init -u https://github.com/RiceDroid/android -b thirteen
+repo init -u https://github.com/ricedroidOSS/android -b thirteen
 ```
 
 **Sync up with this command:**
