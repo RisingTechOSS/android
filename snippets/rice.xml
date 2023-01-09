@@ -87,6 +87,7 @@
   <project path="packages/providers/DownloadProvider" name="ricedroidOSS/android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
   <project path="packages/providers/MediaProvider" name="ricedroidOSS/android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   <project path="packages/modules/AdServices" name="ricedroidOSS/android_packages_modules_Adservices" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/modules/common" name="ricedroidOSS/android_packages_modules_common" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   <project path="packages/modules/Permission" name="ricedroidOSS/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   <project path="packages/modules/Wifi" name="ricedroidOSS/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   <project path="packages/providers/TelephonyProvider" name="ricedroidOSS/android_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
