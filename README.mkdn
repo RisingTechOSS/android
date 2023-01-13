@@ -17,7 +17,9 @@ Requirements:
 
 1. Device trees must be properly maintained, patches applied to the tree must be either rom source changes adaptation,bug fixes or improvements.
 2. Must have no known issues in his/her current device community.
-3. Approved by the maintainership application form reviewers. Maintainership application form link: https://docs.google.com/forms/d/e/1FAIpQLSdQjt9NvuzEEqxwvEVtGbCaoxaFFLoz7SRr8J1c_-kcn5EQBQ/viewform
+3. Approved by the maintainership application form reviewers. 
+
+Maintainership application form link: https://docs.google.com/forms/d/1TSnWigcR5cZmeABU07gvbBPd_keqlteLcLq4iJif-qw/viewform
  
 Getting Started
 ---------------
