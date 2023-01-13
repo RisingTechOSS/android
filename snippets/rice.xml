@@ -107,6 +107,7 @@
   <project path="system/media" name="ricedroidOSS/android_system_media" groups="pdk" revision="thirteen" />
   <project path="system/memory/lmkd" name="ricedroidOSS/android_system_memory_lmkd" groups="pdk" revision="thirteen" />
   <project path="system/netd" name="ricedroidOSS/android_system_netd" groups="pdk" revision="thirteen" />
+  <project path="system/incremental_delivery" name="ricedroidOSS/android_incremental_delivery" groups="pdk" revision="thirteen" />
   <project path="system/security" name="ricedroidOSS/android_system_security" groups="pdk" revision="thirteen" />
   <project path="system/sepolicy" name="ricedroidOSS/android_system_sepolicy" groups="pdk" revision="thirteen" />
   <project path="system/tools/aidl" name="ricedroidOSS/android_system_tools_aidl" groups="pdk" revision="thirteen" />
