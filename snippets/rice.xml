@@ -29,6 +29,7 @@
 
   <!-- Device -->
   <project path="device/lineage/sepolicy" name="ricedroidOSS/android_device_lineage_sepolicy" revision="thirteen" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="ricedroidOSS/android_device_qcom_sepolicy_vndr" groups="qcom,lahaina" revision="thirteen-legacy-um" />
   
   <!-- External  -->
   <project path="external/AndroidSystemBlur" name="ricedroidOSS/AndroidSystemBlur" revision="main" />
