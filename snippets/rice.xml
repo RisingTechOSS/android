@@ -29,8 +29,6 @@
 
   <!-- Device -->
   <project path="device/lineage/sepolicy" name="ricedroidOSS/android_device_lineage_sepolicy" revision="thirteen" />
-  <project path="device/qcom/sepolicy" name="ricedroidOSS/android_device_qcom_sepolicy" groups="qcom,qssi" revision="thirteen" />
-  <project path="device/qcom/sepolicy_vndr" name="ricedroidOSS/android_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="thirteen" />
   
   <!-- External  -->
   <project path="external/AndroidSystemBlur" name="ricedroidOSS/AndroidSystemBlur" revision="main" />
