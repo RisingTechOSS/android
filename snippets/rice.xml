@@ -67,6 +67,7 @@
   <project path="lineage-sdk" name="ricedroidOSS/android_lineage-sdk" revision="thirteen" />
 
   <!-- Packages -->
+  <project path="packages/apps/Backgrounds" name="ricedroidOSS/android_packages_apps_Backgrounds" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/Contacts" name="ricedroidOSS/android_packages_apps_Contacts" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/crDroidSettings" name="ricedroidOSS/android_packages_apps_RiceDroidSettings" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/DeskClock" name="ricedroidOSS/android_packages_apps_DeskClock" groups="pdk-fs" revision="thirteen" />
