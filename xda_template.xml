@@ -1,41 +1,68 @@
-Thread title: [ROM][TIRAMISU][DEVICE] riceDroid android project [AOSP]
-
 [CENTER]
-[SIZE="5"][b][color=#1a73e8]riceDroid for Device name [codename][/color][/b][/SIZE]
+[SIZE=5][B][COLOR=#FF0000]riceDroid for DEVICE_MODEL [DEVICE_CODENAME][/COLOR][/B][/SIZE]
 
-[SIZE="4"][b][color=#1a73e8]What is riceDroid?[/color][/b][/SIZE]
-[SIZE="3"]* RiceDroid is an opensource android operating system that aims to bring the necessary system modifications while being neat, stable and fast.
+[ATTACH type="full" alt="sushi.png"]attach logo here[/ATTACH]
 
-[SIZE="4"][b][color=#1a73e8]What is RiseUI?[/color][/b][/SIZE]
-[SIZE="3"]* RiseUI is the name for our firmware skin/user interface.
+[SIZE=4][B][COLOR=#FF0000]What is riceDroid?[/COLOR][/B][/SIZE]
+[SIZE=3]* Ricedroid is a FREE OPENSOURCE Android Operating System based on LineageOS and crDroid, that aims to provide necessary "ricing" aka customizations for ANDROID while being fast and stable. This operating system is highly inspired by Oxygen OS (10-11) and nothingOS, we strive to make things different but not too far from AOSP.
 
-[SIZE="4"][b][color=#1a73e8]Terminology[/color][/b][/SIZE]
-[SIZE="3"]* The RICE in the project refers to rice(food) itself, but in a sense it is indeed the term RICING in linux.
+[SIZE=4][B][COLOR=#FF0000]What is RiseUI?[/COLOR][/B][/SIZE][/SIZE]
+[SIZE=3][SIZE=3]* RiseUI is the name for our firmware skin/user interface.
 
-Based on Android 13 | Tiramisu
-[/SIZE]
+[SIZE=4][B][COLOR=#FF0000]Terminology[/COLOR][/B][/SIZE][/SIZE][/SIZE]
+[SIZE=3][SIZE=3][SIZE=3]* The term \'rice\' is used to describe a person's unix desktop where \'ricing\' is an act where someone customizes their desktop such as the changing icons, panels or system interface.
 
-[SIZE="4"][b][color=#1a73e8]What's working?[/color][/b][/SIZE]
-[SIZE="3"]
-List whats working on your device here, list the broken ones on What's not working? aka Firmware issues section.
-[/SIZE]
+source: [URL]https://jie-fang.github.io/blog/basics-of-ricing[/URL][/SIZE]
 
-[SIZE="4"][b][color=#1a73e8]What's working? aka Firmware issues[/color][/b][/SIZE]
-[SIZE="3"]List Encountered bugs here[/SIZE]
-[SIZE="3"]You tell me[/SIZE]
 
-[SIZE="3"][B]List package build types here - default is AOSP (VANILLA), packabe build type is overridable, you can use (PIXEL,GMS, CUSTOM etc.) [/B][/SIZE]
+[SIZE=4][B]Based on Android 13 | Tiramisu QPR1 [/B][/SIZE][/SIZE][/SIZE]
 
+
+[SIZE=3][B][COLOR=#FF0000]What's working?[/COLOR][/B]
+
+[SIZE=3][SIZE=3]Most basic stuffs[/SIZE]
+
+
+[SIZE=4][B][COLOR=#FF0000]Bugs and Issues[/COLOR][/B][/SIZE][/SIZE][/SIZE]
+[SIZE=3][SIZE=3][SIZE=3]Please tell me with a logcat attached[/SIZE]
+
+[SIZE=4][B][COLOR=#FF0000]Variants available[/COLOR][/B][/SIZE][/SIZE][/SIZE]
+[SIZE=3][SIZE=3][SIZE=3][B]CORE build (only)[/B] - comes with basic gapps, no setupwizard [/SIZE]
+[SIZE=3][SIZE=3][SIZE=3][B]PIXEL build (only)[/B] - comes with full pixel gapps[/SIZE]
+[SIZE=3][SIZE=3][SIZE=3][B]AOSP build (only)[/B] - pure aosp vanilla build [/SIZE]
+
+
+[SIZE=4][B][COLOR=#FF0000]Device specific changes[/COLOR][/B][/SIZE][/SIZE][/SIZE]
+[SIZE=3][SIZE=3][SIZE=3] description here .[/SIZE]
+
+
+[SIZE=4][B][COLOR=#FF0000]Credits[/COLOR][/B][/SIZE][/SIZE][/SIZE]
+[SIZE=3][SIZE=3][SIZE=3] CREDITS_1
+[URL='https://github.com/CREDITS2_GITHUB_LINK']CREDITS_2[/URL] 
+[URL='https://github.com/CREDITS3_GITHUB_LINK'][B]CREDITS_3[/B][/URL] [/SIZE]
+
+
+[SIZE=4][B][COLOR=#FF0000]Notes[/COLOR][/B][/SIZE][/SIZE][/SIZE]
+[SIZE=3][SIZE=3][SIZE=3] personal message here [/SIZE][/SIZE][/SIZE]
+
+
+[SIZE=4][B][COLOR=#FF0000]Changelog[/COLOR][/B][/SIZE]
+[SIZE=3][SIZE=3][SIZE=3][URL='https://raw.githubusercontent.com/ricedroidOSS/android_vendor_rice/thirteen/build/tools/SimpleChangelog.txt']Source Changelog[/URL][/SIZE]
+
+
+[SIZE=4][B][COLOR=#FF0000]Download link[/COLOR][/B][/SIZE][/SIZE][/SIZE]
+[SIZE=3][SIZE=3][SIZE=3][URL='FILE_URL_DOWNLOAD_LINK']Click Here![/URL][/SIZE][/SIZE][/SIZE]
 [/CENTER]
 
-[LEFT][SIZE="3"][list]
-[*][b]Android OS version:[/b] 13.0.0_rX
-[*][b]Security patch level:[/b] XXX XX XXX
-[*][b]Build author/Device Maintainer:[/b] [url=XDA_PROFILE_URL]XDA_USERNAME[/url]
-[*][b]Device source code:[/b] [url=https://github.com/RiceDroid-devices]https://github.com/RiceDroid-devices[/url]
-[*][b]Firmware source code:[/b] [url=https://github.com/RiceDroid]https://github.com/RiceDroid[/url]
-[*][b]Firmware created by:[/b] The riceDroid Team
-[/list][/SIZE][/LEFT]
 
-
-
+ 
+[LIST]
+[*][B]Android OS version:[/B] 13.0.0_r24
+[*][B]Security patch level:[/B] January 2023
+[*][B]Build author/Device Maintainer:[/B] [URL='XDA_USER_LINK']xda_username[/URL]
+[*][B]Device tree source code:[/B] [URL]DEVICE_TREE_URL[/URL]
+[*][B]Device vendor source code:[/B] [URL]VENDOR_TREE_URL[/URL]
+[*][B]Kernel source code:[/B] [URL]KERNEL_TREE_URL[/URL]
+[*][B]Firmware source code:[/B] [URL]https://github.com/ricedroidOSS[/URL]
+[*][B]Firmware created by:[/B] The ricedroidOSS Team
+[/LIST]

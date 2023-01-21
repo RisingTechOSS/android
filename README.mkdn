@@ -8,7 +8,9 @@ Ricedroid is a FREE OPENSOURCE Android Operating System based on LineageOS and c
 
 Terminology
 ---------------
-The rice in the project name can be referred to "rice" (food) itself, but in a sense it is indeed the term "ricing" in linux.
+The term \'rice\' is used to describe a person's unix desktop where \'ricing\' is an act where someone customizes their desktop such as the changing icons, panels or system interface.
+
+source: https://jie-fang.github.io/blog/basics-of-ricing
 
 
 Maintainership
@@ -72,9 +74,9 @@ Preparing device for this ROM
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 ```
 
-**Adapt your device tree according to our fwb/hardware/vendor changes and use these flags to configure certain ROM properties**
+Build Flags
+---------------
 ```bash
-
 # chipset flag enclose var with "" if more than one
 # friendly tip: builders can use init_xxx.cpp as workaround for spacing
 # e.g. property_override("ro.rice.chipset", "Snapdragon 870 5G");
@@ -93,7 +95,10 @@ RICE_PACKAGE_TYPE := "VANILLA AOSP"
 # Sushi Bootanimation (only 720/1080p/1440 supported. if not defined, bootanimation is google bootanimation)
 SUSHI_BOOTANIMATION := 720/1080/1440
 
-# Graphene Camera
+# Aperture Camera (default: not defined - skipped by the compiler)
+TARGET_BUILD_APERTURE_CAMERA := true/false
+
+# Graphene Camera (default: not defined - skipped by the compiler)
 TARGET_BUILD_GRAPHENEOS_CAMERA := true/false
 
 # disable/enable blur support, default is false
@@ -107,16 +112,19 @@ TARGET_KERNEL_OPTIONAL_LD := true/false
 
 # Spoof build description/fingerprint as pixel device
 TARGET_USE_PIXEL_FINGERPRINT := true/false
+```
 
+GMS Flags
+---------------
+```bash
 # GMS build flags, if none were defined the package build type will be AOSP (default: false)
 WITH_GMS := true/false - ship with GMS packages, replaces misc AOSP packages with Google packages.
 
 # Customized GMS Flags 
 # WITH_GMS flag is required
 
-# Opt out of google dialer support, compiler will build aosp dialer,
-# package type will change from PIXEL -> GMS
-TARGET_OPTOUT_GOOGLE_TELEPHONY := true/false
+# Wether to use google (true) or AOSP (false) telephony package bundle. (defaults: false for gms core, true for pixel builds)
+TARGET_USE_GOOGLE_TELEPHONY := true/false
 
 # Compiler will only build GMS playstore services, its dependencies, and Gboard app.
 # package type will change from PIXEL/GMS -> CORE
@@ -124,12 +132,45 @@ TARGET_CORE_GMS := true/false
 
 # extra flag under TARGET_CORE_GMS
 TARGET_CORE_GMS_EXTRAS := true/false - extra packages for core build type (velvet and photos)
+```
 
-# We took some of Code Linaro optimizations and ported it to AOSP,
-# But due to some stuffs we were not able to make the system parse the device perfconfigstore.xml automatically
-# builders might need to tune runtime properties listed below (with reference and CLO counterparts)
+Adapting System Properties for riceDroid
+---------------
+```bash
+# Camera
 
-# Memory properties
+# Exposing aux/camera privileges to OEM cameras
+persist.camera.manufacturer=oneplus (oem or certain common word that exists to oem camera package)
+persist.camera.oem.package=com.oneplus.camera (actual oem camera package)
+
+# Overriding camera id 
+# 1. Add depth sensor flag to device tree makefiles
+TARGET_USES_DEPTHSENSOR_OVERRIDE := true
+
+# 2. Add camera id system property to device tree build properties
+persist.sys.vendor.camera_override_id=20 (desired camera id)
+
+# Enabling MIUI camera mode support
+# Add miui camera flag to device tree makefiles
+TARGET_USES_MIUI_CAMERA := true
+
+# Display 
+
+# Increase/Reduce screen off blanking delay
+persist.sys.screen.blank_delay=1000 (default)
+
+# Increase/Reduce screen wake up delay
+persist.sys.screen.wakeup_delay=1000 (default)
+
+# Performance
+
+# Increase/Reduce AOSP boostframework default boosting durations
+persist.sys.powerhal.interaction.max=200 (default)
+
+# Increase/Reduce Scarlet boostframework system boost boosting durations
+persist.sys.powerhal.interaction.max_boost=2000 (default)
+
+# Memory Management
 
 # Max cached app processes in system, overrides "config_customizedMaxCachedProcesses"
 persist.sys.fw.bg_apps_limit=96
@@ -172,6 +213,32 @@ persist.sys.appcompact.compact_throttle_bfgs=600000
 persist.sys.appcompact.compact_throttle_persistent=600000
 persist.sys.appcompact.rss_throttle_kb=12000
 persist.sys.appcompact.delta_rss_throttle_kb=8000
+```
+
+System Boot Changes
+---------------
+```bash
+# Kernel-side fs-verity support was remove as per revision v8.6, 
+# certain fs-verity related changes must be adapted to boot riceDroid on your Device
+
+# Enable apk-fs-verity
+ro.apk_verity.mode=2
+
+# Required Apex Changes  - credits to eun0115
+# Remove updatable apex make
+# 1. remove this line if it exists on your device tree makefiles.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# 2. Set ro.apex.updatable to false.
+# Disable updatable apex
+ro.apex.updatable=false
+
+# 3. Enable flatten apex - add to your device tree makefiles.
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
+or
+
+export OVERRIDE_TARGET_FLATTEN_APEX=true
 ```
 
 Build
