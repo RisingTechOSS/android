@@ -59,8 +59,9 @@
 
    <!-- Hardware -->
   <project path="hardware/interfaces" name="ricedroidOSS/android_hardware_interfaces" groups="pdk" revision="thirteen" />
-  <project path="hardware/qcom-caf/sm8250/audio" name="ricedroidOSS/android_hardware_qcom_audio" groups="qcom" revision="thirteen-clo-sm8250" />
-  <project path="hardware/qcom-caf/sm8250/display" name="ricedroidOSS/android_hardware_qcom_display" groups="qcom" revision="thirteen-clo-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="ricedroidOSS/android_hardware_qcom_audio_sm8250" groups="qcom" revision="thirteen" />
+  <project path="hardware/qcom-caf/sm8250/media" name="ricedroidOSS/android_hardware_qcom_media_sm8250" groups="qcom,kona" revision="thirteen" />
+  <project path="hardware/qcom-caf/sm8250/display" name="ricedroidOSS/android_hardware_qcom_display_sm8250" groups="qcom" revision="thirteen" />
   <project path="hardware/qcom-caf/wlan" name="ricedroidOSS/android_hardware_qcom_wlan" groups="qcom,waipio-vendor" revision="thirteen" />
 
   <!-- Lineage -->
