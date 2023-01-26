@@ -30,39 +30,12 @@ Getting Started
 ```bash
 repo init --depth=1 --no-repo-verify -u https://github.com/ricedroidOSS/android -b thirteen -g default,-mips,-darwin,-notdefault
 ```
-**in case of repo syncing failures try this instead**
-
-```bash
-repo init -u https://github.com/ricedroidOSS/android -b thirteen
-```
 
 **Sync up with this command:**
 ```bash
-repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
+repo sync -c --no-clone-bundle --force-remove-dirty --optimized-fetch --prune --force-sync -j8
 
-```
-**Workaround for failing repositories**
-
-```
-Failing repos:
-system/core
-Try re-running with "-j1 --fail-fast" to exit at the first error.
-user@linux1-S:~/rice$ cd system/core
-user@linux1-S:~/rice/system/core$ git remote remove github
-user@linux1-S:~/rice/system/core$ git remote add github https://github.com/RiceDroid/android_system_core
-user@linux1-S:~/rice/system/core$ git fetch github
-remote: Enumerating objects: 204495, done.
-remote: Counting objects: 100% (204495/204495), done.
-remote: Compressing objects: 100% (84311/84311), done.
-remote: Total 204495 (delta 116667), reused 204374 (delta 116643), pack-reused 
-Receiving objects: 100% (204495/204495), 203.26 MiB | 23.42 MiB/s, done.
-Resolving deltas: 100% (116667/116667), done.
-From https://github.com/RiceDroid/android_system_core
- * [new branch]          thirteen   -> github/thirteen
- * [new branch]          twelve     -> github/twelve
-user@linux1-S:~/rice/system/core$ git switch thirteen
-user@linux1-S:~/rice/system/core$ git branch -f --track thirteen github/thirteen
-HEAD is now at xxxxxxx Congrats you can now resync without deleting folder!
+# --force-remove-dirty option can be used to remove previously used projects with uncommitted changes. (to prevent misc sync failures etc.)
 
 ```
 
