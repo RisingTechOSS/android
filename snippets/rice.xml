@@ -107,7 +107,7 @@
   <project path="system/libziparchive" name="ricedroidOSS/android_system_libziparchive" groups="pdk" revision="thirteen" />
   <project path="system/logging" name="ricedroidOSS/system_logging" groups="pdk" revision="thirteen"/>
   <project path="system/media" name="ricedroidOSS/android_system_media" groups="pdk" revision="thirteen" />
-  <project path="system/memory/libdmabufheap" name="minaripenguin/android_system_memory_libdmabufheap" groups="pdk" revision="thirteen" />
+  <project path="system/memory/libdmabufheap" name="ricedroidOSS/android_system_memory_libdmabufheap" groups="pdk" revision="thirteen" />
   <project path="system/memory/libmeminfo" name="ricedroidOSS/android_system_memory_libmeminfo" groups="pdk" revision="thirteen" />
   <project path="system/memory/lmkd" name="ricedroidOSS/android_system_memory_lmkd" groups="pdk" revision="thirteen" />
   <project path="system/netd" name="ricedroidOSS/android_system_netd" groups="pdk" revision="thirteen" />
