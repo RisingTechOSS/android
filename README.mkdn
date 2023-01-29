@@ -113,39 +113,43 @@ Adapting System Properties for riceDroid
 # Camera
 
 # Exposing aux/camera privileges to OEM cameras
-persist.camera.manufacturer=oneplus (oem or certain common word that exists to oem camera package)
-persist.camera.oem.package=com.oneplus.camera (actual oem camera package)
+# oem or certain common word that exists to oem camera package
+persist.camera.manufacturer=oneplus 
+# actual oem camera package
+persist.camera.oem.package=com.oneplus.camera 
 
 # Overriding camera id 
-# 1. Add depth sensor flag to device tree makefiles
+# 1. Add depth sensor flag to Boardconfig.mk
 TARGET_USES_DEPTHSENSOR_OVERRIDE := true
 
 # 2. Add camera id system property to device tree build properties
-persist.sys.vendor.camera_override_id=20 (desired camera id)
+# desired camera id
+persist.sys.vendor.camera_override_id=20
 
 # Enabling MIUI camera mode support
-# Add miui camera flag to device tree makefiles
+# Add miui camera flag to Boardconfig.mk
 TARGET_USES_MIUI_CAMERA := true
 
 # Display 
 
-# Increase/Reduce screen off blanking delay
-persist.sys.screen.blank_delay=1000 (default)
+# Increase/Reduce screen off blanking delay (default)
+persist.sys.screen.blank_delay=1000
 
-# Increase/Reduce screen wake up delay
-persist.sys.screen.wakeup_delay=1000 (default)
+# Increase/Reduce screen wake up delay (default)
+persist.sys.screen.wakeup_delay=0
 
 # Performance
 
-# Increase/Reduce AOSP boostframework default boosting durations
-persist.sys.powerhal.interaction.max=200 (default)
+# Increase/Reduce AOSP boostframework default boosting durations  (default)
+persist.sys.powerhal.interaction.max=200
 
-# Increase/Reduce Scarlet boostframework system boost boosting durations
-persist.sys.powerhal.interaction.max_boost=2000 (default)
+# Increase/Reduce Scarlet boostframework system boost boosting durations (default)
+persist.sys.powerhal.interaction.max_boost=2000
 
 # Memory Management
 
 # Max cached app processes in system, overrides "config_customizedMaxCachedProcesses"
+# below properties are examples and were taken from oneplus 9R perfconfigstore.xml file
 persist.sys.fw.bg_apps_limit=96
 
 # Code linaro LMKD properties and its AOSP counterparts - refer to perfconfigstore.xml (if available) for tuning purposes
