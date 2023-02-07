@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="pixys"
+          fetch="https://github.com/PixysOS/"
+          revision="thirteen"
+          review="gerrit.pixysos.com" />
+
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com/" />
+
+  <remote name="pixys-gitlab"
+          fetch="https://gitlab.com/PixysOS"
+          revision="thirteen" />
+
+  <remote name="pixys-devices"
+          fetch="https://github.com/PixysOS-Devices/" />
+
+  <remote name="pixys-devices-gitlab"
+          fetch="https://gitlab.com/PixysOS-Devices/" />
+
+  <!-- CodeAurora additions -->
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" remote="pixys" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" groups="qcom,qssi" remote="pixys" />
+  <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" remote="pixys" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" groups="qcom,qssi" remote="pixys" />
+
+  <!-- Custom Hals -->
+  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" groups="pdk,qcom,qcom_display" revision="thirteen" remote="pixys" />
+  <project path="hardware/qcom-caf/sm8350/media" name="hardware_qcom-caf_sm8350_media" groups="qcom" revision="thirteen" remote="pixys" />
+
+</manifest>
