@@ -39,6 +39,7 @@
 
    <!-- Hardware (AOSP) -->
   <project path="hardware/interfaces" name="minaripenguin/android_hardware_interfaces" groups="pdk" revision="thirteen" />
+  <project path="hardware/lineage/interfaces" name="minaripenguin/android_hardware_lineage_interfaces" revision="thirteen" />
 
    <!-- Hardware (Google) -->
   <project path="hardware/google/camera" name="minaripenguin/android_hardware_google_camera" groups="pdk" revision="thirteen" />
