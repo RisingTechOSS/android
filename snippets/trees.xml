@@ -15,4 +15,10 @@
   <project name="RisingOSS-devices/android_device_google_raviole" path="device/google/raviole" revision="thirteen" />
   <project name="minaripenguin/proprietary_vendor_google_oriole" path="vendor/google/oriole" remote="gitlab" clone-depth="1" revision="lineage-20" />
 
+  <!-- Xiaomi Mi Pad 5 -->
+  <project name="minaripenguin/android_device_xiaomi_nabu" path="device/xiaomi/nabu" revision="thirteen" />
+  <project name="minaripenguin/android_kernel_xiaomi_nabu" path="kernel/xiaomi/nabu" revision="thirteen" />
+  <project name="minaripenguin/android_vendor_xiaomi_nabu" path="vendor/xiaomi/nabu" remote="gitlab" revision="thirteen" />
+  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi"  revision="lineage-20"/>
+  
 </manifest>
