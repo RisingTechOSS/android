@@ -95,10 +95,30 @@
 
   <!-- Vendor -->
   <project path="vendor/addons" name="minaripenguin/android_vendor_addons" revision="thirteen" />
-  <project path="vendor/gms" name="minaripenguin/vendor_google_pixel" remote="gitlab" revision="thirteen" clone-depth="1" />
+  <project path="vendor/gms" name="minaripenguin/vendor_google_pixel" remote="gitlab" revision="tm-qpr3" clone-depth="1" />
   <project path="vendor/lineage" name="minaripenguin/android_vendor_rising" revision="thirteen" />
   <project path="vendor/support" name="minaripenguin/android_vendor_support" revision="thirteen" />
   <project path="vendor/risingOTA" name="RisingOSS-devices/android_vendor_RisingOTA" revision="thirteen" />
+
+  <!-- Partner modules -->
+  <remove-project name="platform/prebuilts/module_sdk/art" />
+  <remove-project name="platform/prebuilts/module_sdk/AdServices" />
+  <remove-project name="platform/prebuilts/module_sdk/AppSearch" />
+  <remove-project name="platform/prebuilts/module_sdk/Bluetooth" />
+  <remove-project name="platform/prebuilts/module_sdk/conscrypt" />
+  <remove-project name="platform/prebuilts/module_sdk/Connectivity" />
+  <remove-project name="platform/prebuilts/module_sdk/IPsec" />
+  <remove-project name="platform/prebuilts/module_sdk/Media" />
+  <remove-project name="platform/prebuilts/module_sdk/MediaProvider" />
+  <remove-project name="platform/prebuilts/module_sdk/OnDevicePersonalization" />
+  <remove-project name="platform/prebuilts/module_sdk/Permission" />
+  <remove-project name="platform/prebuilts/module_sdk/Scheduling" />
+  <remove-project name="platform/prebuilts/module_sdk/SdkExtensions" />
+  <remove-project name="platform/prebuilts/module_sdk/StatsD" />
+  <remove-project name="platform/prebuilts/module_sdk/Uwb" />
+  <remove-project name="platform/prebuilts/module_sdk/Wifi" />
+  <project path="prebuilts/module_sdk" name="minaripenguin/android_prebuilts_module_sdk" remote="gitlab" revision="tm-qpr3" />
+  <project path="vendor/partner_modules" name="minaripenguin/android_vendor_partner_modules" remote="gitlab" revision="tm-qpr3" />
 
   <!-- Vendor QCOM-->
   <project path="hardware/qcom-caf/sm8350/audio" name="minaripenguin/android_hardware_qcom_audio_sm8350" groups="qcom" revision="thirteen" />
