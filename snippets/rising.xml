@@ -70,11 +70,8 @@
   <project path="packages/apps/WallpaperPicker2" name="minaripenguin/android_packages_apps_WallpaperPicker2" groups="pdk-fs" revision="thirteen"/>
 
   <!-- Rising Core Packages  -->
-  <project path="packages/apps/OrtusLauncher" name="minaripenguin/android_packages_apps_Ortus_Launcher" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/RisingColorStub" name="minaripenguin/android_packages_apps_Rising_ColorStub" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/RisingSettings" name="minaripenguin/android_packages_apps_Rising_Settings" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/RisingSystemUI" name="minaripenguin/android_packages_apps_Rising_SystemUI" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/RisingThemePicker" name="minaripenguin/android_packages_apps_Rising_ThemePicker" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Rising/Settings" name="minaripenguin/android_packages_apps_Rising_Settings" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Rising/SystemUI" name="minaripenguin/android_packages_apps_Rising_SystemUI" groups="pdk-fs" revision="thirteen" />
 
   <!-- Modules -->  
   <project path="packages/modules/Bluetooth" name="minaripenguin/android_packages_modules_Bluetooth" groups="pdk" revision="thirteen"/>
