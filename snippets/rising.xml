@@ -95,7 +95,7 @@
 
   <!-- Vendor -->
   <project path="vendor/addons" name="minaripenguin/android_vendor_addons" revision="thirteen" />
-  <project path="vendor/gms" name="minaripenguin/vendor_google_pixel" remote="gitlab" revision="tm-qpr3" clone-depth="1" />
+  <project path="vendor/gms" name="minaripenguin/android_vendor_gms" remote="gitlab" revision="tm-qpr3" />
   <project path="vendor/rising-prebuilts" name="minaripenguin/android_vendor_rising-prebuilts" revision="thirteen" />
   <project path="vendor/lineage" name="minaripenguin/android_vendor_rising" revision="thirteen" />
   <project path="vendor/support" name="minaripenguin/android_vendor_support" revision="thirteen" />
