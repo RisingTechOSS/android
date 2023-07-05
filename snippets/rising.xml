@@ -82,6 +82,7 @@
   <!-- Services -->  
   <project path="packages/services/OmniJaws" name="minaripenguin/packages_services_OmniJaws" revision="thirteen" />
   <project path="packages/services/Telecomm" name="minaripenguin/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
+  <project path="packages/services/Telephony" name="minaripenguin/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
 
   <!-- System -->
   <project path="system/core" name="minaripenguin/android_system_core" groups="pdk" revision="thirteen" />
