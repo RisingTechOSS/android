@@ -13,6 +13,7 @@
   <project name="RisingOSS-devices/android_device_google_gs101" path="device/google/gs101" revision="thirteen" />
   <project name="RisingOSS-devices/android_kernel_google_gs101" path="kernel/google/gs101/private/gs-google" revision="thirteen" />
   <project name="RisingOSS-devices/android_device_google_raviole" path="device/google/raviole" revision="thirteen" />
+  <project name="minaripenguin/packages_apps_PixelParts" path="packages/apps/PixelParts" revision="thirteen" />
   <project name="minaripenguin/proprietary_vendor_google_oriole" path="vendor/google/oriole" remote="gitlab" clone-depth="1" revision="lineage-20" />
 
   <!-- Xiaomi Mi Pad 5 -->
