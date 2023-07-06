@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="build/soong" name="minaripenguin/android_build_soong" groups="pdk,tradefed" revision="thirteen" >
+  <project path="build/soong" name="RisingTechOSS/android_build_soong" groups="pdk,tradefed" revision="thirteen" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   
-  <project path="build/make" name="minaripenguin/android_build" groups="pdk" revision="thirteen" >
+  <project path="build/make" name="RisingTechOSS/android_build" groups="pdk" revision="thirteen" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -14,90 +14,90 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="art" name="minaripenguin/android_art" groups="pdk" revision="thirteen"  />
-  <project path="bionic" name="minaripenguin/android_bionic" groups="pdk" revision="thirteen"  />
-  <project path="bootable/recovery" name="minaripenguin/android_bootable_recovery" groups="pdk" revision="thirteen"  />
+  <project path="art" name="RisingTechOSS/android_art" groups="pdk" revision="thirteen"  />
+  <project path="bionic" name="RisingTechOSS/android_bionic" groups="pdk" revision="thirteen"  />
+  <project path="bootable/recovery" name="RisingTechOSS/android_bootable_recovery" groups="pdk" revision="thirteen"  />
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="minaripenguin/android_frameworks_av" groups="pdk" revision="thirteen" />
-  <project path="frameworks/base" name="minaripenguin/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="frameworks/libs/net" name="minaripenguin/android_frameworks_libs_net" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="frameworks/libs/systemui" name="minaripenguin/android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="frameworks/native" name="minaripenguin/android_frameworks_native" groups="pdk" revision="thirteen" />
+  <project path="frameworks/av" name="RisingTechOSS/android_frameworks_av" groups="pdk" revision="thirteen" />
+  <project path="frameworks/base" name="RisingTechOSS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="frameworks/libs/net" name="RisingTechOSS/android_frameworks_libs_net" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="frameworks/libs/systemui" name="RisingTechOSS/android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="frameworks/native" name="RisingTechOSS/android_frameworks_native" groups="pdk" revision="thirteen" />
   
   <!-- External (AOSP) --> 
-  <project path="external/google-fonts/cutive-mono" name="minaripenguin/android_external_google-fonts_cutive-mono" revision="thirteen" />
-  <project path="external/noto-fonts" name="minaripenguin/android_external_noto-fonts"  revision="thirteen" />
-  <project path="external/roboto-fonts" name="minaripenguin/android_external_roboto-fonts"  revision="thirteen" />
-  <project path="external/skia" name="minaripenguin/android_external_skia" groups="pdk,qcom_msm8x26" revision="thirteen" />
-  <project path="external/tigervnc" name="minaripenguin/android_external_tigervnc" groups="pdk" revision="thirteen" />
+  <project path="external/google-fonts/cutive-mono" name="RisingTechOSS/android_external_google-fonts_cutive-mono" revision="thirteen" />
+  <project path="external/noto-fonts" name="RisingTechOSS/android_external_noto-fonts"  revision="thirteen" />
+  <project path="external/roboto-fonts" name="RisingTechOSS/android_external_roboto-fonts"  revision="thirteen" />
+  <project path="external/skia" name="RisingTechOSS/android_external_skia" groups="pdk,qcom_msm8x26" revision="thirteen" />
+  <project path="external/tigervnc" name="RisingTechOSS/android_external_tigervnc" groups="pdk" revision="thirteen" />
 
   <!-- External (Chromiuim) -->
-  <project path="external/chromium-webview/prebuilt/arm" name="minaripenguin/android_external_chromium-webview_prebuilt_arm" groups="pdk" clone-depth="1" revision="backup/main_20230314" />
-  <project path="external/chromium-webview/prebuilt/arm64" name="minaripenguin/android_external_chromium-webview_prebuilt_arm64" groups="pdk" clone-depth="1" revision="backup/main_20230314" />
-  <project path="external/chromium-webview/prebuilt/x86" name="minaripenguin/android_external_chromium-webview_prebuilt_x86" groups="pdk" clone-depth="1" revision="backup/main_20230314" />
+  <project path="external/chromium-webview/prebuilt/arm" name="RisingTechOSS/android_external_chromium-webview_prebuilt_arm" groups="pdk" clone-depth="1" revision="backup/main_20230314" />
+  <project path="external/chromium-webview/prebuilt/arm64" name="RisingTechOSS/android_external_chromium-webview_prebuilt_arm64" groups="pdk" clone-depth="1" revision="backup/main_20230314" />
+  <project path="external/chromium-webview/prebuilt/x86" name="RisingTechOSS/android_external_chromium-webview_prebuilt_x86" groups="pdk" clone-depth="1" revision="backup/main_20230314" />
 
    <!-- Hardware (AOSP) -->
-  <project path="hardware/interfaces" name="minaripenguin/android_hardware_interfaces" groups="pdk" revision="thirteen" />
-  <project path="hardware/lineage/interfaces" name="minaripenguin/android_hardware_lineage_interfaces" revision="thirteen" />
+  <project path="hardware/interfaces" name="RisingTechOSS/android_hardware_interfaces" groups="pdk" revision="thirteen" />
+  <project path="hardware/lineage/interfaces" name="RisingTechOSS/android_hardware_lineage_interfaces" revision="thirteen" />
 
    <!-- Hardware (Google) -->
-  <project path="hardware/google/camera" name="minaripenguin/android_hardware_google_camera" groups="pdk" revision="thirteen" />
-  <project path="hardware/google/pixel" name="minaripenguin/android_hardware_google_pixel" groups="generic_fs,pixel" revision="thirteen"/>
-  <project path="hardware/google/pixel-sepolicy" name="minaripenguin/android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel" revision="thirteen" />
+  <project path="hardware/google/camera" name="RisingTechOSS/android_hardware_google_camera" groups="pdk" revision="thirteen" />
+  <project path="hardware/google/pixel" name="RisingTechOSS/android_hardware_google_pixel" groups="generic_fs,pixel" revision="thirteen"/>
+  <project path="hardware/google/pixel-sepolicy" name="RisingTechOSS/android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel" revision="thirteen" />
   
    <!-- Hardware (QCOM) -->
-  <project path="hardware/qcom-caf/wlan" name="minaripenguin/android_hardware_qcom_wlan" groups="qcom,waipio-vendor" revision="thirteen" />
+  <project path="hardware/qcom-caf/wlan" name="RisingTechOSS/android_hardware_qcom_wlan" groups="qcom,waipio-vendor" revision="thirteen" />
 
   <!-- Non-AOSP Packages -->
-  <project path="packages/apps/Backgrounds" name="minaripenguin/android_packages_apps_Backgrounds" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/DesktopMode" name="minaripenguin/android_packages_apps_DesktopMode" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/GameSpace" name="minaripenguin/android_packages_apps_GameSpace" revision="thirteen" />
-  <project path="packages/apps/Updater" name="minaripenguin/android_packages_apps_Updater" revision="thirteen" />
-  <project path="packages/services/VncFlinger" name="minaripenguin/android_packages_services_VncFlinger" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Backgrounds" name="RisingTechOSS/android_packages_apps_Backgrounds" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/DesktopMode" name="RisingTechOSS/android_packages_apps_DesktopMode" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/GameSpace" name="RisingTechOSS/android_packages_apps_GameSpace" revision="thirteen" />
+  <project path="packages/apps/Updater" name="RisingTechOSS/android_packages_apps_Updater" revision="thirteen" />
+  <project path="packages/services/VncFlinger" name="RisingTechOSS/android_packages_services_VncFlinger" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   
   <!-- AOSP Packages  -->
-  <project path="packages/apps/Contacts" name="minaripenguin/android_packages_apps_Contacts" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/DocumentsUI" name="minaripenguin/android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
-  <project path="packages/apps/DeskClock" name="minaripenguin/android_packages_apps_DeskClock" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Dialer" name="minaripenguin/android_packages_apps_Dialer" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Launcher3" name="minaripenguin/android_packages_apps_Launcher3" revision="thirteen" />
-  <project path="packages/apps/Messaging" name="minaripenguin/android_packages_apps_Messaging" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Nfc" name="minaripenguin/android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Personalizations" name="minaripenguin/android_packages_apps_Personalizations" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Settings" name="minaripenguin/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/ThemePicker" name="minaripenguin/android_packages_apps_ThemePicker" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/WallpaperPicker2" name="minaripenguin/android_packages_apps_WallpaperPicker2" groups="pdk-fs" revision="thirteen"/>
-  <project path="packages/modules/Wifi" name="minaripenguin/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Contacts" name="RisingTechOSS/android_packages_apps_Contacts" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/DocumentsUI" name="RisingTechOSS/android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
+  <project path="packages/apps/DeskClock" name="RisingTechOSS/android_packages_apps_DeskClock" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Dialer" name="RisingTechOSS/android_packages_apps_Dialer" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Launcher3" name="RisingTechOSS/android_packages_apps_Launcher3" revision="thirteen" />
+  <project path="packages/apps/Messaging" name="RisingTechOSS/android_packages_apps_Messaging" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Nfc" name="RisingTechOSS/android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Personalizations" name="RisingTechOSS/android_packages_apps_Personalizations" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Settings" name="RisingTechOSS/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/ThemePicker" name="RisingTechOSS/android_packages_apps_ThemePicker" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/WallpaperPicker2" name="RisingTechOSS/android_packages_apps_WallpaperPicker2" groups="pdk-fs" revision="thirteen"/>
+  <project path="packages/modules/Wifi" name="RisingTechOSS/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
 
   <!-- Rising Core Packages  -->
-  <project path="packages/apps/Rising/Settings" name="minaripenguin/android_packages_apps_Rising_Settings" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Rising/SystemUI" name="minaripenguin/android_packages_apps_Rising_SystemUI" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Rising/Settings" name="RisingTechOSS/android_packages_apps_Rising_Settings" groups="pdk-fs" revision="thirteen" />
+  <project path="packages/apps/Rising/SystemUI" name="RisingTechOSS/android_packages_apps_Rising_SystemUI" groups="pdk-fs" revision="thirteen" />
 
   <!-- Modules -->  
-  <project path="packages/modules/Bluetooth" name="minaripenguin/android_packages_modules_Bluetooth" groups="pdk" revision="thirteen"/>
-  <project path="packages/modules/Connectivity" name="minaripenguin/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="packages/modules/DnsResolver" name="minaripenguin/android_packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="packages/modules/Permission" name="minaripenguin/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/modules/Bluetooth" name="RisingTechOSS/android_packages_modules_Bluetooth" groups="pdk" revision="thirteen"/>
+  <project path="packages/modules/Connectivity" name="RisingTechOSS/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/modules/DnsResolver" name="RisingTechOSS/android_packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/modules/Permission" name="RisingTechOSS/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   
   <!-- Services -->  
-  <project path="packages/services/OmniJaws" name="minaripenguin/packages_services_OmniJaws" revision="thirteen" />
-  <project path="packages/services/Telecomm" name="minaripenguin/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
-  <project path="packages/services/Telephony" name="minaripenguin/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
+  <project path="packages/services/OmniJaws" name="RisingTechOSS/packages_services_OmniJaws" revision="thirteen" />
+  <project path="packages/services/Telecomm" name="RisingTechOSS/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
+  <project path="packages/services/Telephony" name="RisingTechOSS/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
 
   <!-- System -->
-  <project path="system/core" name="minaripenguin/android_system_core" groups="pdk" revision="thirteen" />
-  <project path="system/libhwbinder" name="minaripenguin/android_system_libhwbinder" groups="pdk" revision="thirteen" />
-  <project path="system/media" name="minaripenguin/android_system_media" groups="pdk" revision="thirteen" />
-  <project path="system/memory/lmkd" name="minaripenguin/android_system_memory_lmkd" groups="pdk" revision="thirteen" />
-  <project path="system/sepolicy" name="minaripenguin/android_system_sepolicy" groups="pdk" revision="thirteen" />
+  <project path="system/core" name="RisingTechOSS/android_system_core" groups="pdk" revision="thirteen" />
+  <project path="system/libhwbinder" name="RisingTechOSS/android_system_libhwbinder" groups="pdk" revision="thirteen" />
+  <project path="system/media" name="RisingTechOSS/android_system_media" groups="pdk" revision="thirteen" />
+  <project path="system/memory/lmkd" name="RisingTechOSS/android_system_memory_lmkd" groups="pdk" revision="thirteen" />
+  <project path="system/sepolicy" name="RisingTechOSS/android_system_sepolicy" groups="pdk" revision="thirteen" />
 
   <!-- Vendor -->
-  <project path="vendor/addons" name="minaripenguin/android_vendor_addons" revision="thirteen" />
+  <project path="vendor/addons" name="RisingTechOSS/android_vendor_addons" revision="thirteen" />
   <project path="vendor/gms" name="minaripenguin/android_vendor_gms" remote="gitlab" revision="tm-qpr3" />
-  <project path="vendor/rising-prebuilts" name="minaripenguin/android_vendor_rising-prebuilts" revision="thirteen" />
-  <project path="vendor/lineage" name="minaripenguin/android_vendor_rising" revision="thirteen" />
-  <project path="vendor/support" name="minaripenguin/android_vendor_support" revision="thirteen" />
+  <project path="vendor/rising-prebuilts" name="RisingTechOSS/android_vendor_rising-prebuilts" revision="thirteen" />
+  <project path="vendor/lineage" name="RisingTechOSS/android_vendor_rising" revision="thirteen" />
+  <project path="vendor/support" name="RisingTechOSS/android_vendor_support" revision="thirteen" />
   <project path="vendor/risingOTA" name="RisingOSS-devices/android_vendor_RisingOTA" revision="thirteen" />
 
   <!-- Partner modules -->
@@ -121,12 +121,12 @@
   <project path="vendor/partner_modules" name="minaripenguin/android_vendor_partner_modules" remote="gitlab" revision="tm-qpr3" />
 
   <!-- Vendor QCOM-->
-  <project path="hardware/qcom-caf/sm8350/audio" name="minaripenguin/android_hardware_qcom_audio_sm8350" groups="qcom" revision="thirteen" />
-  <project path="hardware/qcom-caf/sm8350/display" name="minaripenguin/android_hardware_qcom_display_sm8350" groups="qcom" revision="thirteen" />
-  <project path="hardware/qcom-caf/sm8350/media" name="minaripenguin/android_hardware_qcom_media_sm8350" groups="qcom" revision="thirteen" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="minaripenguin/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" revision="thirteen" />
-  <project path="vendor/qcom/opensource/commonsys/display" name="minaripenguin/android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" revision="thirteen" />
-  <project path="vendor/qcom/opensource/display" name="minaripenguin/android_vendor_qcom_opensource_display" groups="qcom" revision="thirteen" />
-  <project path="vendor/qcom/opensource/interfaces" name="minaripenguin/android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" revision="thirteen" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="RisingTechOSS/android_hardware_qcom_audio_sm8350" groups="qcom" revision="thirteen" />
+  <project path="hardware/qcom-caf/sm8350/display" name="RisingTechOSS/android_hardware_qcom_display_sm8350" groups="qcom" revision="thirteen" />
+  <project path="hardware/qcom-caf/sm8350/media" name="RisingTechOSS/android_hardware_qcom_media_sm8350" groups="qcom" revision="thirteen" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="RisingTechOSS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" revision="thirteen" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="RisingTechOSS/android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" revision="thirteen" />
+  <project path="vendor/qcom/opensource/display" name="RisingTechOSS/android_vendor_qcom_opensource_display" groups="qcom" revision="thirteen" />
+  <project path="vendor/qcom/opensource/interfaces" name="RisingTechOSS/android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" revision="thirteen" />
 
 </manifest>
