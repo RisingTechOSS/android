@@ -68,6 +68,7 @@
   <project path="packages/apps/Settings" name="minaripenguin/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/ThemePicker" name="minaripenguin/android_packages_apps_ThemePicker" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/WallpaperPicker2" name="minaripenguin/android_packages_apps_WallpaperPicker2" groups="pdk-fs" revision="thirteen"/>
+  <project path="packages/modules/Wifi" name="minaripenguin/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
 
   <!-- Rising Core Packages  -->
   <project path="packages/apps/Rising/Settings" name="minaripenguin/android_packages_apps_Rising_Settings" groups="pdk-fs" revision="thirteen" />
