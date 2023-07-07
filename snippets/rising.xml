@@ -32,11 +32,6 @@
   <project path="external/skia" name="RisingTechOSS/android_external_skia" groups="pdk,qcom_msm8x26" revision="thirteen" />
   <project path="external/tigervnc" name="RisingTechOSS/android_external_tigervnc" groups="pdk" revision="thirteen" />
 
-  <!-- External (Chromiuim) -->
-  <project path="external/chromium-webview/prebuilt/arm" name="RisingTechOSS/android_external_chromium-webview_prebuilt_arm" groups="pdk" clone-depth="1" revision="backup/main_20230314" />
-  <project path="external/chromium-webview/prebuilt/arm64" name="RisingTechOSS/android_external_chromium-webview_prebuilt_arm64" groups="pdk" clone-depth="1" revision="backup/main_20230314" />
-  <project path="external/chromium-webview/prebuilt/x86" name="RisingTechOSS/android_external_chromium-webview_prebuilt_x86" groups="pdk" clone-depth="1" revision="backup/main_20230314" />
-
    <!-- Hardware (AOSP) -->
   <project path="hardware/interfaces" name="RisingTechOSS/android_hardware_interfaces" groups="pdk" revision="thirteen" />
   <project path="hardware/lineage/interfaces" name="RisingTechOSS/android_hardware_lineage_interfaces" revision="thirteen" />

@@ -24,7 +24,7 @@ repo init --depth=1 --no-repo-verify -u https://github.com/RisingTechOSS/android
 **in case of repo syncing failures try this instead**
 
 ```bash
-repo init -u https://github.com/RisingTechOSS/android -b thirteen
+repo init -u https://github.com/RisingTechOSS/android -b thirteen --git-lfs
 ```
 
 **Sync up with this command:**
