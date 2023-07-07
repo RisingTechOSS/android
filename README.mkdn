@@ -19,7 +19,12 @@ Getting Started
 **Initialize local repository (thanks to apon77 for repo init script)**
 
 ```bash
-repo init --depth=1 --no-repo-verify -u https://github.com/RisingTechOSS/android -b thirteen -g default,-mips,-darwin,-notdefault
+# For webview related errors due to git lfs (credits to haggertk):
+rm -rf external/chromium-webview/prebuilt/*
+rm -rf .repo/projects/external/chromium-webview/prebuilt/*.git
+rm -rf .repo/project-objects/LineageOS/android_external_chromium-webview_prebuilt_*.git
+
+repo init --depth=1 --no-repo-verify -u https://github.com/RisingTechOSS/android -b thirteen --git-lfs -g default,-mips,-darwin,-notdefault
 ```
 **in case of repo syncing failures try this instead**
 
