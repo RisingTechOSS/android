@@ -20,6 +20,8 @@ Getting Started
 
 ```bash
 # For webview related errors due to git lfs (credits to haggertk):
+sudo apt install git-lfs
+git lfs install
 rm -rf external/chromium-webview/prebuilt/*
 rm -rf .repo/projects/external/chromium-webview/prebuilt/*.git
 rm -rf .repo/project-objects/LineageOS/android_external_chromium-webview_prebuilt_*.git
