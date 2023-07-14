@@ -92,6 +92,7 @@
   <project path="vendor/gms" name="minaripenguin/android_vendor_gms" remote="gitlab" revision="tm-qpr3" />
   <project path="vendor/rising-prebuilts" name="RisingTechOSS/android_vendor_rising-prebuilts" revision="thirteen" />
   <project path="vendor/lineage" name="RisingTechOSS/android_vendor_rising" revision="thirteen" />
+  <project path="vendor/pixel-framework" name="RisingTechOSS/vendor_pixel-framework" revision="thirteen" />
   <project path="vendor/support" name="RisingTechOSS/android_vendor_support" revision="thirteen" />
   <project path="vendor/risingOTA" name="RisingOSS-devices/android_vendor_RisingOTA" revision="thirteen" />
 
