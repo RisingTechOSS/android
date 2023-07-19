@@ -37,8 +37,8 @@
   <project path="bootable/libbootloader" name="platform/bootable/libbootloader" groups="vts,pdk" remote="aosp" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="developers/build" name="platform/developers/build" groups="developers,pdk" remote="aosp" />
-  <project path="development" name="platform/development" groups="developers,pdk-cw-fs,pdk-fs" remote="aosp" />
+  <project path="developers/build" name="platform/developers/build" groups="developers,pdk" remote="aosp" clone-depth="1" />
+  <project path="development" name="platform/development" groups="developers,pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk" remote="aosp" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" remote="aosp" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" remote="aosp" />
@@ -305,7 +305,7 @@
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk" remote="aosp" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk" remote="aosp" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" remote="aosp" />
-  <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="external/mime-support" name="platform/external/mime-support" groups="pdk" remote="aosp" />
   <project path="external/minigbm" name="platform/external/minigbm" groups="pdk" remote="aosp" />
   <project path="external/minijail" name="platform/external/minijail" groups="pdk" remote="aosp" />
@@ -649,13 +649,13 @@
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" remote="aosp" />
   <project path="external/stardoc" name="platform/external/stardoc" groups="pdk" remote="aosp" />
   <project path="external/starlark-go" name="platform/external/starlark-go" groups="pdk" remote="aosp" />
-  <project path="external/strace" name="platform/external/strace" groups="pdk" remote="aosp" />
+  <project path="external/strace" name="platform/external/strace" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/stressapptest" name="platform/external/stressapptest" groups="pdk" remote="aosp" />
   <project path="external/subsampling-scale-image-view" name="platform/external/subsampling-scale-image-view" groups="pdk" clone-depth="1" remote="aosp" />
-  <project path="external/swiftshader" name="platform/external/swiftshader" groups="pdk" remote="aosp" />
-  <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk" remote="aosp" />
+  <project path="external/swiftshader" name="platform/external/swiftshader" groups="pdk" remote="aosp" clone-depth="1" />
+  <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk" remote="aosp" clone-depth="1"/>
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk" remote="aosp" />
-  <project path="external/tensorflow" name="platform/external/tensorflow" groups="pdk" remote="aosp" />
+  <project path="external/tensorflow" name="platform/external/tensorflow" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/TestParameterInjector" name="platform/external/TestParameterInjector" groups="pdk" remote="aosp" />
   <project path="external/testng" name="platform/external/testng" groups="pdk" remote="aosp" />
   <project path="external/tflite-support" name="platform/external/tflite-support" groups="pdk" remote="aosp" />
@@ -687,7 +687,7 @@
   <project path="external/wayland" name="platform/external/wayland" groups="pdk" remote="aosp" />
   <project path="external/wayland-protocols" name="platform/external/wayland-protocols" groups="pdk" remote="aosp" />
   <project path="external/webp" name="platform/external/webp" groups="pdk,qcom_msm8x26" remote="aosp" />
-  <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" remote="aosp" />
+  <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="external/wpa_supplicant_8" name="LineageOS/android_external_wpa_supplicant_8" groups="pdk" />
   <project path="external/wmediumd" name="platform/external/wmediumd" groups="pdk" remote="aosp" />
   <project path="external/wuffs-mirror-release-c" name="platform/external/wuffs-mirror-release-c" groups="pdk,qcom_msm8x26" remote="aosp" />
@@ -983,7 +983,7 @@
   <project path="prebuilts/vndk/v30" name="platform/prebuilts/vndk/v30" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/vndk/v31" name="platform/prebuilts/vndk/v31" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/vndk/v32" name="platform/prebuilts/vndk/v32" groups="pdk" clone-depth="1" remote="aosp" />
-  <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" clone-depth="1" />
   <project path="system/apex" name="LineageOS/android_system_apex" groups="pdk" />
   <project path="system/bpf" name="platform/system/bpf" groups="pdk" remote="aosp" />
   <project path="system/bpfprogs" name="platform/system/bpfprogs" groups="pdk" remote="aosp" />
@@ -1016,7 +1016,7 @@
   <project path="system/memory/libmeminfo" name="platform/system/memory/libmeminfo" groups="pdk" remote="aosp" />
   <project path="system/memory/libmemtrack" name="platform/system/memory/libmemtrack" groups="pdk" remote="aosp" />
   <project path="system/memory/libmemunreachable" name="platform/system/memory/libmemunreachable" groups="pdk" remote="aosp" />
-  <project path="system/netd" name="platform/system/netd" groups="pdk" remote="aosp" />
+  <project path="system/netd" name="platform/system/netd" groups="pdk" remote="aosp" clone-depth="1" />
   <project path="system/nfc" name="platform/system/nfc" groups="pdk" remote="aosp" />
   <project path="system/nvram" name="platform/system/nvram" groups="pdk" remote="aosp" />
   <project path="system/security" name="LineageOS/android_system_security" groups="pdk" />
