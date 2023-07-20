@@ -40,9 +40,6 @@
   <project path="hardware/google/camera" name="RisingTechOSS/android_hardware_google_camera" groups="pdk" revision="thirteen" />
   <project path="hardware/google/pixel" name="RisingTechOSS/android_hardware_google_pixel" groups="generic_fs,pixel" revision="thirteen"/>
   <project path="hardware/google/pixel-sepolicy" name="RisingTechOSS/android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel" revision="thirteen" />
-  
-   <!-- Hardware (QCOM) -->
-  <project path="hardware/qcom-caf/wlan" name="RisingTechOSS/android_hardware_qcom_wlan" groups="qcom,waipio-vendor" revision="thirteen" />
 
   <!-- Non-AOSP Packages -->
   <project path="packages/apps/Backgrounds" name="RisingTechOSS/android_packages_apps_Backgrounds" groups="pdk-fs" revision="thirteen" />
