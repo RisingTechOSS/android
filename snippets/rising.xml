@@ -71,8 +71,6 @@
 
   <!-- Modules -->  
   <project path="packages/modules/Bluetooth" name="RisingTechOSS/android_packages_modules_Bluetooth" groups="pdk" revision="thirteen"/>
-  <project path="packages/modules/Connectivity" name="RisingTechOSS/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  <project path="packages/modules/DnsResolver" name="RisingTechOSS/android_packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   <project path="packages/modules/Permission" name="RisingTechOSS/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   
   <!-- Services -->  
