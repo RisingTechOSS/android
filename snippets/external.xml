@@ -7,6 +7,5 @@
    <!-- crdroid repositories  --> 
   <project path="external/faceunlock" name="crdroidandroid/android_external_faceunlock" remote="gitlab" revision="13.0"/>
   <project path="packages/apps/FaceUnlockService" name="crdroidandroid/android_packages_apps_FaceUnlockService" revision="13.0"/>
-  <project path="packages/apps/ParallelSpace" name="crdroidandroid/android_packages_apps_ParallelSpace" revision="13.0" />
 
 </manifest>

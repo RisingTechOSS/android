@@ -56,6 +56,7 @@
   <project path="packages/apps/Launcher3" name="RisingTechOSS/android_packages_apps_Launcher3" revision="thirteen" />
   <project path="packages/apps/Messaging" name="RisingTechOSS/android_packages_apps_Messaging" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/Nfc" name="RisingTechOSS/android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" revision="thirteen" />
+  <project path="packages/apps/ParallelSpace" name="RisingTechOSS/android_packages_apps_ParallelSpace" revision="thirteen" />
   <project path="packages/apps/Personalizations" name="RisingTechOSS/android_packages_apps_Personalizations" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/Settings" name="RisingTechOSS/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/ThemePicker" name="RisingTechOSS/android_packages_apps_ThemePicker" groups="pdk-fs" revision="thirteen" />
