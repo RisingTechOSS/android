@@ -14,7 +14,6 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="art" name="RisingTechOSS/android_art" groups="pdk" revision="thirteen"  />
   <project path="bionic" name="RisingTechOSS/android_bionic" groups="pdk" revision="thirteen"  />
   <project path="bootable/recovery" name="RisingTechOSS/android_bootable_recovery" groups="pdk" revision="thirteen"  />
 
@@ -50,7 +49,6 @@
   
   <!-- AOSP Packages  -->
   <project path="packages/apps/Contacts" name="RisingTechOSS/android_packages_apps_Contacts" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/DocumentsUI" name="RisingTechOSS/android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
   <project path="packages/apps/DeskClock" name="RisingTechOSS/android_packages_apps_DeskClock" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/Dialer" name="RisingTechOSS/android_packages_apps_Dialer" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/Launcher3" name="RisingTechOSS/android_packages_apps_Launcher3" revision="thirteen" />
@@ -59,9 +57,6 @@
   <project path="packages/apps/ParallelSpace" name="RisingTechOSS/android_packages_apps_ParallelSpace" revision="thirteen" />
   <project path="packages/apps/Personalizations" name="RisingTechOSS/android_packages_apps_Personalizations" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/Settings" name="RisingTechOSS/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/ThemePicker" name="RisingTechOSS/android_packages_apps_ThemePicker" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/WallpaperPicker2" name="RisingTechOSS/android_packages_apps_WallpaperPicker2" groups="pdk-fs" revision="thirteen"/>
-  <project path="packages/modules/Wifi" name="RisingTechOSS/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
 
   <!-- Rising Core Packages  -->
   <project path="packages/apps/Rising/Settings" name="RisingTechOSS/android_packages_apps_Rising_Settings" groups="pdk-fs" revision="thirteen" />
