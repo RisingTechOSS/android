@@ -28,6 +28,7 @@
   <project path="external/google-fonts/cutive-mono" name="RisingTechOSS/android_external_google-fonts_cutive-mono" revision="thirteen" />
   <project path="external/noto-fonts" name="RisingTechOSS/android_external_noto-fonts"  revision="thirteen" />
   <project path="external/roboto-fonts" name="RisingTechOSS/android_external_roboto-fonts"  revision="thirteen" />
+  <project path="external/piex" name="RisingTechOSS/android_external_piex" groups="pdk" revision="thirteen"/>
   <project path="external/skia" name="RisingTechOSS/android_external_skia" groups="pdk,qcom_msm8x26" revision="thirteen" />
   <project path="external/tigervnc" name="RisingTechOSS/android_external_tigervnc" groups="pdk" revision="thirteen" />
 
