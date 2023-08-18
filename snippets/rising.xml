@@ -45,8 +45,10 @@
   <project path="packages/apps/Backgrounds" name="RisingTechOSS/android_packages_apps_Backgrounds" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/DesktopMode" name="RisingTechOSS/android_packages_apps_DesktopMode" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/GameSpace" name="RisingTechOSS/android_packages_apps_GameSpace" revision="thirteen" />
+  <project path="packages/apps/ThemePicker" name="RisingTechOSS/android_packages_apps_ThemePicker" groups="pdk-fs" revision="thirteen"/>
   <project path="packages/apps/Updater" name="RisingTechOSS/android_packages_apps_Updater" revision="thirteen" />
   <project path="packages/services/VncFlinger" name="RisingTechOSS/android_packages_services_VncFlinger" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+  <project path="packages/apps/WallpaperPicker2" name="RisingTechOSS/android_packages_apps_WallpaperPicker2" groups="pdk-fs" revision="thirteen" />
   
   <!-- AOSP Packages  -->
   <project path="packages/apps/Contacts" name="RisingTechOSS/android_packages_apps_Contacts" groups="pdk-fs" revision="thirteen" />
