@@ -14,6 +14,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
+  <project path="art" name="RisingTechOSS/android_art" groups="pdk" revision="thirteen"  />
   <project path="bionic" name="RisingTechOSS/android_bionic" groups="pdk" revision="thirteen"  />
   <project path="bootable/recovery" name="RisingTechOSS/android_bootable_recovery" groups="pdk" revision="thirteen"  />
 
