@@ -69,7 +69,10 @@
   <!-- Modules -->  
   <project path="packages/modules/Bluetooth" name="RisingTechOSS/android_packages_modules_Bluetooth" groups="pdk" revision="thirteen"/>
   <project path="packages/modules/Permission" name="RisingTechOSS/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
-  
+
+  <!-- Providers -->  
+  <project path="packages/providers/MediaProvider" name="RisingTechOSS/android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+
   <!-- Services -->  
   <project path="packages/services/OmniJaws" name="RisingTechOSS/packages_services_OmniJaws" revision="thirteen" />
   <project path="packages/services/Telecomm" name="RisingTechOSS/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" revision="thirteen"/>
