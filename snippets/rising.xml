@@ -95,6 +95,7 @@
   <project path="vendor/risingOTA" name="RisingOSS-devices/android_vendor_RisingOTA" revision="thirteen" />
 
   <!-- Vendor QCOM-->
+  <project path="hardware/qcom-caf/sm8150/display" name="RisingTechOSS/android_hardware_qcom_display_sm8150" groups="qcom" revision="thirteen" />
   <project path="hardware/qcom-caf/sm8350/audio" name="RisingTechOSS/android_hardware_qcom_audio_sm8350" groups="qcom" revision="thirteen" />
   <project path="hardware/qcom-caf/sm8350/display" name="RisingTechOSS/android_hardware_qcom_display_sm8350" groups="qcom" revision="thirteen" />
   <project path="hardware/qcom-caf/sm8350/media" name="RisingTechOSS/android_hardware_qcom_media_sm8350" groups="qcom" revision="thirteen" />
