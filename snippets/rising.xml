@@ -62,10 +62,6 @@
   <project path="packages/apps/Personalizations" name="RisingTechOSS/android_packages_apps_Personalizations" groups="pdk-fs" revision="thirteen" />
   <project path="packages/apps/Settings" name="RisingTechOSS/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
 
-  <!-- Rising Core Packages  -->
-  <project path="packages/apps/Rising/Settings" name="RisingTechOSS/android_packages_apps_Rising_Settings" groups="pdk-fs" revision="thirteen" />
-  <project path="packages/apps/Rising/SystemUI" name="RisingTechOSS/android_packages_apps_Rising_SystemUI" groups="pdk-fs" revision="thirteen" />
-
   <!-- Modules -->  
   <project path="packages/modules/Bluetooth" name="RisingTechOSS/android_packages_modules_Bluetooth" groups="pdk" revision="thirteen"/>
   <project path="packages/modules/Permission" name="RisingTechOSS/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
