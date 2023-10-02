@@ -17,7 +17,7 @@
   <project path="kernel/google/gs201/private/google-modules/edgetpu/abrolhos" name="kernel/google-modules/edgetpu/abrolhos" groups="pixel-extra" remote="aosp" revision="refs/tags/android-13.0.0_r0.117" />
   <project path="kernel/google/gs201/private/google-modules/edgetpu/janeiro" name="kernel/google-modules/edgetpu/janeiro" groups="pixel-extra" remote="aosp" revision="refs/tags/android-13.0.0_r0.117" />
   <project path="kernel/google/gs201/private/google-modules/fingerprint/fpc" name="kernel/google-modules/fingerprint/fpc" groups="pixel-extra" remote="aosp" revision="refs/tags/android-13.0.0_r0.117" />
-  <project path="kernel/google/gs201/private/google-modules/gpu" name="kernel/google-modules/gpu" groups="pixel-extra" remote="aosp" revision="refs/tags/android-13.0.0_r0.117" />
+  <project path="kernel/google/gs201/private/google-modules/gpu" name="RisingTechOSS/android_kernel_google_modules_gpu" groups="pixel-extra" revision="thirteen" />
   <project path="kernel/google/gs201/private/google-modules/gxp/gs201" name="kernel/google-modules/gxp/gs201" groups="pixel-extra" remote="aosp" revision="refs/tags/android-13.0.0_r0.117" />
   <project path="kernel/google/gs201/private/google-modules/lwis" name="kernel/google-modules/lwis" groups="pixel-extra" remote="aosp" revision="refs/tags/android-13.0.0_r0.117" />
   <project path="kernel/google/gs201/private/google-modules/nfc" name="kernel/google-modules/nfc" groups="pixel-extra" remote="aosp" revision="refs/tags/android-13.0.0_r0.117" />
