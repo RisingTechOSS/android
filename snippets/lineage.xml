@@ -129,7 +129,6 @@
   <project path="hardware/qcom-caf/sdm845/audio" remote="github" name="LineageOS/android_hardware_qcom_audio" groups="qcom,sdm845" revision="lineage-21.0-caf-sdm845" />
   <project path="hardware/qcom-caf/sdm845/display" remote="github" name="LineageOS/android_hardware_qcom_display" groups="qcom" revision="lineage-21.0-caf-sdm845" />
   <project path="hardware/qcom-caf/sdm845/media" remote="github" name="LineageOS/android_hardware_qcom_media" groups="qcom,sdm845" revision="lineage-21.0-caf-sdm845" />
-  <project path="hardware/qcom-caf/sm8150/display" remote="github" name="LineageOS/android_hardware_qcom_display" groups="qcom" revision="lineage-21.0-caf-sm8150" />
   <project path="hardware/qcom-caf/sm8150/media" remote="github" name="LineageOS/android_hardware_qcom_media" groups="qcom,msmnile" revision="lineage-21.0-caf-sm8150" />
   <project path="hardware/qcom-caf/sm8250/audio" remote="github" name="LineageOS/android_hardware_qcom_audio" groups="qcom,kona" revision="lineage-21.0-caf-sm8250" />
   <project path="hardware/qcom-caf/sm8250/display" remote="github" name="LineageOS/android_hardware_qcom_display" groups="qcom" revision="lineage-21.0-caf-sm8250" />

@@ -55,7 +55,8 @@
 
   <!-- Hardware -->
   <project path="hardware/google/pixel" name="RisingTechOSS/android_hardware_google_pixel" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
-  <project path="hardware/qcom-caf/sm8150/audio" remote="github" name="RisingTechOSS/android_hardware_qcom_audio" groups="qcom,msmnile" revision="fourteen-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/audio" remote="github" name="RisingOS-staging/android_hardware_qcom_audio" groups="qcom,msmnile" revision="fourteen-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" remote="github" name="RisingOS-staging/android_hardware_qcom_display" groups="qcom,msmnile" revision="fourteen-caf-sm8150" />
   <project path="hardware/rising/interfaces" name="RisingTechOSS/android_hardware_rising_interfaces" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
   <project path="hardware/interfaces" name="RisingTechOSS/android_hardware_interfaces" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
 
