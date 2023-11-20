@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <!-- Remove Projects -->
+  <remove-project name="platform/bootable/recovery" />
+  <remove-project name="platform/art" />
+  <remove-project name="platform/bionic" />
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/android-nn-driver" />
+  <remove-project name="platform/external/armnn" />
+  <remove-project name="platform/external/skia" />
+  <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/zxing" />
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/libs/systemui" />
+  <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/hardware/google/pixel" />
+  <remove-project name="platform/hardware/interfaces" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/modules/Permission" />
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/memory/lmkd" />
+  <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/update_engine" />
+  <remove-project name="platform/system/vold" />
+  
+  <!-- Build  -->
+  <project path="build/soong" name="RisingTechOSS/android_build_soong" groups="pdk,tradefed" remote="github" revision="fourteen" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="build/make" name="RisingTechOSS/android_build" groups="pdk" remote="github" revision="fourteen" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <!-- Manifest -->
+  <project path="android" name="RisingTechOSS/android" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  
+  <project path="art" name="RisingTechOSS/android_art" remote="github" groups="pdk" revision="fourteen" />
+  <project path="bionic" name="RisingTechOSS/android_bionic" remote="github" groups="pdk" revision="fourteen" />
+
+  <!-- Device -->
+  <project path="device/rising/sepolicy" name="RisingTechOSS/android_device_rising_sepolicy" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  <project path="device/qcom/sepolicy-legacy-um" name="RisingTechOSS/android_device_qcom_sepolicy" remote="github" groups="qcom,sdm660" revision="fourteen-legacy-um" />
+
+  <!-- Hardware -->
+  <project path="hardware/google/pixel" name="RisingTechOSS/android_hardware_google_pixel" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  <project path="hardware/qcom-caf/sm8150/audio" remote="github" name="RisingTechOSS/android_hardware_qcom_audio" groups="qcom,msmnile" revision="fourteen-caf-sm8150" />
+  <project path="hardware/rising/interfaces" name="RisingTechOSS/android_hardware_rising_interfaces" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  <project path="hardware/interfaces" name="RisingTechOSS/android_hardware_interfaces" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+
+  <!-- Recovery -->
+  <project path="bootable/recovery" name="RisingTechOSS/android_bootable_recovery" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+
+  <!-- External -->
+  <project path="external/android-nn-driver" name="RisingTechOSS/android_external_android-nn-driver" remote="github" groups="pdk-lassen,pdk-gs-arm" revision="fourteen" />
+  <project path="external/armnn" name="RisingTechOSS/android_external_armnn" remote="github" groups="pdk-lassen,pdk-gs-arm" revision="fourteen" />
+  <project path="external/skia" name="RisingTechOSS/android_external_skia" groups="pdk,qcom_msm8x26" remote="github" revision="fourteen" />
+  <project path="external/tinycompress" name="RisingTechOSS/android_external_tinycompress" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  <project path="external/zxing" name="RisingTechOSS/android_external_zxing" groups="pdk" remote="github" revision="fourteen" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="RisingTechOSS/android_frameworks_av" remote="github" groups="pdk" revision="fourteen" />
+  <project path="frameworks/base" name="RisingTechOSS/android_frameworks_base" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  <project path="frameworks/libs/systemui" name="RisingTechOSS/android_frameworks_libs_systemui" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
+  <project path="frameworks/native" name="RisingTechOSS/android_frameworks_native" remote="github" groups="pdk" revision="fourteen" />
+
+  <!-- Non-AOSP Packages  -->
+  <project path="packages/apps/Backgrounds" name="RisingTechOSS/android_packages_apps_Backgrounds" remote="github" revision="fourteen" />
+  <project path="packages/apps/GameSpace" name="RisingTechOSS/android_packages_apps_GameSpace" remote="github" revision="fourteen" />
+
+  <!-- AOSP Packages  -->
+  <project path="packages/apps/Launcher3" name="RisingTechOSS/android_packages_apps_Launcher3" remote="github" revision="fourteen" />
+  <project path="packages/apps/Settings" name="RisingTechOSS/android_packages_apps_Settings" groups="pdk-fs" remote="github" revision="fourteen" />
+  <project path="packages/apps/Personalizations" name="RisingTechOSS/android_packages_apps_Personalizations" groups="pdk-fs" remote="github" revision="fourteen" />
+  <project path="packages/modules/Permission" name="RisingTechOSS/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="github" revision="fourteen" />
+
+  <!-- System  -->
+  <project path="system/core" name="RisingTechOSS/android_system_core" remote="github" groups="pdk" revision="fourteen" />
+  <project path="system/memory/lmkd" name="RisingTechOSS/android_system_memory_lmkd" remote="github" groups="pdk" revision="fourteen" />
+  <project path="system/sepolicy" name="RisingTechOSS/android_system_sepolicy" remote="github" groups="pdk" revision="fourteen" />
+  <project path="system/update_engine" name="RisingTechOSS/android_system_update_engine" remote="github" groups="pdk" revision="fourteen" />
+  <project path="system/vold" name="RisingTechOSS/android_system_vold" remote="github" groups="pdk" revision="fourteen" />
+
+   <!-- Vendor  -->
+  <project path="vendor/addons" name="RisingTechOSS/android_vendor_addons" groups="pdk-fs" remote="github" revision="fourteen" />
+  <project path="vendor/gms" name="minaripenguin/android_vendor_gms" groups="pdk-fs" remote="gitlab" revision="fourteen" />
+  <project path="vendor/google/interfaces" name="RisingTechOSS/android_vendor_google_interfaces" groups="pdk-fs" remote="github" revision="fourteen" />
+  <project path="vendor/pixel-framework" name="RisingTechOSS/vendor_pixel-framework" remote="github" revision="fourteen" />
+  <project path="vendor/rising" name="RisingTechOSS/android_vendor_rising" groups="pdk-fs" remote="github" revision="fourteen" />
+  <project path="vendor/risingOTA" name="RisingOSS-devices/android_vendor_RisingOTA" remote="github" revision="fourteen" />
+</manifest>
