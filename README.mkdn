@@ -113,7 +113,7 @@ Build
 
 **Build the code**
 ```bash
-brunch "device_codename" userdebug/user
+riseup "device_codename" userdebug/user
 ```
 
 **Purge out directories**
@@ -121,7 +121,7 @@ brunch "device_codename" userdebug/user
 purge
 ```
 
-**brunch uses all available cores to assign jobs hence making -jX no-op, to utilize -jX use:**
+**riseup uses all available cores to assign jobs hence making -jX no-op, to utilize -jX use:**
 ```bash
 lunch rising_device-userdebug/user or riseup device userdebug/user
 ```
@@ -134,7 +134,7 @@ m -jX or ascend
 riseup device userdebug/user
 ```
 ```bash
-make updatepackage
+make updatepackage or ascend fastboot
 ```
 
 
