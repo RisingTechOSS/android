@@ -9,6 +9,7 @@
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/external/android-nn-driver" />
   <remove-project name="platform/external/armnn" />
+  <remove-project name="platform/external/libaom" />
   <remove-project name="platform/external/skia" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/zxing" />
@@ -63,6 +64,7 @@
   <!-- External -->
   <project path="external/android-nn-driver" name="RisingTechOSS/android_external_android-nn-driver" remote="github" groups="pdk-lassen,pdk-gs-arm" revision="fourteen" />
   <project path="external/armnn" name="RisingTechOSS/android_external_armnn" remote="github" groups="pdk-lassen,pdk-gs-arm" revision="fourteen" />
+  <project path="external/libaom" name="RisingTechOSS/android_external_libaom" groups="pdk" remote="github" revision="fourteen" />
   <project path="external/skia" name="RisingTechOSS/android_external_skia" groups="pdk,qcom_msm8x26" remote="github" revision="fourteen" />
   <project path="external/tinycompress" name="RisingTechOSS/android_external_tinycompress" remote="github" groups="pdk-cw-fs,pdk-fs" revision="fourteen" />
   <project path="external/zxing" name="RisingTechOSS/android_external_zxing" groups="pdk" remote="github" revision="fourteen" />
