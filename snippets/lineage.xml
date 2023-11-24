@@ -18,6 +18,7 @@
   <remove-project name="platform/hardware/qcom/sm8150/gps" />
   <remove-project name="platform/hardware/qcom/sm8150/media" />
   <remove-project name="platform/hardware/qcom/sm8150p/gps" />
+  <remove-project name="platform/system/bpf" />
   <remove-project name="platform/hardware/qcom/wlan" />
   <remove-project name="platform/packages/modules/adb" />
 
@@ -25,6 +26,9 @@
   <project path="external/gptfdisk" remote="github" name="LineageOS/android_external_gptfdisk" revision="lineage-21.0" />
   <project path="external/mksh" remote="github" name="LineageOS/android_external_mksh" revision="lineage-21.0" />
   <project path="packages/modules/adb" remote="github" name="LineageOS/android_packages_modules_adb" revision="lineage-21.0" />
+
+  <!-- System -->
+  <project path="system/bpf" remote="github" name="LineageOS/android_system_bpf" revision="lineage-21.0" />
 
   <!-- Inline kernel build -->
   <project path="prebuilts/clang/kernel/linux-x86/clang-r416183b" remote="github" name="LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b" clone-depth="1" revision="lineage-20.0" />
