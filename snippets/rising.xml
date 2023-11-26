@@ -24,6 +24,7 @@
   <remove-project name="platform/packages/modules/Permission" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/memory/lmkd" />
+  <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/update_engine" />
   <remove-project name="platform/system/vold" />
@@ -88,6 +89,7 @@
   <!-- System  -->
   <project path="system/core" name="RisingTechOSS/android_system_core" remote="github" groups="pdk" revision="fourteen" />
   <project path="system/memory/lmkd" name="RisingTechOSS/android_system_memory_lmkd" remote="github" groups="pdk" revision="fourteen" />
+  <project path="system/security" name="RisingTechOSS/android_system_security" remote="github" revision="fourteen" />
   <project path="system/sepolicy" name="RisingTechOSS/android_system_sepolicy" remote="github" groups="pdk" revision="fourteen" />
   <project path="system/update_engine" name="RisingTechOSS/android_system_update_engine" remote="github" groups="pdk" revision="fourteen" />
   <project path="system/vold" name="RisingTechOSS/android_system_vold" remote="github" groups="pdk" revision="fourteen" />
