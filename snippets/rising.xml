@@ -78,6 +78,7 @@
 
   <!-- Non-AOSP Packages  -->
   <project path="packages/apps/Backgrounds" name="RisingTechOSS/android_packages_apps_Backgrounds" remote="github" revision="fourteen" />
+  <project path="packages/apps/FaceUnlock" name="minaripenguin/android_packages_apps_FaceUnlock" groups="pdk-fs" remote="gitlab" revision="fourteen" />
   <project path="packages/apps/GameSpace" name="RisingTechOSS/android_packages_apps_GameSpace" remote="github" revision="fourteen" />
 
   <!-- AOSP Packages  -->
