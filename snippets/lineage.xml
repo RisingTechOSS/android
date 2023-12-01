@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remove-project name="kernel/configs" />
+  <remove-project name="platform/development" />
   <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/mksh" />
@@ -22,6 +23,8 @@
   <remove-project name="platform/system/bpf" />
   <remove-project name="platform/hardware/qcom/wlan" />
   <remove-project name="platform/packages/modules/adb" />
+
+  <project path="development" remote="github" name="LineageOS/android_development" revision="lineage-21.0" />
 
   <!-- Recovery -->
    <project path="external/e2fsprogs" remote="github" name="LineageOS/android_external_e2fsprogs" revision="lineage-21.0" />
