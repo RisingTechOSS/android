@@ -1207,4 +1207,5 @@
 
   <include name="snippets/lineage.xml" />
   <include name="snippets/pixel.xml" />
+  <include name="snippets/rising.xml" />
 </manifest>
