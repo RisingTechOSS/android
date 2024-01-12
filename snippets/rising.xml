@@ -26,10 +26,20 @@
   <remove-project path="frameworks/libs/net" />
   <remove-project path="frameworks/libs/systemui" />
   <remove-project path="frameworks/native" />
+  <remove-project path="packages/apps/Aperture" />
+  <remove-project path="packages/apps/AudioFX" />
   <remove-project path="packages/apps/Backgrounds" />
+  <remove-project path="packages/apps/Eleven" />
+  <remove-project path="packages/apps/Etar" />
+  <remove-project path="packages/apps/FlipFlap" />
+  <remove-project path="packages/apps/Jelly" />
   <remove-project path="packages/apps/LineageParts" />
-  <remove-project path="packages/apps/Trebuchet" />
+  <remove-project path="packages/apps/Recorder" />
+  <remove-project path="packages/apps/Seedvault" />
   <remove-project path="packages/apps/Settings" />
+  <remove-project path="packages/apps/SimpleDeviceConfig" />
+  <remove-project path="packages/apps/Trebuchet" />
+  <remove-project path="packages/apps/Updater" />
   <remove-project path="packages/overlays/Lineage" />
   <remove-project path="packages/modules/Connectivity" />
   <remove-project path="packages/modules/Permission" />
@@ -81,6 +91,7 @@
   <project path="packages/apps/FaceUnlock" name="minaripenguin/android_packages_apps_FaceUnlock" groups="pdk-fs" remote="gitlab" revision="fourteen" />
   <project path="packages/apps/LineageParts" name="minaripenguin/android_packages_apps_LineageParts" remote="github" revision="fourteen" />
   <project path="packages/apps/GameSpace" name="minaripenguin/android_packages_apps_GameSpace" remote="github" revision="fourteen" />
+  <project path="packages/apps/Updater" name="minaripenguin/android_packages_apps_Updater" remote="github" revision="fourteen" />
 
   <!-- AOSP Packages  -->
   <project path="packages/apps/Launcher3" name="minaripenguin/android_packages_apps_Launcher3" remote="github" revision="fourteen" />
