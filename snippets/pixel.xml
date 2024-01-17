@@ -9,6 +9,7 @@
   <project path="kernel/google/gs201/private/gs-google" name="RisingOSS-devices/android_kernel_google_gs201" remote="github" revision="fourteen" />
   <project path="device/google/gs-common" name="device/google/gs-common" groups="device,slider,bluejay,pdk-gs-arm" remote="aosp" />
   <project path="hardware/google/pixel-sepolicy" name="minaripenguin/android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel" remote="github" revision="fourteen" />
+  <project path="vendor/google/oriole" name="minaripenguin/android_vendor_google_devices_oriole" groups="generic_fs,pixel" remote="github" revision="fourteen" />
   
   <!-- Pixel 6/6 Pro/6a/7/7 Pro/7a/Tablet/Fold kernel modules -->
   <project path="kernel/google/gs201/private/devices/google/bluejay" name="kernel/devices/google/bluejay" groups="pixel-extra" remote="aosp" revision="refs/tags/android-14.0.0_r0.37" />
