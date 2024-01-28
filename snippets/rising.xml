@@ -92,6 +92,9 @@
   <project path="packages/apps/LineageParts" name="minaripenguin/android_packages_apps_LineageParts" remote="github" revision="fourteen" />
   <project path="packages/apps/GameSpace" name="minaripenguin/android_packages_apps_GameSpace" remote="github" revision="fourteen" />
   <project path="packages/apps/Updater" name="minaripenguin/android_packages_apps_Updater" remote="github" revision="fourteen" />
+  
+  <!-- Non-AOSP services  -->
+  <project path="packages/services/OmniJaws" name="minaripenguin/android_packages_services_OmniJaws" remote="github" revision="fourteen" />
 
   <!-- AOSP Packages  -->
   <project path="packages/apps/Launcher3" name="minaripenguin/android_packages_apps_Launcher3" remote="github" revision="fourteen" />
