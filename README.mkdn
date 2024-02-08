@@ -1,36 +1,139 @@
-LineageOS
-===========
+<p align="center">
+<img src="https://github.com/RisingTechOSS/android/blob/fourteen/risingOS_banner.jpg">
+</p>
 
-Getting started
+What is RisingOS?
 ---------------
+risingOS is A FREE OpenSource Aftermarket Android Operating System that aims to bring unique and fresh user experience.
 
-To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
+Maintainership
+---------------
+Requirements:
 
-To initialize your local repository using the LineageOS trees, use a command like this:
+1. Device trees must be properly maintained, patches applied to the tree must be either rom source changes adaptation,bug fixes or improvements.
+2. Must have no known issues in his/her current device community.
+3. Approved by the maintainership application form reviewers. Maintainership application form link: https://github.com/RisingOSS-devices/official/issues
+ 
+Getting Started
+---------------
+**Initialize local repository (thanks to apon77 for repo init script)**
+```bash
+repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
 ```
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
+
+**Sync up with this command:**
+```bash
+repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 ```
-Then to sync up:
+
+```bash
+# For gms or chromium blobs related errors due to git lfs (gitlab now limits files up to 100mb max) (credits to haggertk):
+sudo apt install git-lfs
+git lfs install
+
+rm -rf vendor/gms
+rm -rf .repo/projects/vendor/gms.git
+rm -rf .repo/project-objects/*/android_vendor_gms.git
+
+repo init --depth=1 --no-repo-verify -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs -g default,-mips,-darwin,-notdefault
+
 ```
-repo sync
+
+Preparing device for this ROM
+---------------
+**Inherit RisingOS vendor common stuffs**
+```bash
+$(call inherit-product, vendor/rising/config/rising.mk)
 ```
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
+
+Build Flags
+---------------
+```bash
+# chipset flag enclose var with "" if more than one
+# friendly tip: builders can use init_xxx.cpp as workaround for spacing
+# e.g. property_override("ro.rising.chipset", "Snapdragon 870 5G");
+RISING_CHIPSET := "snapdragon_x"
+
+# chipset flag enclose var with "" if more than one
+# friendly tip: builders can use init_xxx.cpp as workaround for spacing
+# e.g. property_override("ro.rising.maintainer", "maintainer");
+RISING_MAINTAINER := "Niv"
+
+# chipset flag enclose var with "" if more than one
+# this will reflect on build/display version, a firmware package/zip name 
+# e.g. risingOS-7.0-COMMUNITY-device-AOSP.zip - AOSP is the default package type, WITH_GMS will override the package type to PIXEL
+RISING_PACKAGE_TYPE := "VANILLA_AOSP"
+
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := true/false
+```
+
+GMS Flags
+---------------
+```bash
+# GMS build flags
+WITH_GMS := true/false - ship with GMS packages, replaces misc AOSP packages with Google packages.
+```
+
+Build
+---------------
+**Set up environment**
+```bash
+. build/envsetup.sh
+```
+
+**IMPORTANT: Always run this command after repo sync and setting up environment**
+```bash
+# fetches and applies remote patches   
+opt_patch
+```
+
+**Build the code**
+```bash
+riseup "device_codename" userdebug/user
+```
+
+**Purge out directories**
+```bash
+purge
+```
+
+**riseup uses all available cores to assign jobs hence making -jX no-op, to utilize -jX use:**
+```bash
+lunch rising_device-userdebug/user or riseup device userdebug/user
+```
+```bash
+m -jX or ascend
+```
+
+**Building fastboot update package**
+```bash
+riseup device userdebug/user
+```
+```bash
+make updatepackage or ascend fastboot
+```
 
 
-Submitting patches
-------------------
-Patches are always welcome! Please submit your patches via LineageOS Gerrit!
-
-Simply follow our guide on [how to submit patches](https://wiki.lineageos.org/submitting-patch-howto.html).
-
-To view the status of your and others' patches, visit [LineageOS Gerrit Code Review](https://review.lineageos.org/).
-
-
-Buildbot
---------
-
-All supported devices are built weekly and periodically as changes are committed to ensure the source trees remain buildable.
-
-You can view the current build statuses at [LineageOS Buildkite](https://buildkite.com/lineageos).
-
-Builds produced weekly by the buildbot can be downloaded from [LineageOS downloads](https://download.lineageos.org/).
+Credits
+---------------
+* [**AOSPA**](https://github.com/AOSPA)
+* [**AICP**](https://github.com/AICP)
+* [**Bootleggers**](https://github.com/BootleggersROM)
+* [**crDroid**](https://github.com/crdroidandroid)
+* [**Corvus-AOSP**](https://github.com/Corvus-R)
+* [**Derpfest**](https://github.com/Derpfest-12)
+* [**DotOS**](https://github.com/DotOS)
+* [**Evolution-X**](https://github.com/Evolution-X)
+* [**Flamingo-OS**](https://github.com/Flamingo-OS)
+* [**LineageOS**](https://github.com/LineageOS)
+* [**Octavi-OS**](https://github.com/Octavi-OS)
+* [**Omnirom**](https://github.com/omnirom)
+* [**PixelDust Caf**](https://github.com/pixeldust-project-caf)
+* [**Project-Fluid**](https://github.com/Project-Fluid)
+* [**Project Kaleidoscope**](https://github.com/Project-Kaleidoscope)
+* [**Project Radiant**](https://github.com/ProjectRadiant)
+* **RiceDroid**
+* [**SparkOS**](https://github.com/Spark-Rom)
+* [**StagOS**](https://github.com/StagOS)
+* [**Xdroid-OSS**](https://github.com/xdroid-oss)
