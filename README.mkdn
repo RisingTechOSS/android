@@ -82,9 +82,10 @@ Build
 . build/envsetup.sh
 ```
 
-**IMPORTANT: Always run this command after repo sync and setting up environment**
+**❗❗IMPORTANT: Always run this command after repo sync and setting up environment❗❗**
 ```bash
 # fetches and applies remote patches   
+# this was added to update repositories seamlessly for any ASB updates
 opt_patch
 ```
 
