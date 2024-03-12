@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="staging"
+          fetch="https://github.com/minaripenguin/"
+          sync-c="true"
+          sync-j="4"
+          revision="refs/heads/fourteen" />
+
+  <remote name="rising"
+          fetch="https://github.com/RisingTechOSS/"
+          sync-c="true"
+          sync-j="4"
+          revision="refs/heads/fourteen" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com" />
+
+  <remove-project path="android" />
+  <remove-project path="bootable/recovery" />
+  <remove-project path="build/make" />
+  <remove-project path="build/soong" />
+  <remove-project path="frameworks/base" />
+  <remove-project path="packages/apps/crDroidSettings" />
+  <remove-project path="packages/apps/Backgrounds" />
+  <remove-project path="packages/apps/Settings" />
+  <remove-project path="packages/apps/Updater" />
+  <remove-project path="vendor/addons" />
+  <remove-project path="vendor/crDroidOTA" />
+  <remove-project path="vendor/pixel-framework" />
+
+  <!-- Android Manifest  -->
+  <project path="android" name="android" remote="staging" />
+
+  <!-- Bootable Recovery  -->
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="staging" />
+
+  <!-- Build  -->
+  <project path="build/make" name="android_build" groups="pdk" remote="staging" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="staging" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Frameworks  -->
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="staging" />
+
+  <!-- Non-AOSP Packages  -->
+  <project path="packages/apps/Backgrounds" name="android_packages_apps_Backgrounds" remote="staging" />
+  <project path="packages/apps/Personalizations" name="android_packages_apps_Personalizations" groups="pdk-fs" remote="staging" />
+  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="staging" />
+
+  <!-- AOSP Packages  -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="staging" />
+
+  <!-- Vendor  -->
+  <project path="vendor/addons" name="android_vendor_addons" remote="staging" />
+  <project path="vendor/gms" name="minaripenguin/android_vendor_gms" groups="pdk-fs" remote="gitlab" revision="fourteen" />
+  <project path="vendor/rising" name="android_vendor_rising" groups="pdk-fs" remote="staging" />
+  <project path="vendor/risingOTA" name="RisingOSS-devices/android_vendor_RisingOTA" remote="github" revision="fourteen" />
+  <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="staging" />
+</manifest>
