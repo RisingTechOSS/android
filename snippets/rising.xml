@@ -25,6 +25,8 @@
   <remove-project path="packages/apps/Backgrounds" />
   <remove-project path="packages/apps/Settings" />
   <remove-project path="packages/apps/Updater" />
+  <remove-project path="system/core" />
+  <remove-project path="system/memory/lmkd" />
   <remove-project path="vendor/addons" />
   <remove-project path="vendor/crDroidOTA" />
   <remove-project path="vendor/pixel-framework" />
@@ -60,6 +62,10 @@
 
   <!-- AOSP Packages  -->
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="staging" />
+
+  <!-- System  -->
+  <project path="system/core" name="android_system_core" groups="pdk" remote="staging" />
+  <project path="system/memory/lmkd" name="android_system_memory_lmkd" groups="pdk" remote="staging" />
 
   <!-- Vendor  -->
   <project path="vendor/addons" name="android_vendor_addons" remote="staging" />
