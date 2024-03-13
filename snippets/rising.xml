@@ -32,6 +32,7 @@
   <remove-project path="system/memory/lmkd" />
   <remove-project path="vendor/addons" />
   <remove-project path="vendor/crDroidOTA" />
+  <remove-project path="vendor/lineage" />
   <remove-project path="vendor/pixel-framework" />
 
   <!-- Android Manifest  -->
@@ -65,7 +66,7 @@
 
   <!-- Non-AOSP Packages  -->
   <project path="packages/apps/Backgrounds" name="android_packages_apps_Backgrounds" remote="staging" />
-  <project path="packages/apps/Personalizations" name="android_packages_apps_Personalizations" groups="pdk-fs" remote="staging" />
+  <project path="packages/apps/crDroidSettings" name="android_packages_apps_Personalizations" groups="pdk-fs" remote="staging" />
   <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="staging" />
 
   <!-- AOSP Packages  -->
@@ -78,6 +79,7 @@
   <!-- Vendor  -->
   <project path="vendor/addons" name="android_vendor_addons" remote="staging" />
   <project path="vendor/gms" name="minaripenguin/android_vendor_gms" groups="pdk-fs" remote="gitlab" revision="fourteen" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="staging" />
   <project path="vendor/rising" name="android_vendor_rising" groups="pdk-fs" remote="staging" />
   <project path="vendor/risingOTA" name="RisingOSS-devices/android_vendor_RisingOTA" remote="github" revision="fourteen" />
   <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="staging" />
