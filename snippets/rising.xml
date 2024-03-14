@@ -17,6 +17,7 @@
           fetch="https://gitlab.com" />
 
   <remove-project path="android" />
+  <remove-project path="art" />
   <remove-project path="bionic" />
   <remove-project path="bootable/recovery" />
   <remove-project path="build/make" />
@@ -39,6 +40,9 @@
   <!-- Android Manifest  -->
   <project path="android" name="android" remote="staging" />
   
+  <!-- Art  -->
+  <project path="art" name="android_art" groups="pdk" remote="staging" />
+
   <!-- Bionic  -->
   <project path="bionic" name="android_bionic" groups="pdk" remote="staging" />
 
