@@ -24,8 +24,9 @@
   <remove-project path="frameworks/av" />
   <remove-project path="frameworks/base" />
   <remove-project path="frameworks/native" />
-  <remove-project path="packages/apps/crDroidSettings" />
   <remove-project path="packages/apps/Backgrounds" />
+  <remove-project path="packages/apps/crDroidSettings" />
+  <remove-project path="packages/apps/OmniStyle" />
   <remove-project path="packages/apps/Settings" />
   <remove-project path="packages/apps/Updater" />
   <remove-project path="system/core" />
@@ -67,6 +68,7 @@
   <!-- Non-AOSP Packages  -->
   <project path="packages/apps/Backgrounds" name="android_packages_apps_Backgrounds" remote="staging" />
   <project path="packages/apps/crDroidSettings" name="android_packages_apps_Personalizations" groups="pdk-fs" remote="staging" />
+  <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="staging" />
   <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="staging" />
 
   <!-- AOSP Packages  -->
