@@ -32,6 +32,7 @@
   <remove-project path="packages/apps/Updater" />
   <remove-project path="system/core" />
   <remove-project path="system/memory/lmkd" />
+  <remove-project path="system/sepolicy" />
   <remove-project path="vendor/addons" />
   <remove-project path="vendor/crDroidOTA" />
   <remove-project path="vendor/lineage" />
@@ -81,6 +82,7 @@
   <!-- System  -->
   <project path="system/core" name="android_system_core" groups="pdk" remote="staging" />
   <project path="system/memory/lmkd" name="android_system_memory_lmkd" groups="pdk" remote="staging" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="staging" />
 
   <!-- Vendor  -->
   <project path="vendor/addons" name="android_vendor_addons" remote="staging" />
