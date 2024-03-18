@@ -40,19 +40,19 @@
   <remove-project path="vendor/pixel-framework" />
 
   <!-- Android Manifest  -->
-  <project path="android" name="android" remote="staging" />
+  <project path="android" name="android" remote="rising" />
   
   <!-- Art  -->
-  <project path="art" name="android_art" groups="pdk" remote="staging" />
+  <project path="art" name="android_art" groups="pdk" remote="rising" />
 
   <!-- Bionic  -->
-  <project path="bionic" name="android_bionic" groups="pdk" remote="staging" />
+  <project path="bionic" name="android_bionic" groups="pdk" remote="rising" />
 
   <!-- Bootable Recovery  -->
-  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="staging" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="rising" />
 
   <!-- Build  -->
-  <project path="build/make" name="android_build" groups="pdk" remote="staging" >
+  <project path="build/make" name="android_build" groups="pdk" remote="rising" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -61,38 +61,38 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="staging" >
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="rising" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
   <!-- Frameworks  -->
-  <project path="frameworks/av" name="android_frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="staging" />
-  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="staging" />
-  <project path="frameworks/native" name="android_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="staging" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="rising" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="rising" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="rising" />
   
   <!-- Hardware  -->
-  <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="staging" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="rising" />
 
   <!-- Non-AOSP Packages  -->
-  <project path="packages/apps/Backgrounds" name="android_packages_apps_Backgrounds" remote="staging" />
-  <project path="packages/apps/crDroidSettings" name="android_packages_apps_Personalizations" groups="pdk-fs" remote="staging" />
-  <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="staging" />
-  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="staging" />
+  <project path="packages/apps/Backgrounds" name="android_packages_apps_Backgrounds" remote="rising" />
+  <project path="packages/apps/crDroidSettings" name="android_packages_apps_Personalizations" groups="pdk-fs" remote="rising" />
+  <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="rising" />
+  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="rising" />
 
   <!-- AOSP Packages  -->
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="staging" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="rising" />
 
   <!-- System  -->
-  <project path="system/core" name="android_system_core" groups="pdk" remote="staging" />
-  <project path="system/memory/lmkd" name="android_system_memory_lmkd" groups="pdk" remote="staging" />
-  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="staging" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="rising" />
+  <project path="system/memory/lmkd" name="android_system_memory_lmkd" groups="pdk" remote="rising" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="rising" />
 
   <!-- Vendor  -->
-  <project path="vendor/addons" name="android_vendor_addons" remote="staging" />
+  <project path="vendor/addons" name="android_vendor_addons" remote="rising" />
   <project path="vendor/gms" name="minaripenguin/android_vendor_gms" groups="pdk-fs" remote="gitlab" revision="fourteen" />
-  <project path="vendor/lineage" name="android_vendor_lineage" remote="staging" />
-  <project path="vendor/rising" name="android_vendor_rising" groups="pdk-fs" remote="staging" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="rising" />
+  <project path="vendor/rising" name="android_vendor_rising" groups="pdk-fs" remote="rising" />
   <project path="vendor/risingOTA" name="RisingOSS-devices/android_vendor_RisingOTA" remote="github" revision="fourteen" />
-  <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="staging" />
+  <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="rising" />
 </manifest>
