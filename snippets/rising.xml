@@ -29,6 +29,7 @@
   <remove-project path="packages/apps/Backgrounds" />
   <remove-project path="packages/apps/crDroidSettings" />
   <remove-project path="packages/apps/OmniStyle" />
+  <remove-project path="packages/apps/MusicFX" />
   <remove-project path="packages/apps/Settings" />
   <remove-project path="packages/apps/Updater" />
   <remove-project path="system/core" />
@@ -81,6 +82,7 @@
   <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="rising" />
 
   <!-- AOSP Packages  -->
+  <project path="packages/apps/MusicFX" name="android_packages_apps_Settings" groups="pdk-fs" remote="rising" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="rising" />
 
   <!-- System  -->
