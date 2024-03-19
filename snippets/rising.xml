@@ -28,9 +28,11 @@
   <remove-project path="hardware/interfaces" />
   <remove-project path="packages/apps/Backgrounds" />
   <remove-project path="packages/apps/crDroidSettings" />
+  <remove-project path="packages/apps/MusicFX" />
   <remove-project path="packages/apps/OmniStyle" />
   <remove-project path="packages/apps/Settings" />
   <remove-project path="packages/apps/Updater" />
+  <remove-project path="packages/modules/DeviceLock" />
   <remove-project path="system/core" />
   <remove-project path="system/memory/lmkd" />
   <remove-project path="system/sepolicy" />
@@ -81,7 +83,9 @@
   <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="rising" />
 
   <!-- AOSP Packages  -->
+  <project path="packages/apps/MusicFX" name="android_packages_apps_MusicFX" groups="pdk-fs" remote="rising" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="rising" />
+  <project path="packages/modules/DeviceLock" name="android_packages_modules_DeviceLock" groups="pdk-cw-fs,pdk-fs" remote="rising" />
 
   <!-- System  -->
   <project path="system/core" name="android_system_core" groups="pdk" remote="rising" />
