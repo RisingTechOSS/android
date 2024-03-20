@@ -2,7 +2,7 @@
 <manifest>
 
   <!-- LineageOS additions -->
-  <project path="android" name="minaripenguin/android" revision="thirteen" />
+  <project path="android" name="RisingTechOSS/android" revision="thirteen" />
   <project path="device/lineage/atv" name="LineageOS/android_device_lineage_atv" />
   <project path="device/lineage/car" name="LineageOS/android_device_lineage_car" />
   <project path="device/lineage/sepolicy" name="minaripenguin/android_device_lineage_sepolicy" revision="thirteen" />
