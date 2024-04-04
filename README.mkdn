@@ -52,8 +52,7 @@ $ repo sync
 # Run to prepare our devices list
 $ . build/envsetup.sh
 # ... now run
-$ lunch lineage_devicecodename-buildtype
-$ m bacon
+$ brunch devicecodename
 ```
 
 ### 1.3 Automation ###
