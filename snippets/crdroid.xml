@@ -13,6 +13,12 @@
            sync-j="4"
            revision="refs/heads/14.0" />
 
+  <remote  name="crdroid-prv"
+           fetch="ssh://git@github.com"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/14.0" />
+
   <!-- crDroid additions -->
   <project path="android" name="crdroidandroid/android" remote="crdroid" />
 
@@ -54,7 +60,7 @@
   <project path="external/sqlite" name="crdroidandroid/android_external_sqlite" groups="pdk" remote="crdroid" />
 
   <project path="frameworks/av" name="crdroidandroid/android_frameworks_av" groups="pdk" remote="crdroid" />
-  <project path="frameworks/base" name="crdroidandroid/android_frameworks_base-prv" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="crdroid" />
+  <project path="frameworks/base" name="crdroidandroid/android_frameworks_base-prv" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="crdroid-prv" />
   <project path="frameworks/libs/systemui" name="crdroidandroid/android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="crdroid" />
   <project path="frameworks/native" name="crdroidandroid/android_frameworks_native" groups="pdk" remote="crdroid" />
   <project path="frameworks/opt/telephony" name="crdroidandroid/android_frameworks_opt_telephony" groups="pdk" remote="crdroid" />
