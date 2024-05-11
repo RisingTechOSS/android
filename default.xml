@@ -32,10 +32,10 @@
     <linkfile dest="build/tools" src="tools" />
   </project>-->
   <project path="build/orchestrator" name="platform/build/orchestrator" groups="pdk" remote="aosp" />
-  <!--<project path="build/bazel" name="platform/build/bazel" groups="pdk" remote="aosp" >
+  <project path="build/bazel" name="platform/build/bazel" groups="pdk" remote="aosp" >
     <linkfile dest="WORKSPACE" src="bazel.WORKSPACE" />
     <linkfile dest="BUILD" src="bazel.BUILD" />
-  </project>-->
+  </project>
   <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" groups="pdk" remote="aosp" />
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
   <project path="build/pesto" name="platform/build/pesto" groups="pdk" remote="aosp" />

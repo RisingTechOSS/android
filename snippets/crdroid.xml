@@ -22,11 +22,6 @@
 
   <project path="bootable/recovery" name="crdroidandroid/android_bootable_recovery" groups="pdk" remote="crdroid" />
 
-  <project path="build/bazel" name="crdroidandroid/android_build_bazel" groups="pdk" remote="crdroid" >
-    <linkfile dest="WORKSPACE" src="bazel.WORKSPACE" />
-    <linkfile dest="BUILD" src="bazel.BUILD" />
-  </project>
-
   <project path="build/make" name="crdroidandroid/android_build" groups="pdk,sysui-studio" remote="crdroid" >
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
