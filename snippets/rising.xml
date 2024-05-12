@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="staging"
+          fetch="https://github.com/RisingOS-staging/"
+          sync-c="true"
+          sync-j="4"
+          revision="refs/heads/fourteen" />
+
+  <remote name="rising"
+          fetch="https://github.com/RisingTechOSS/"
+          sync-c="true"
+          sync-j="4"
+          revision="refs/heads/fourteen" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com/minaripenguin/"
+          sync-c="true"
+          sync-j="4"
+          revision="refs/heads/fourteen" />
+
+  <!-- AOSP remove-projects -->
+  <remove-project path="packages/modules/Virtualization" />
+  <remove-project path="prebuilts/build-tools" />
+
+  <!-- RisingOS remove-projects -->
+  <remove-project path="android" />
+  <remove-project path="art" />
+  <remove-project path="bionic" />
+  <remove-project path="bootable/recovery" />
+  <remove-project path="build/make" />
+  <remove-project path="build/soong" />
+  <remove-project path="device/lineage/sepolicy" />
+  <remove-project path="frameworks/av" />
+  <remove-project path="frameworks/base" />
+  <remove-project path="frameworks/libs/systemui" />
+  <remove-project path="frameworks/native" />
+  <remove-project path="hardware/interfaces" />
+  <remove-project path="packages/apps/AudioFX" />
+  <remove-project path="packages/apps/Backgrounds" />
+  <remove-project path="packages/apps/crDroidSettings" />
+  <remove-project path="packages/apps/GameSpace" />
+  <remove-project path="packages/apps/Launcher3" />
+  <remove-project path="packages/apps/Jelly" />
+  <remove-project path="packages/apps/OmniStyle" />
+  <remove-project path="packages/apps/Settings" />
+  <remove-project path="packages/apps/SetupWizard" />
+  <remove-project path="packages/apps/Updater" />
+  <remove-project path="packages/modules/Bluetooth" />
+  <remove-project path="packages/modules/Wifi" />
+  <remove-project path="system/core" />
+  <remove-project path="system/memory/lmkd" />
+  <remove-project path="system/sepolicy" />
+  <remove-project path="vendor/addons" />
+  <remove-project path="vendor/crDroidOTA" />
+  <remove-project path="vendor/lineage" />
+  <remove-project path="vendor/pixel-framework" />
+  
+  <!-- AOSP Redirects -->
+  <project path="packages/modules/Virtualization" name="platform/packages/modules/Virtualization" groups="pdk" remote="aosp" />
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk,sysui-studio" clone-depth="1" remote="aosp" />
+
+  <!-- Android Manifest  -->
+  <project path="android" name="android" remote="rising" />
+  
+  <!-- Art  -->
+  <project path="art" name="android_art" groups="pdk" remote="rising" />
+
+  <!-- Bionic  -->
+  <project path="bionic" name="android_bionic" groups="pdk" remote="rising" />
+
+  <!-- Bootable Recovery  -->
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="rising" />
+
+  <!-- Build  -->
+  <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="rising" >
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
+  </project>
+
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="rising" >
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
+  </project>
+
+  <!-- Device  -->
+  <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="rising" />
+
+  <!-- Frameworks  -->
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="rising" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="rising" />
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="rising" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="rising" />
+  
+  <!-- Hardware  -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk,sysui-studio" remote="rising" />
+
+  <!-- Non-AOSP Packages  -->
+  <project path="packages/apps/Backgrounds" name="android_packages_apps_Backgrounds" remote="rising" />
+  <project path="packages/apps/crDroidSettings" name="android_packages_apps_Personalizations" groups="pdk-fs" remote="rising" />
+  <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="rising" />
+  <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="rising" />
+  <project path="packages/apps/SetupWizard" name="android_packages_apps_SetupWizard" remote="rising" />
+  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="rising" />
+
+  <!-- AOSP Packages  -->
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs,sysui-studio" remote="rising" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="rising" />
+
+  <!-- AOSP Modules  -->
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" groups="pdk" remote="rising" />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" groups="pdk" remote="rising" />
+
+  <!-- System  -->
+  <project path="system/core" name="android_system_core" groups="pdk" remote="rising" />
+  <project path="system/memory/lmkd" name="android_system_memory_lmkd" groups="pdk" remote="rising" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="rising" />
+
+  <!-- Vendor  -->
+  <project path="vendor/addons" name="android_vendor_addons" remote="rising" />
+  <project path="vendor/gms" name="android_vendor_gms" remote="gitlab" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="rising" />
+  <project path="vendor/rising" name="android_vendor_rising" groups="pdk-fs" remote="rising" />
+  <project path="vendor/risingOTA" name="RisingOSS-devices/android_vendor_RisingOTA" remote="github" revision="fourteen" />
+  <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="rising" />
+</manifest>
