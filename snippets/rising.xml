@@ -31,6 +31,7 @@
   <remove-project path="build/make" />
   <remove-project path="build/soong" />
   <remove-project path="device/lineage/sepolicy" />
+  <remove-project path="external/lottie" />
   <remove-project path="frameworks/av" />
   <remove-project path="frameworks/base" />
   <remove-project path="frameworks/libs/systemui" />
@@ -89,6 +90,9 @@
 
   <!-- Device  -->
   <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="rising" />
+
+  <!-- External -->
+  <project path="external/lottie" name="android_external_lottie" groups="pdk" remote="rising" />
 
   <!-- Frameworks  -->
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="rising" />
