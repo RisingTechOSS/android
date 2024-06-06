@@ -114,6 +114,8 @@ TARGET_CORE_GMS_EXTRAS := true/false
 # Wether to ship pixel launcher and set it as default launcher
 TARGET_DEFAULT_PIXEL_LAUNCHER := true/false 
 
+# Android System Intelligence (Pixels devices)
+It is recommended for Builders to drop other versions of DevicePersonalization except for DevicePersonalization2020 to avoid breakages on pixel features like Live Captions/NGA etc.
 ```
 
 Building the firmware
@@ -136,6 +138,27 @@ riseup <device> <build-type>
 ```
 ```bash
 rise fb
+```
+
+**Building signed ota package**
+```bash
+riseup <device> <build-type> 
+```
+```bash
+# 'rise sb' is an attempt to automate LineageOS builds signing. 
+# Reference: https://wiki.lineageos.org/signing_builds 
+# In case of errors or any other difficulties, feel free to use other methods of signing builds.
+# (Automatic generation of keys will be performed if keys do not exist). 
+# For manual key generation, please use "genkeys":
+rise sb
+```
+
+**Opting out of signed builds**
+```bash
+riseup <device> <build-type> 
+```
+```bash
+remove_keys # This will remove generated keys so the system will revert back to test keys.
 ```
 
 **For more information about the rise build command:**
