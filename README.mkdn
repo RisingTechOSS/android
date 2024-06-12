@@ -75,7 +75,7 @@ RISING_PACKAGE_TYPE := "VANILLA_AOSP"
 # disable/enable blur support, default is false
 TARGET_ENABLE_BLUR := true/false
 
-# whether to ship aperture camera, default is false
+# whether to ship aperture camera, default is true
 PRODUCT_NO_CAMERA := true/false
 ```
 
