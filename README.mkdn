@@ -55,11 +55,6 @@ $ . build/envsetup.sh
 $ brunch devicecodename
 ```
 
-### 1.3 Automation ###
-
-At crDroid, we have an automated script that also builds and uploads your device to our official SourceForge page.  
-[Show me more](https://github.com/crdroidandroid/crdroid_build).
-
 ## 2. Contributions ##
 
 To submit changes/patches, please send a pull request on GitHub. We will review and merge.
