@@ -293,7 +293,7 @@
   <project path="external/libevent" name="platform/external/libevent" groups="pdk" remote="aosp" />
   <project path="external/libexif" name="platform/external/libexif" groups="pdk" remote="aosp" />
   <project path="external/libffi" name="platform/external/libffi" groups="pdk" remote="aosp" />
-  <!--<project path="external/libfuse" name="platform/external/libfuse" groups="pdk" remote="aosp" />-->
+  <project path="external/libfuse" name="platform/external/libfuse" groups="pdk" remote="aosp" />
   <project path="external/libgav1" name="platform/external/libgav1" groups="pdk" remote="aosp" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" remote="aosp" />
   <project path="external/libhevc" name="platform/external/libhevc" groups="pdk" remote="aosp" />
@@ -399,7 +399,7 @@
   <project path="external/parameter-framework" name="platform/external/parameter-framework" groups="pdk" remote="aosp" />
   <project path="external/pcre" name="platform/external/pcre" groups="pdk" remote="aosp" />
   <project path="external/pdfium" name="platform/external/pdfium" groups="pdk" remote="aosp" />
-  <!--<project path="external/perfetto" name="platform/external/perfetto" groups="pdk,sysui-studio" remote="aosp" />-->
+  <project path="external/perfetto" name="platform/external/perfetto" groups="pdk,sysui-studio" remote="aosp" />
   <project path="external/perfmark" name="platform/external/perfmark" groups="pdk" remote="aosp" />
   <project path="external/pffft" name="platform/external/pffft" groups="pdk" remote="aosp" />
   <project path="external/piex" name="platform/external/piex" groups="pdk" remote="aosp" />
@@ -681,7 +681,7 @@
   <project path="external/rust/crates/regex-syntax" name="platform/external/rust/crates/regex-syntax" groups="pdk" remote="aosp" />
   <project path="external/rust/crates/remain" name="platform/external/rust/crates/remain" groups="pdk" remote="aosp" />
   <project path="external/rust/crates/remove_dir_all" name="platform/external/rust/crates/remove_dir_all" groups="pdk" remote="aosp" />
-  <!--<project path="external/rust/crates/ring" name="platform/external/rust/crates/ring" groups="pdk" remote="aosp" />-->
+  <project path="external/rust/crates/ring" name="platform/external/rust/crates/ring" groups="pdk" remote="aosp" />
   <project path="external/rust/crates/ron" name="platform/external/rust/crates/ron" groups="pdk" remote="aosp" />
   <project path="external/rust/crates/rusqlite" name="platform/external/rust/crates/rusqlite" groups="pdk" remote="aosp" />
   <project path="external/rust/crates/rustc-hash" name="platform/external/rust/crates/rustc-hash" groups="pdk" remote="aosp" />
