@@ -103,6 +103,4 @@
   <project path="vendor/crDroidOTA" name="crdroidandroid/android_vendor_crDroidOTA" remote="crdroid" />
   <project path="vendor/lineage" name="crdroidandroid/android_vendor_crdroid" remote="crdroid" />
   <project path="vendor/pixel-framework" name="crdroidandroid/android_vendor_pixel-framework" remote="crdroid" />
-
-  <project path="vendor/qcom/opensource/usb" name="crdroidandroid/android_vendor_qcom_opensource_usb" remote="crdroid" />
 </manifest>
