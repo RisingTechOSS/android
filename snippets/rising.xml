@@ -14,7 +14,7 @@
           revision="refs/heads/fourteen" />
 
   <remote name="gitlab"
-          fetch="https://gitlab.com/minaripenguin/"
+          fetch="https://gitlab.com/RisingTechOSS/"
           sync-c="true"
           sync-j="4"
           revision="refs/heads/fourteen" />
